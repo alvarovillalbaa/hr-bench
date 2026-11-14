@@ -1,0 +1,26 @@
+{
+  "id": "dpl_55BGEV9A2Z9wzxjv6RrdAbCtcztV",
+  "url": "hr-bench-fs7e0rm67-my-team-4f230354.vercel.app",
+  "state": "READY",
+  "target": "production",
+  "source": "git",
+  "project": {
+    "id": "prj_rcLQoczv3LjIrGHb3PwjM66C6hXx",
+    "name": "hr-bench",
+    "framework": null
+  },
+  "meta": {
+    "githubCommitRef": "main",
+    "githubCommitSha": "3b827b43fc23b17acfd45897dde1f733ae86a2c1",
+    "githubCommitMessage": "eval: preserve complete negative Qwen pilot and prepare hosted qualification",
+    "githubRepo": "hr-bench",
+    "githubOrg": "alvarovillalbaa"
+  },
+  "alias": [
+    "hr-bench.vercel.app",
+    "hr-bench-my-team-4f230354.vercel.app",
+    "hr-bench-git-main-my-team-4f230354.vercel.app"
+  ],
+  "ready": 1794653675647,
+  "note": "Provider metadata; browser/body qualification is recorded separately. Ready is the provider timestamp."
+}
