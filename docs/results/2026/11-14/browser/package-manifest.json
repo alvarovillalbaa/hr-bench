@@ -1,0 +1,115 @@
+{
+  "file": "alvarovillalbaa-hr-bench-0.1.0.tgz",
+  "bytes": 25589,
+  "sha256": "cefe47a7c465bce5dc6d44e99e00a1bd766f38fdaaecfe1a456834d27ae7e0f2",
+  "members": [
+    {
+      "path": "package/LICENSE",
+      "bytes": 1072,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/manifest.json",
+      "bytes": 5177,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/package.json",
+      "bytes": 803,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/policy.json",
+      "bytes": 843,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/target-qwen-v1.json",
+      "bytes": 439,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/tasks.json",
+      "bytes": 64685,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/references/adapter.md",
+      "bytes": 1688,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/specs/benchmark-v1.md",
+      "bytes": 2860,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/specs/qualification-v1.md",
+      "bytes": 3164,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/README.md",
+      "bytes": 2570,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/references/sources.md",
+      "bytes": 1745,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/core.mjs",
+      "bytes": 14772,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bin/hrbench.mjs",
+      "bytes": 4916,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/manifest.mjs",
+      "bytes": 1891,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/report.mjs",
+      "bytes": 7165,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/runner.mjs",
+      "bytes": 6992,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/strict-json.mjs",
+      "bytes": 3499,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/prompt.txt",
+      "bytes": 892,
+      "mode": 420,
+      "regular": true
+    }
+  ]
+}

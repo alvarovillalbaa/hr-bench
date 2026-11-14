@@ -1,0 +1,198 @@
+{
+  "mode": "browser",
+  "commands": [
+    {
+      "name": "versions",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 10,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.0027470869999888237,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 10,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.06745202000001882,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.24200035000001208,
+      "stdoutBytes": 109,
+      "stderrBytes": 0,
+      "stdoutSha256": "8383e76d13e3286c643fc56370d96022bd06b37d2f2a864099120f6aa05d84d6",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser-dependencies",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 240,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 1.5486899199999584,
+      "stdoutBytes": 24,
+      "stderrBytes": 0,
+      "stdoutSha256": "4aaef3acc3c4b16766abf61c4f4aa2d3bd413e2fe822d3edd6cfa9d7e7334efa",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "chromium",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-gw8romyl/browser-tools/node_modules/playwright/cli.js",
+        "install",
+        "chromium"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 180,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 6.037021605000007,
+      "stdoutBytes": 6812,
+      "stderrBytes": 0,
+      "stdoutSha256": "00a739177faf8ae5575dffeadad5c99dd131ab6579133f262e3945b0b3208e37",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser",
+      "argv": [
+        "node",
+        "tests/e2e/explorer.mjs"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 360,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 6.883968025999991,
+      "stdoutBytes": 15837,
+      "stderrBytes": 0,
+      "stdoutSha256": "0d24c64fcf7690383afae7c17cc72594b8a0105dbf3782e7e6f5f91b4eccb965",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "release-pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-artifact"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.2027042510000001,
+      "stdoutBytes": 2212,
+      "stderrBytes": 0,
+      "stdoutSha256": "bcfab930c5602f4f55ca8960336d208aa215e87a6595a01f594a8d584bd4cfea",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "release-offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-artifact/alvarovillalbaa-hr-bench-0.1.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.21495845499998723,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "9f2723423f7232c39d91ea43a1d870736da3de8498b7a688074a82043624d17e",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "release-installed-list",
+      "argv": [
+        "/tmp/hrbench-qualification-gw8romyl/release-consumer/node_modules/.bin/hrbench",
+        "list",
+        "--split",
+        "evaluation_public"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 15,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.05167009999996708,
+      "stdoutBytes": 1579,
+      "stderrBytes": 0,
+      "stdoutSha256": "f6924cfb792e7cc44ebb7e448b92e9ee5f2ed13a26889eeca16b061d72554ee7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "release-replay-measurement",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-gw8romyl/release-consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "replay",
+        "/tmp/hrbench-qualification-gw8romyl/source/docs/results/2026/11-14/pilot/report.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.13149598900002957,
+      "stdoutBytes": 1633,
+      "stderrBytes": 0,
+      "stdoutSha256": "210a646f0c63c452988a355f1a1eedc5ae6f2f7bf4f2614d5569f090f438ad31",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": true,
+  "cleanup": true,
+  "sourceUnchanged": true,
+  "scratchBytes": 985733089
+}

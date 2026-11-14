@@ -6,6 +6,10 @@ An open benchmark for agents doing human-resources work: read the supplied
 records, use the permitted tools, complete the task, preserve everything else.
 Scoring executes the trajectory against a fresh sandbox and checks final state.
 
+[Open the explorer](https://hr-bench.vercel.app) ·
+[Download 0.1.0](https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.1.0) ·
+[Release evidence](docs/results/2026/11-14/release.md)
+
 The first version contains24 authored synthetic tasks across scheduling, leave
 reconciliation, onboarding, policy answers, compensation arithmetic,
 consent-limited extraction, evidence-backed interview notes and offboarding
@@ -29,6 +33,12 @@ node bin/hrbench.mjs control --kind null --out null.json
 node bin/hrbench.mjs run --adapter ./my-adapter.mjs --target target.json --out run.json
 node bin/hrbench.mjs replay run.json
 ```
+
+Or download the release tarball and SHA256SUMS, verify its digest, then install
+the archive into a disposable Node project with
+`npm install --offline --ignore-scripts ./alvarovillalbaa-hr-bench-0.1.0.tgz`.
+Use `./node_modules/.bin/hrbench list`. This archive was actually installed and
+its executable/replay exercised on Node24; it is not an npm-registry publication.
 
 The adapter is an explicit Node program using the documented JSON-lines
 protocol. It receives public task/tool observations, never grading targets.

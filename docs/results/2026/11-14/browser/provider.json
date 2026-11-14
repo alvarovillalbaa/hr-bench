@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "id": 14111470246,
+      "name": "hrbench-browser-43587666908",
+      "size_in_bytes": 755324,
+      "url": "https://api.github.com/repos/alvarovillalbaa/hr-bench/actions/artifacts/14111470246",
+      "archive_download_url": "https://api.github.com/repos/alvarovillalbaa/hr-bench/actions/artifacts/14111470246/zip",
+      "expired": false,
+      "created_at": "2026-11-14T10:57:34Z",
+      "expires_at": "2026-11-21T10:57:33Z",
+      "updated_at": "2026-11-14T10:57:34Z",
+      "digest": "sha256:428a641e42e202a37e0b6e8c842f6b611670f99c2c973cd6b4126efd37d6cfd4",
+      "workflow_run": {
+        "id": 43587666908,
+        "repository_id": 1457646566,
+        "head_repository_id": 1457646566,
+        "head_branch": "main",
+        "head_sha": "de832bca1489a21f59dc87ddddaa8c8c326f0167"
+      }
+    }
+  ]
+}

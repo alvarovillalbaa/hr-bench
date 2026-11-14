@@ -1,0 +1,41 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.1.0/alvarovillalbaa-hr-bench-0.1.0.tgz",
+      "digest": "sha256:cefe47a7c465bce5dc6d44e99e00a1bd766f38fdaaecfe1a456834d27ae7e0f2",
+      "id": 747207895,
+      "name": "alvarovillalbaa-hr-bench-0.1.0.tgz",
+      "size": 25589,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.1.0/model-provenance.json",
+      "digest": "sha256:492efcf128fc8ad4d5df83e0a0fb4dd477d32f6950872b7fe0537012ee6c4181",
+      "id": 747209106,
+      "name": "model-provenance.json",
+      "size": 2032,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.1.0/report.json",
+      "digest": "sha256:a7026e81ab9711491fa410780c0fab32ef7e2b88030911817e37cde91a50b446",
+      "id": 747208677,
+      "name": "report.json",
+      "size": 441665,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.1.0/SHA256SUMS",
+      "digest": "sha256:86a89f8137867a08b7c2e2fb41520bd27132e8416968bdaa209a8b9c468a497c",
+      "id": 747208631,
+      "name": "SHA256SUMS",
+      "size": 101,
+      "state": "uploaded"
+    }
+  ],
+  "html_url": "https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.1.0",
+  "id": 445229214,
+  "published_at": "2026-11-14T11:00:48Z",
+  "tag_name": "v0.1.0",
+  "target_commitish": "de832bca1489a21f59dc87ddddaa8c8c326f0167"
+}

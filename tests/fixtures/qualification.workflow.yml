@@ -1,3 +1,4 @@
+# Retired recipe. No active workflow; new scope requires a fresh owned dispatch.
 name: Temporary HRBench qualification
 on:
   workflow_dispatch:
