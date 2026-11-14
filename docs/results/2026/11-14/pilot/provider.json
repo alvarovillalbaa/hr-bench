@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "id": 14110452998,
+      "name": "hrbench-pilot-43586539509",
+      "size_in_bytes": 103542,
+      "url": "https://api.github.com/repos/alvarovillalbaa/hr-bench/actions/artifacts/14110452998",
+      "archive_download_url": "https://api.github.com/repos/alvarovillalbaa/hr-bench/actions/artifacts/14110452998/zip",
+      "expired": false,
+      "created_at": "2026-11-14T10:51:54Z",
+      "expires_at": "2026-11-21T10:51:53Z",
+      "updated_at": "2026-11-14T10:51:54Z",
+      "digest": "sha256:3e11516d419420e848683e1f7fb434394822f91e7e30e15dcf21ff65cae8f915",
+      "workflow_run": {
+        "id": 43586539509,
+        "repository_id": 1457646566,
+        "head_repository_id": 1457646566,
+        "head_branch": "main",
+        "head_sha": "5a96694b6391aca12d6ec0f903c84ce009ff3b48"
+      }
+    }
+  ]
+}

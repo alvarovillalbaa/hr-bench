@@ -35,10 +35,16 @@ protocol. It receives public task/tool observations, never grading targets.
 No output text is executed. The CLI never silently substitutes a control for
 a model. Use an adapter/endpoint you own; keys stay in its environment.
 
-The public explorer will offer task filtering, an actual interactive sandbox,
-reference-control demonstrations and local report import/replay. A model pilot
-will be linked only after actual inference is observed. No account, database
-or application service is required; browser state is disposable.
+The explorer offers task filtering, an actual interactive sandbox,
+reference-control demonstrations and local report import/replay. No account,
+database or application service is required; browser state is disposable.
+
+The [real local q8 Qwen pilot](docs/results/2026/11-14/pilot/result.md) scored
+**0/8** on all eight public evaluation tasks:48 completions failed the strict
+tool protocol. Infrastructure coverage was complete. Raw actions, inputs,
+replayable grades and actual weight/runtime provenance are preserved. This
+negative measurement was not tuned or replaced. Oracle24/24 and null0/24 are
+environment controls, not AI performance or real-HR validation.
 
 Read [benchmark contract](docs/specs/benchmark-v1.md),
 [frozen qualification](docs/specs/qualification-v1.md) and the

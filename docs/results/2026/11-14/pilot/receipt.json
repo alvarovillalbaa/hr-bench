@@ -1,0 +1,295 @@
+{
+  "mode": "pilot",
+  "commands": [
+    {
+      "name": "versions",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 10,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.0037737290000023904,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 10,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.06917336099999716,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-artifact"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 1.3976119890000014,
+      "stdoutBytes": 2107,
+      "stderrBytes": 0,
+      "stdoutSha256": "ac71a829a35ce8ec69cdbbc50f2459c0fd70bca9fcd823e182cc5fd37afaf9cb",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-artifact/alvarovillalbaa-hr-bench-0.1.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.2891745390000011,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "8fd9411c15732d5a80c0afbdc6ada798373812a2e4f739b1462dd4cdf93d8f51",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "installed-list",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "list",
+        "--split",
+        "evaluation_public"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 15,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.060929444999999305,
+      "stdoutBytes": 1579,
+      "stderrBytes": 0,
+      "stdoutSha256": "f6924cfb792e7cc44ebb7e448b92e9ee5f2ed13a26889eeca16b061d72554ee7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "installed-oracle",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "control",
+        "--kind",
+        "oracle",
+        "--out",
+        "/home/runner/work/_temp/hrbench-artifact/oracle-control.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.206903668999999,
+      "stdoutBytes": 1647,
+      "stderrBytes": 0,
+      "stdoutSha256": "42020f9bb4addd34ad8264539042c64355b77c7976dfe844e86bcc17c9fe65c4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "replay-oracle",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "replay",
+        "/home/runner/work/_temp/hrbench-artifact/oracle-control.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.1566774439999996,
+      "stdoutBytes": 1635,
+      "stderrBytes": 0,
+      "stdoutSha256": "31d7a2f9922953abae010b12f326168f53de49b40875de971964e9de6b4692ca",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "installed-null",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "control",
+        "--kind",
+        "null",
+        "--out",
+        "/home/runner/work/_temp/hrbench-artifact/null-control.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.09688785499999852,
+      "stdoutBytes": 1663,
+      "stderrBytes": 0,
+      "stdoutSha256": "f28449cab666564d7142ed8475babc7765d3281e65ee94057dbfe72374bbf5f3",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "replay-null",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "replay",
+        "/home/runner/work/_temp/hrbench-artifact/null-control.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.08822928200000035,
+      "stdoutBytes": 1656,
+      "stderrBytes": 0,
+      "stdoutSha256": "912ba96eade7c4022b6a015fdc3a273d98b193c0a7ee5a81852d0f534b5fd254",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "installed-adapter",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "run",
+        "--adapter",
+        "/tmp/hrbench-qualification-uhrm6sey/source/tests/fixtures/null-adapter.mjs",
+        "--target",
+        "/tmp/hrbench-qualification-uhrm6sey/source/tests/fixtures/scripted-target.json",
+        "--row",
+        "ops-v1.policy.cedar",
+        "--out",
+        "/home/runner/work/_temp/hrbench-artifact/scripted-report.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.09996946500000092,
+      "stdoutBytes": 697,
+      "stderrBytes": 0,
+      "stdoutSha256": "1341c5fdc16ff31f3baf5ff55835075ad980eab417477d29398b977a78a7ffc9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model-dependencies",
+      "argv": [
+        "npm",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 240,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 3.838232843,
+      "stdoutBytes": 25,
+      "stderrBytes": 128,
+      "stdoutSha256": "1840cef0d2e7d872c32e07c1bae7c15525654bba9f1747f918cc63914c2cc5d5",
+      "stderrSha256": "a79e4d8ee28132a825b18a6728298bfe8dcea7ecd2f8ce8541d2aa732a4af3b5"
+    },
+    {
+      "name": "model-pilot",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "run",
+        "--adapter",
+        "/tmp/hrbench-qualification-uhrm6sey/source/tests/fixtures/local-qwen.mjs",
+        "--target",
+        "/tmp/hrbench-qualification-uhrm6sey/source/bench/v1/target-qwen-v1.json",
+        "--out",
+        "/home/runner/work/_temp/hrbench-artifact/report.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 840,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 552.781942777,
+      "stdoutBytes": 2044,
+      "stderrBytes": 0,
+      "stdoutSha256": "2a9c30e7567d07e4e3decba1b84d93ac3f737a3b93a9ae670f032f6e5dcee5fb",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "replay-pilot",
+      "argv": [
+        "node",
+        "/tmp/hrbench-qualification-uhrm6sey/consumer/node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs",
+        "replay",
+        "/home/runner/work/_temp/hrbench-artifact/report.json"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.12423334300001443,
+      "stdoutBytes": 1633,
+      "stderrBytes": 0,
+      "stdoutSha256": "210a646f0c63c452988a355f1a1eedc5ae6f2f7bf4f2614d5569f090f438ad31",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "timeoutSeconds": 30,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.20219659399992906,
+      "stdoutBytes": 109,
+      "stderrBytes": 0,
+      "stdoutSha256": "8383e76d13e3286c643fc56370d96022bd06b37d2f2a864099120f6aa05d84d6",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": true,
+  "cleanup": true,
+  "sourceUnchanged": true,
+  "scratchBytes": 1054622476
+}

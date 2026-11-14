@@ -157,6 +157,24 @@ try:
         execute("browser", ["node", "tests/e2e/explorer.mjs"], 360)
         if not json.loads((output / "browser-result.json").read_text())["passed"]:
             raise RuntimeError("Browser qualification failed")
+        # The release archive includes the now-published README/provenance.
+        # Exercise that actual new archive rather than relabelling the pilot's.
+        execute("release-pack", ["npm", "pack", "--json", "--ignore-scripts", "--pack-destination", str(output)], 30)
+        tarball = next(output.glob("*.tgz"))
+        with tarfile.open(tarball) as archive:
+            members = [{"path": m.name, "bytes": m.size, "mode": m.mode, "regular": m.isfile()} for m in archive.getmembers()]
+        roots = {"package/README.md", "package/LICENSE", "package/package.json"}
+        prefixes = ("package/bin/", "package/src/", "package/bench/", "package/docs/specs/", "package/docs/references/")
+        if any(not m["regular"] or (m["path"] not in roots and not m["path"].startswith(prefixes)) or ".." in Path(m["path"]).parts for m in members):
+            raise RuntimeError("Release archive contains unapproved files")
+        (output / "package-manifest.json").write_text(json.dumps({"file": tarball.name, "bytes": tarball.stat().st_size, "sha256": hashlib.sha256(tarball.read_bytes()).hexdigest(), "members": members}, indent=2))
+        consumer = scratch / "release-consumer"
+        consumer.mkdir()
+        (consumer / "package.json").write_text('{"name":"hrbench-release-consumer","version":"0.0.0","private":true}')
+        execute("release-offline-install", ["npm", "install", "--offline", "--ignore-scripts", "--no-audit", "--no-fund", str(tarball)], 30, cwd=consumer)
+        cli = str(consumer / "node_modules/@alvarovillalbaa/hr-bench/bin/hrbench.mjs")
+        execute("release-installed-list", [str(consumer / "node_modules/.bin/hrbench"), "list", "--split", "evaluation_public"], 15, cwd=consumer)
+        execute("release-replay-measurement", ["node", cli, "replay", str(work / "docs/results/2026/11-14/pilot/report.json")], 30, cwd=consumer)
     else:
         raise RuntimeError("Unknown qualification mode")
     receipt["passed"] = True

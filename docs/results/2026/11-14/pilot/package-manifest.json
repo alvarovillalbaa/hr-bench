@@ -1,0 +1,109 @@
+{
+  "file": "alvarovillalbaa-hr-bench-0.1.0.tgz",
+  "bytes": 24736,
+  "sha256": "b20a631a70e6259d0cd2804608130e951f53e4e8d730a1790180e4a1c3c6fe44",
+  "members": [
+    {
+      "path": "package/LICENSE",
+      "bytes": 1072,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/manifest.json",
+      "bytes": 5177,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/package.json",
+      "bytes": 803,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/policy.json",
+      "bytes": 843,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/target-qwen-v1.json",
+      "bytes": 439,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/tasks.json",
+      "bytes": 64685,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/references/adapter.md",
+      "bytes": 1688,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/specs/benchmark-v1.md",
+      "bytes": 2860,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/docs/specs/qualification-v1.md",
+      "bytes": 3164,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/README.md",
+      "bytes": 2203,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/core.mjs",
+      "bytes": 14772,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bin/hrbench.mjs",
+      "bytes": 4916,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/manifest.mjs",
+      "bytes": 1891,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/report.mjs",
+      "bytes": 7165,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/runner.mjs",
+      "bytes": 6992,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/src/strict-json.mjs",
+      "bytes": 3499,
+      "mode": 420,
+      "regular": true
+    },
+    {
+      "path": "package/bench/v1/prompt.txt",
+      "bytes": 892,
+      "mode": 420,
+      "regular": true
+    }
+  ]
+}
