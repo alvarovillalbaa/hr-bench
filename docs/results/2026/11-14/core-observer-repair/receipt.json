@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "node",
+    "--test",
+    "--test-name-pattern",
+    "C09",
+    "tests/unit/core.test.mjs"
+  ],
+  "exit": 0,
+  "reason": "Observer selected record by map position instead of explicit authority membership",
+  "stdoutSha256": "ed284a74281eb0f7604638bc96bab731592a2c13048e5ee0168d9943aa241b02",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

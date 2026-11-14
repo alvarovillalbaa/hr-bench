@@ -1,0 +1,26 @@
+[
+  {
+    "name": "report",
+    "argv": [
+      "node",
+      "--test",
+      "--test-name-pattern",
+      "C27|C28|C29|C30",
+      "tests/unit/core.test.mjs"
+    ],
+    "exit": 0,
+    "stdoutSha256": "da56b705c836abe6ea8d9c4fa169bfc4537bd319f056746775a38f2fea67caba",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "cli",
+    "argv": [
+      "node",
+      "--test",
+      "tests/integration/cli.test.mjs"
+    ],
+    "exit": 0,
+    "stdoutSha256": "53e9cf7e7a9746760473097aa17bf3963af875b62c6bbd2a848a2d1b7fd28656",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "dataset": "ops-v1",
+  "evaluator": "state-v1",
+  "protocol": "tools-v1",
+  "promptVersion": "tool-agent-v1",
+  "promptSha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+  "dataPolicyFingerprint": "sha256:f5e83cac78dfb0e3093763460de506eb3c2350ef983daa199258afedd5a6d44a",
+  "samples": [
+    {
+      "row_id": "ops-v1.scheduling.amber",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "53c0766d075792afffe6f9ec3cd8751f81d0fa50114df948211fb0c08177986c"
+    },
+    {
+      "row_id": "ops-v1.scheduling.birch",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "e63508a18cd95ccc5eb5524d6c6bb819cd2dfd4cef594fad1beece9ee35ad032"
+    },
+    {
+      "row_id": "ops-v1.scheduling.cedar",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "317d38f1ac26a14e836f629f414877c9d5796c26ee170bbfbba53b1731020e1d"
+    },
+    {
+      "row_id": "ops-v1.leave.amber",
+      "family": "leave",
+      "split": "development",
+      "sha256": "8c68dcf131b85f99c579b13cbaee755c0c5c9f01986b7893cc7d8bdf8a75f6f3"
+    },
+    {
+      "row_id": "ops-v1.leave.birch",
+      "family": "leave",
+      "split": "development",
+      "sha256": "24986fd7dcd2d4a6345b3845497d82b6eeb9baeeeccdbbd9c38cac3a1b587f41"
+    },
+    {
+      "row_id": "ops-v1.leave.cedar",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "ea2116c16f741c89d46ee7d9882a6492be1f4b6fd44936a1fb305a5414f30123"
+    },
+    {
+      "row_id": "ops-v1.onboarding.amber",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "347aada7dce0d3cfdaf0dc6dc9fb853748fd0ba42d445673faed26fcb7f736a2"
+    },
+    {
+      "row_id": "ops-v1.onboarding.birch",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "ce0c81915b9f0306a719a5e9dd9458458675bfe3a5f4e07a42ff6ceda2f43359"
+    },
+    {
+      "row_id": "ops-v1.onboarding.cedar",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "176cd1f2ae69f443f5e122a67d0fecd62e1181dc596eb84a0798543a2a9d2c56"
+    },
+    {
+      "row_id": "ops-v1.policy.amber",
+      "family": "policy",
+      "split": "development",
+      "sha256": "62acaee1ee3502d2948b459297dddbae447e42e1b619fa6bb9aee14f3d5ebc16"
+    },
+    {
+      "row_id": "ops-v1.policy.birch",
+      "family": "policy",
+      "split": "development",
+      "sha256": "8c558ca44a6cccc15b9e4142eae649b7c601865c1b1d00e8e14981b214f6b092"
+    },
+    {
+      "row_id": "ops-v1.policy.cedar",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "c5f3e00cf06911de8c254c7d4745a2a4afb2eccd7c5f16b542a81142a2e619e2"
+    },
+    {
+      "row_id": "ops-v1.compensation.amber",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "c62ab7e41cfacf0b64292173d73c2fcffa2fcc8bb2f6c832312671aa8fbcb73b"
+    },
+    {
+      "row_id": "ops-v1.compensation.birch",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "72ef49df143ba5f909cb9ed98e00d78967a75cce5dc68180cc5d9a14cd743a3b"
+    },
+    {
+      "row_id": "ops-v1.compensation.cedar",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "ca3cf771b23f5889bcc7a46a57707dd75eb0f7d40acc340aefe42af4e214d6f9"
+    },
+    {
+      "row_id": "ops-v1.consent.amber",
+      "family": "consent",
+      "split": "development",
+      "sha256": "321d62284effb525227afd4778dfb2e427b7ceddbf037f105773aa3447449fc9"
+    },
+    {
+      "row_id": "ops-v1.consent.birch",
+      "family": "consent",
+      "split": "development",
+      "sha256": "2ce81779b2f561ae51fa6a5eb2827f09e025e5cbb50129938ef40a1c8936832e"
+    },
+    {
+      "row_id": "ops-v1.consent.cedar",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "8b1e633dcf4655a31e27139d14e93ddc5eb46959e70fd1020f74b9a5197d6638"
+    },
+    {
+      "row_id": "ops-v1.evidence.amber",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "e4d7be3e17ff28afc3b152fb0590d8125d0374b6b240869e0be8bcb0be9f39e2"
+    },
+    {
+      "row_id": "ops-v1.evidence.birch",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "7ebf37f48629d8379342b977d561e9127ca105070de4e0b332b03426af94d914"
+    },
+    {
+      "row_id": "ops-v1.evidence.cedar",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "9ab3b5c6c1abe1c23e447dcc180a8c928d23ef0045c23c19300453924408b981"
+    },
+    {
+      "row_id": "ops-v1.offboarding.amber",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "9a8da565cfd99645aec3d3002a19590126953cd52591d8f70cd6a2d27586069c"
+    },
+    {
+      "row_id": "ops-v1.offboarding.birch",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "d2f67e208e25e67428b8a6c483cc61846dc0492cecbaea7cac5952cc79dba566"
+    },
+    {
+      "row_id": "ops-v1.offboarding.cedar",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "d16ebbfdfa2757612e7fd688c4caac6db79a277f67466befd696aaf11af8f869"
+    }
+  ],
+  "sampleManifestId": "sha256:cafb93e2bac439c6dabfa08a34a54011b5753d3b4751686880936a5238b97af1"
+}

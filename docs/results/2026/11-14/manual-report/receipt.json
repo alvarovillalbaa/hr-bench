@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "--test",
+    "--test-name-pattern",
+    "C31",
+    "tests/unit/core.test.mjs"
+  ],
+  "exit": 0,
+  "stdoutSha256": "c99bf2c36d05396792b575c69fb1ffcb412af20e66a96b41704b218109b67df7",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "hrbench-data-policy-v1",
+  "tier": "T2-authored-synthetic",
+  "unit": "task-episode",
+  "source": "New authored fictional records and policies; no employee/applicant corpus or third-party benchmark data",
+  "population": "24 public English synthetic workflow tasks in eight families; not calibrated to real HR work",
+  "splits": { "development": 16, "evaluation_public": 8, "blind_holdout": 0 },
+  "authority": "Only in-memory allowlisted patches; no external side effect; unauthorized attempts hard-gate success",
+  "grading": "Exact final goal fields plus protected-state and authority invariants, evaluator state-v1",
+  "infrastructure": "Adapter failures unscored; incomplete coverage has no official aggregate",
+  "claims": "Pilot measurement only; no global adoption, hiring validity or general model competence claim"
+}
