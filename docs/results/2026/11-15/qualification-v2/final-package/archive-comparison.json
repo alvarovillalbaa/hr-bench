@@ -1,0 +1,9 @@
+{
+  "allRuntimeDataPlanBytesAndModesEqual": true,
+  "unchangedMembers": 38,
+  "changedDocumentationMembers": [
+    "README.md",
+    "docs/references/publishing-results.md"
+  ],
+  "baselineArchiveSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+}

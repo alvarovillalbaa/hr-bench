@@ -1,7 +1,7 @@
 # HRBench V2 qualification and complete model measurement
 
-15 November2026. Candidate software and model milestone; final package/hosted
-publication checks are next. The owner explicitly left
+15 November2026. Candidate software and model milestone; final installed/native
+archive accepted, hosted publication is next. The owner explicitly left
 [professional review pending](../../../../reviews/v2-owner-deferral-20261115.md).
 All96 new tasks remain candidate/source-grounded, zero independently reviewed.
 
@@ -102,8 +102,38 @@ No extra permission question was sent or target/data/prompt/grader changed.
 Five focused composition controls passed again after the merger separated
 source inference runtimes from its aggregation runtime.
 
+## Final installed archive and model-bearing explorer
+
+[Run43718163964](https://github.com/alvarovillalbaa/hr-bench/actions/runs/43718163964),
+sourcecfc5b9fec89a045359e60c743c9977aae34bf677, passed in42seconds.
+The actual final archive is86,863bytes/40 members, SHA256
+bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3.
+All38 runtime/data/plan/review members and modes match the actual model archive;
+only README and publishing-results.md changed to describe the accepted result.
+A fresh offline consumer ran the installed32-row list and replayed the complete
+real model report. Its build contains24 static bodies including both separate
+model payloads and build.json.
+
+All six native identities passed together against the final model-bearing page:
+V1 readable library/chart; V2 cohort/source/review and actual0/32 model bar;
+download/import/rehashed-grade refusal/inert markup/private-chart separation;
+delayed route/file reads across editions; touch/keyboard/dialog/width320 and390.
+Chromium141.0.7390.37, all six contexts and server closed; no page/console errors,
+external browser requests or horizontal overflow. The original library and320px
+PNGs were visually inspected. See [44 original files](final-package/receipt.json)
+and [native receipt](final-package/native/receipt.json).
+
+The preceding final-package invocation
+[43717961829](https://github.com/alvarovillalbaa/hr-bench/actions/runs/43717961829)
+stopped after packing because the reference manifest was absent from that
+checkout. It consumed19seconds, performed no consumer install/browser and
+passed source/cleanup guards. Its15 originals remain under
+[final-native-initial](final-native-initial/receipt.json). The correction added
+that existing immutable manifest; product and archive bytes did not change.
+Actual CI through final-native acceptance totals9,509seconds (158m29s).
+
 Local Guard8.3/34GiB refused heavy work. No local install/build/browser/model
 or database was created; source, tiny pure checks and bounded verified evidence
-copies only. Final archive/public release, hosted body equality and temporary
+copies only. Public release, hosted body equality and temporary
 control retirement remain open. The user's professional-review
 deferral remains explicit. No private HR data, paid API, account or contacts.

@@ -1,13 +1,15 @@
-name: Temporary HRBench V2 final package and native qualification
+name: Temporary HRBench V2 public qualification and retirement
 on:
   push:
     branches: ['qa/hrbench-v2-20261115']
 permissions:
   contents: read
 jobs:
-  final-native:
+  publish-hosted-retire:
     runs-on: ubuntu-24.04
     timeout-minutes: 8
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -15,16 +17,34 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
           node-version: '24.22.2'
-      - name: Qualify final archive and full model-bearing explorer
+      - name: Publish and anonymously verify the qualified candidate assets
         env:
-          HRBENCH_MODE: final-native
-          HRBENCH_REMAINING_SECONDS: '480'
-          HRBENCH_OUTPUT: ${{ runner.temp }}/hrbench-v2-final-artifact
+          HRBENCH_RELEASE_SOURCE: 9b4539d7a1ed040792e4db395f1b04533b7405eb
+          HRBENCH_RELEASE_ARCHIVE_SHA256: bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3
+          HRBENCH_RELEASE_TOKEN: ${{ github.token }}
+          HRBENCH_PUBLICATION_OUTPUT: ${{ runner.temp }}/hrbench-v2-publication
+        run: python3 tests/scripts/publish-v2.py
+      - name: Verify canonical public bodies and actual browser journeys
+        env:
+          HRBENCH_MODE: hosted
+          HRBENCH_RELEASE_ARCHIVE_SHA256: bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3
+          HRBENCH_URL: https://hr-bench.vercel.app
+          HRBENCH_REMAINING_SECONDS: '420'
+          HRBENCH_OUTPUT: ${{ runner.temp }}/hrbench-v2-hosted
         run: python3 tests/scripts/qualify-v2.py
+      - name: Retire only the owned temporary control
+        env:
+          HRBENCH_RELEASE_SOURCE: 9b4539d7a1ed040792e4db395f1b04533b7405eb
+          HRBENCH_RETIRE_TOKEN: ${{ github.token }}
+          HRBENCH_RETIRE_OUTPUT: ${{ runner.temp }}/hrbench-v2-retirement
+        run: python3 tests/scripts/retire-v2.py
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
-          name: hrbench-v2-final-${{ github.run_id }}
-          path: ${{ runner.temp }}/hrbench-v2-final-artifact
+          name: hrbench-v2-public-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/hrbench-v2-publication
+            ${{ runner.temp }}/hrbench-v2-hosted
+            ${{ runner.temp }}/hrbench-v2-retirement
           if-no-files-found: error
           retention-days: 7

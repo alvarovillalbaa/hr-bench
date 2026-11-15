@@ -1,0 +1,5 @@
+
+> @alvarovillalbaa/hr-bench@0.2.0 build
+> node scripts/build.mjs
+
+{"rows":24,"candidateRows":96,"files":24,"pilot":"measured","independentReview":"pending"}
