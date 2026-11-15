@@ -1,0 +1,181 @@
+{
+  "mode": "hosted",
+  "passed": true,
+  "cleanup": true,
+  "commands": [
+    {
+      "name": "node-version",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.004027511000003869,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.07867283000000214,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "syntax",
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.20537540200000137,
+      "stdoutBytes": 197,
+      "stderrBytes": 0,
+      "stdoutSha256": "8a0564caeecde2792f34d4d5e9898c82a608dbf5044b5af1fd9e8168ed7004d4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-v2-hosted"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.5562017399999988,
+      "stdoutBytes": 4575,
+      "stderrBytes": 0,
+      "stdoutSha256": "f309f97603b722b9c84a21bf7fa0290b78a5f2a040ca704f2dfe5941919f7ca2",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-v2-hosted/alvarovillalbaa-hr-bench-0.2.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.28599546799999587,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "3f704e15e05cb30db2bbf40933feaf5945374dd50a0b15e6acb5870e851ebb1a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.7317283209999985,
+      "stdoutBytes": 158,
+      "stderrBytes": 0,
+      "stdoutSha256": "0031d8e57f1270b36327e5d134f0a267a17acd905fefbd2d01caad90765192de",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser-dependencies",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.5445197700000008,
+      "stdoutBytes": 27,
+      "stderrBytes": 0,
+      "stdoutSha256": "8f4cddc07717e0725dea4bed411c1ae63e6b59aa32f590c64222d4d2eb05ce95",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser-install",
+      "argv": [
+        "node",
+        "/tmp/hrbench-v2-0rhp2_z4/browser-tools/node_modules/playwright/cli.js",
+        "install",
+        "--with-deps",
+        "chromium"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 20.434982095000002,
+      "stdoutBytes": 16035,
+      "stderrBytes": 237,
+      "stdoutSha256": "22b3515c1e548ebdb6dc2d62cbb295b6faed137288b1794b37229ebbf97f8963",
+      "stderrSha256": "3b419c69ff321ee6851fa5489a2bb0c9a2ef093815a709dbd05391f89767267f"
+    },
+    {
+      "name": "native",
+      "argv": [
+        "node",
+        "tests/e2e/v2-explorer.mjs"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 12.505149171,
+      "stdoutBytes": 1630,
+      "stderrBytes": 0,
+      "stdoutSha256": "b4b7dba6df62758e3d9b938eda7ad1b97349ccd26841ac1281eddec2016d0f33",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "storage": {
+    "freeBytes": 91496206336,
+    "requiredBytes": 36507222016,
+    "passed": true
+  },
+  "frozenV1Preserved": {
+    "inputs": 10,
+    "baselineReceiptSha256": "712d5f821fbffe042915419a16e038516535d06c902ffaa5dc7e90daf0b1b2bb",
+    "allEqual": true
+  },
+  "sourceUnchanged": true,
+  "sourceGuardPassed": true,
+  "scratchBytes": 991357894
+}

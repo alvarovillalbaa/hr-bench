@@ -1,7 +1,7 @@
 # HRBench V2 qualification and complete model measurement
 
-15 November2026. Candidate software and model milestone; final installed/native
-archive accepted, hosted publication is next. The owner explicitly left
+15 November2026. Published0.2.0 candidate: installed archive, complete real-model
+measurement, native/hosted acceptance and temporary retirement. The owner left
 [professional review pending](../../../../reviews/v2-owner-deferral-20261115.md).
 All96 new tasks remain candidate/source-grounded, zero independently reviewed.
 
@@ -132,8 +132,50 @@ passed source/cleanup guards. Its15 originals remain under
 that existing immutable manifest; product and archive bytes did not change.
 Actual CI through final-native acceptance totals9,509seconds (158m29s).
 
-Local Guard8.3/34GiB refused heavy work. No local install/build/browser/model
-or database was created; source, tiny pure checks and bounded verified evidence
-copies only. Public release, hosted body equality and temporary
-control retirement remain open. The user's professional-review
-deferral remains explicit. No private HR data, paid API, account or contacts.
+## Public release, hosted acceptance and retirement
+
+Qualified/tagged source9b4539d7a1ed040792e4db395f1b04533b7405eb is published
+as [v0.2.0 candidate](https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.2.0),
+prerelease true, without replacing the original release. This is GitHub archive
+distribution, not an npm-registry publication. Five assets include the actual
+archive, model report, runtime provenance, release provenance and SHA256SUMS.
+Each provider digest and actual anonymous HTTP200 download matched every byte.
+See [publication receipt](publication/receipt.json).
+
+[Run43718717814](https://github.com/alvarovillalbaa/hr-bench/actions/runs/43718717814),
+source d904872973ed840b9cc5634ecbfe93651d5327be, passed in60seconds. It first
+published/verified assets, then repacked the exact qualified archive, compared
+all24 anonymous canonical static bodies (including both model payloads and
+build.json) by length/SHA256 and all four configured security headers. All six
+native journeys passed against https://hr-bench.vercel.app, including the actual
+V2 0/32 bar and private-import separation. Every browser context, Chromium,
+local support server and process group closed; source and cleanup guards passed.
+See [hosted receipt](hosted/receipt.json),
+[six journeys and24 body observations](hosted/native/receipt.json) and original
+PNGs/downloads/HTTP bodies under that directory. The tested production deployment
+was dpl_HewUCckdLZCzD68Hqw9UkCGj9J4g, READY with the canonical alias and exact
+release source. QA had zero Vercel deployments.
+
+The same owned job retired its workflow and temporary branch after the public
+checks. The [actual retirement stdout](retirement/receipt.json) records workflow
+removal200, branch removal204 and subsequent404, with main unchanged. Retired
+commit fad66e367f2500804ec5f676070bd901cb381477 retains the control history.
+Deletion uses serialized exact-owner reads; GitHub DELETE ref is not atomic CAS.
+No temporary workflow is present on main. The final evidence commit can advance
+main with identical40 archive members/modes and28 build-input blobs; this carries
+the exact tested bytes without claiming a second hosted browser invocation.
+
+Total actual temporary CI was9,569seconds (**159m29s**) including every failed
+and successful job in both model trials, packaging, native/publication and
+retirement. Each job stayed below its standing20-minute cap; actual model jobs
+stayed below the narrower14-minute limit. The total stayed below the declared
+300-minute operator ceiling. The auxiliary jobs consumed225seconds, within the
+20-minute auxiliary allowance. See [per-job accounting](ci-receipt.json).
+
+Local Guard8.3/34GiB refused heavy work. No local install/build/browser/model or
+database was created; source, tiny pure checks and bounded verified evidence
+copies only. Local HEAD/index were not moved to publish. No private HR data,
+paid API, account or contacts. **Independent HR review remains pending for all96
+candidate rows**, as explicitly requested. Public correlated synthetic tasks,
+source citations and successful software delivery do not establish professional
+validation, representative HR performance, blind holdout results or adoption.

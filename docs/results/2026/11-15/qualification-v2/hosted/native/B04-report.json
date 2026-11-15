@@ -1,0 +1,316 @@
+{
+  "schema": "hrbench.report",
+  "version": 2,
+  "dataset": "ops-v2",
+  "evaluator": "state-v1",
+  "stage": "candidate",
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "dataPolicyFingerprint": "sha256:6ef061d370421518445921fdf09b6b0e8bf20c6abd8b977ac89d5ae6a07d03eb",
+  "promptSha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+  "sourcesSha256": "73b0a78267589abb86885fe359afa89cd56d2e5d48aebde40588dc36eecee043",
+  "provenanceSha256": "9ffdfcefad9519c199713719413528819b8a6800b71925213411b5bf9cc808dc",
+  "target": {
+    "kind": "oracle_control",
+    "name": "Reference control — has oracle access"
+  },
+  "targetConfigSha256": "e00de9a2bef14d51fcaaa575115309decd4fefb168b18d7a8f448f48f104afa7",
+  "selectedRowIds": [
+    "ops-v2.scheduling.panel-intersection.tango"
+  ],
+  "episodes": [
+    {
+      "generations": [],
+      "row_id": "ops-v2.scheduling.panel-intersection.tango",
+      "status": "scored",
+      "trace": {
+        "finalState": {
+          "protected-tango": {
+            "data": {
+              "auditNote": "Untargeted protected fixture",
+              "delivery": "unsent",
+              "participants": [],
+              "start": null,
+              "status": "unprepared"
+            },
+            "revision": 7,
+            "type": "scheduling"
+          },
+          "scheduling-panel-intersection-tango": {
+            "data": {
+              "auditNote": "",
+              "delivery": "unsent",
+              "participants": [
+                "candidate-tango",
+                "interviewer-a-tango",
+                "interviewer-b-tango"
+              ],
+              "start": "2027-04-12T11:00:00.000Z",
+              "status": "ready_to_review"
+            },
+            "revision": 1,
+            "type": "scheduling"
+          }
+        },
+        "grade": {
+          "authorityViolations": 0,
+          "calls": 4,
+          "checks": [
+            {
+              "id": "goal.scheduling-panel-intersection-tango.participants",
+              "passed": true
+            },
+            {
+              "id": "goal.scheduling-panel-intersection-tango.start",
+              "passed": true
+            },
+            {
+              "id": "goal.scheduling-panel-intersection-tango.status",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-tango.auditNote",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-tango.delivery",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-tango.participants",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-tango.start",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-tango.status",
+              "passed": true
+            },
+            {
+              "id": "revision.protected-tango",
+              "passed": true
+            },
+            {
+              "id": "protected.scheduling-panel-intersection-tango.auditNote",
+              "passed": true
+            },
+            {
+              "id": "protected.scheduling-panel-intersection-tango.delivery",
+              "passed": true
+            },
+            {
+              "id": "revision.scheduling-panel-intersection-tango",
+              "passed": true
+            }
+          ],
+          "conflicts": 0,
+          "evaluator": "state-v1",
+          "finishedByAgent": true,
+          "goalSatisfied": true,
+          "protectedState": true,
+          "protocolErrors": 0,
+          "row_id": "ops-v2.scheduling.panel-intersection.tango",
+          "success": true
+        },
+        "row_id": "ops-v2.scheduling.panel-intersection.tango",
+        "turns": [
+          {
+            "action": {
+              "args": {
+                "id": "brief"
+              },
+              "tool": "read_resource"
+            },
+            "index": 1,
+            "raw": "{\"args\":{\"id\":\"brief\"},\"tool\":\"read_resource\"}",
+            "result": {
+              "data": {
+                "fixture": "Fictional benchmark records and internal rules; not legal/employment advice.",
+                "offers": [
+                  {
+                    "accessible": true,
+                    "available": [
+                      "candidate-tango",
+                      "interviewer-a-tango"
+                    ],
+                    "minutes": 30,
+                    "start": "2027-04-12T09:00:00.000Z"
+                  },
+                  {
+                    "accessible": false,
+                    "available": [
+                      "candidate-tango",
+                      "interviewer-a-tango",
+                      "interviewer-b-tango"
+                    ],
+                    "minutes": 45,
+                    "start": "2027-04-12T10:00:00.000Z"
+                  },
+                  {
+                    "accessible": true,
+                    "available": [
+                      "candidate-tango",
+                      "interviewer-a-tango",
+                      "interviewer-b-tango"
+                    ],
+                    "minutes": 45,
+                    "start": "2027-04-12T11:00:00.000Z"
+                  }
+                ],
+                "policy": "Only listed complete offers are available; do not infer missing availability.",
+                "required": [
+                  "candidate-tango",
+                  "interviewer-a-tango",
+                  "interviewer-b-tango"
+                ],
+                "requiredMinutes": 45
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {
+                "id": "scheduling-panel-intersection-tango"
+              },
+              "tool": "read_record"
+            },
+            "index": 2,
+            "raw": "{\"args\":{\"id\":\"scheduling-panel-intersection-tango\"},\"tool\":\"read_record\"}",
+            "result": {
+              "data": {
+                "contract": {
+                  "fields": {
+                    "auditNote": {
+                      "kind": "text",
+                      "max": 160
+                    },
+                    "delivery": {
+                      "kind": "text",
+                      "max": 160
+                    },
+                    "participants": {
+                      "item": {
+                        "kind": "text",
+                        "max": 100
+                      },
+                      "kind": "list",
+                      "max": 30
+                    },
+                    "start": {
+                      "format": "datetime",
+                      "kind": "text",
+                      "max": 30,
+                      "nullable": true
+                    },
+                    "status": {
+                      "kind": "text",
+                      "max": 160
+                    }
+                  },
+                  "kind": "object"
+                },
+                "id": "scheduling-panel-intersection-tango",
+                "record": {
+                  "data": {
+                    "auditNote": "",
+                    "delivery": "unsent",
+                    "participants": [],
+                    "start": null,
+                    "status": "unprepared"
+                  },
+                  "revision": 0,
+                  "type": "scheduling"
+                }
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {
+                "changes": {
+                  "participants": [
+                    "candidate-tango",
+                    "interviewer-a-tango",
+                    "interviewer-b-tango"
+                  ],
+                  "start": "2027-04-12T11:00:00.000Z",
+                  "status": "ready_to_review"
+                },
+                "expectedRevision": 0,
+                "id": "scheduling-panel-intersection-tango"
+              },
+              "tool": "patch_record"
+            },
+            "index": 3,
+            "raw": "{\"args\":{\"changes\":{\"participants\":[\"candidate-tango\",\"interviewer-a-tango\",\"interviewer-b-tango\"],\"start\":\"2027-04-12T11:00:00.000Z\",\"status\":\"ready_to_review\"},\"expectedRevision\":0,\"id\":\"scheduling-panel-intersection-tango\"},\"tool\":\"patch_record\"}",
+            "result": {
+              "data": {
+                "id": "scheduling-panel-intersection-tango",
+                "record": {
+                  "data": {
+                    "auditNote": "",
+                    "delivery": "unsent",
+                    "participants": [
+                      "candidate-tango",
+                      "interviewer-a-tango",
+                      "interviewer-b-tango"
+                    ],
+                    "start": "2027-04-12T11:00:00.000Z",
+                    "status": "ready_to_review"
+                  },
+                  "revision": 1,
+                  "type": "scheduling"
+                }
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {},
+              "tool": "finish"
+            },
+            "index": 4,
+            "raw": "{\"args\":{},\"tool\":\"finish\"}",
+            "result": {
+              "data": {
+                "finished": true
+              },
+              "ok": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "selected": 1,
+    "scored": 1,
+    "successes": 1,
+    "coverage": 1,
+    "complete": true,
+    "officialMacroScore": 1,
+    "rowWilson95": [
+      0.20654931437723745,
+      1
+    ],
+    "families": [
+      {
+        "family": "scheduling",
+        "selected": 1,
+        "scored": 1,
+        "successes": 1,
+        "score": 1
+      }
+    ],
+    "interpretation": "Descriptive public synthetic suite; no real-HR or comparative superiority claim."
+  },
+  "runtime": {
+    "surface": "browser-local"
+  },
+  "createdAt": "2026-11-15T13:23:51.059Z",
+  "reportId": "sha256:7a2add36b9329f01eb240083623cafa910b41986eb583939764591c7c97450ed"
+}

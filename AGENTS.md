@@ -19,8 +19,9 @@ Last updated: 2026-11-15
 - V2 inputs/provenance/manifest are sealed. Its report is version 2/candidate;
   do not pool or relabel V1 results. All frozen V1 files/engine/prompt/pilot
   remain unchanged. Actual reviewer attestations must be new records bound to
-  exact row hashes. Installed archive and six native identities are accepted;
-  the final model-bearing page/archive and hosted/publication are next.
+  exact row hashes. Candidate0.2.0 is published:40-member archive, installed
+  replay, six native and six hosted identities,24 public bodies/security headers,
+  five anonymously verified release assets. Independent HR review stays pending.
 - UI-only reading aids live in web/explorer.mjs, separate from frozen contracts.
   Keep original goals accessible. The public chart uses replayed published model
   reports on the exact complete ordered evaluation cohort. Controls, incomplete
@@ -48,22 +49,27 @@ Last updated: 2026-11-15
   per-row outcomes, coverage and uncertainty. No hidden chain-of-thought/judge.
 - No paid model-service API, secret copying, account/plan creation or DB needed.
   The real pilot uses pinned public local weights in owned remote free CI.
-- Storage Guard failed5.2/34GiB. No local install/build/server/browser/model work.
+- Storage Guard last failed8.3/34GiB. No local install/build/server/browser/model work.
   Tiny existing-Node checks and bounded source/evidence only. No weights, caches,
   dependencies, credentials or local-only configuration in Git/artifacts.
 - Temporary CI has a20-minute job cap,17-minute internal deadline, exact owner
   scratch identity, complete streams/source guards and teardown; retire it.
-- Initial V2 campaign: qa/hrbench-v2-20261115 at
+- Retained initial V2 campaign at
   25fea481cf34af81cd93ae8c519f2f7080c90e71, run43712560360. Its push workflow
   ran four predeclared real-model shards, max two concurrently; all four
   exhausted760seconds and are retained as interrupted infrastructure evidence.
   Corrected source769e7b556f468007a280949bd32d441e7d7461b6,
   run43714588256, completed16 two-row jobs,32/32 scored,0/32 successes.
-  Do not push
-  documentation/source onto this ref while that model recipe is active: doing
-  so would repeat inference. Poll the existing run/jobs; change the recipe to
-  the next phase in the same later commit before moving the ref.
-- Active sealed campaign is bench/runs/v2-qwen-20261115/plan-v3.json, hash
+  Final installed/native run43718163964 and public/retirement run43718717814
+  passed. Tagged candidate source is9b4539d7a1ed040792e4db395f1b04533b7405eb.
+  The owned QA branch/workflow were retired; do not recreate them or repeat
+  unchanged model/native checks. Final receipt is
+  docs/results/2026/11-15/qualification-v2/result.md. Actual CI159m29s includes
+  all failures, within the300-minute operator ceiling and20-minute owner job cap.
+  Local HEAD remains the old3cdf192cc812c8f8665a2646ed798e355d437f14 with
+  preserved dirty source/evidence; inspect remote main before any future Git
+  work. Do not push stale local refs or reset/stash/switch this shared checkout.
+- Accepted sealed campaign is bench/runs/v2-qwen-20261115/plan-v3.json, hash
   0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f.
   The owner cap above is per job; no new cumulative approval was needed.
   Operator bounds are14minutes/job and300minutes covering the retained initial

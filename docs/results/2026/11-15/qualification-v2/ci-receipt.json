@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "source": "9b4539d7a1ed040792e4db395f1b04533b7405eb",
+  "ownerPerJobCapSeconds": 1200,
+  "operatorCampaignCapSeconds": 18000,
+  "operatorAuxiliaryAllowanceSeconds": 1200,
+  "actualTotalSeconds": 9569,
+  "actualAuxiliarySeconds": 225,
+  "jobs": [
+    {
+      "id": 43712132401,
+      "jobId": 132805795974,
+      "source": "1c5513982c6b844ef63321ee0abc45d47094d50a",
+      "seconds": 61,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43712368316,
+      "jobId": 132806520614,
+      "source": "cf5d670a1e42edf92ed76c23740bf48394bbe281",
+      "seconds": 30,
+      "conclusion": "success"
+    },
+    {
+      "id": 43712560360,
+      "jobId": 132807099839,
+      "source": "25fea481cf34af81cd93ae8c519f2f7080c90e71",
+      "shard": 0,
+      "seconds": 772,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43712560360,
+      "jobId": 132807099865,
+      "source": "25fea481cf34af81cd93ae8c519f2f7080c90e71",
+      "shard": 1,
+      "seconds": 782,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813250447,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "phase": "corrected-preflight",
+      "seconds": 13,
+      "conclusion": "success"
+    },
+    {
+      "id": 43712560360,
+      "jobId": 132807099725,
+      "source": "25fea481cf34af81cd93ae8c519f2f7080c90e71",
+      "shard": 2,
+      "seconds": 782,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43712560360,
+      "jobId": 132807099898,
+      "source": "25fea481cf34af81cd93ae8c519f2f7080c90e71",
+      "shard": 3,
+      "seconds": 779,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320586,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 3,
+      "trial": "resource-corrected-v3",
+      "seconds": 329,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320549,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 0,
+      "trial": "resource-corrected-v3",
+      "seconds": 522,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320574,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 2,
+      "trial": "resource-corrected-v3",
+      "seconds": 514,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320578,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 4,
+      "trial": "resource-corrected-v3",
+      "seconds": 107,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320582,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 1,
+      "trial": "resource-corrected-v3",
+      "seconds": 546,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320659,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 5,
+      "trial": "resource-corrected-v3",
+      "seconds": 116,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320555,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 8,
+      "trial": "resource-corrected-v3",
+      "seconds": 525,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320596,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 7,
+      "trial": "resource-corrected-v3",
+      "seconds": 423,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320622,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 6,
+      "trial": "resource-corrected-v3",
+      "seconds": 300,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320638,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 9,
+      "trial": "resource-corrected-v3",
+      "seconds": 285,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320625,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 11,
+      "trial": "resource-corrected-v3",
+      "seconds": 305,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320602,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 10,
+      "trial": "resource-corrected-v3",
+      "seconds": 546,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320698,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 12,
+      "trial": "resource-corrected-v3",
+      "seconds": 541,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813320674,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 13,
+      "trial": "resource-corrected-v3",
+      "seconds": 470,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813321605,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 14,
+      "trial": "resource-corrected-v3",
+      "seconds": 463,
+      "conclusion": "success"
+    },
+    {
+      "id": 43714588256,
+      "jobId": 132813321595,
+      "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+      "shard": 15,
+      "trial": "resource-corrected-v3",
+      "seconds": 237,
+      "conclusion": "success"
+    },
+    {
+      "id": 43717961829,
+      "jobId": 132823486113,
+      "source": "b1f530841f92456017db7813cd54acca92496358",
+      "phase": "final-native-initial",
+      "seconds": 19,
+      "conclusion": "failure"
+    },
+    {
+      "id": 43718163964,
+      "jobId": 132824106768,
+      "source": "cfc5b9fec89a045359e60c743c9977aae34bf677",
+      "phase": "final-native",
+      "seconds": 42,
+      "conclusion": "success"
+    },
+    {
+      "id": 43718717814,
+      "jobId": 132825788343,
+      "source": "d904872973ed840b9cc5634ecbfe93651d5327be",
+      "phase": "publish-hosted-retire",
+      "seconds": 60,
+      "conclusion": "success"
+    }
+  ],
+  "allJobsWithinOwnerCap": true,
+  "humanReview": "Deferred by explicit owner choice; zero accepted rows"
+}

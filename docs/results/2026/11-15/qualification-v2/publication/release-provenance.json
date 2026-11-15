@@ -1,0 +1,120 @@
+{
+  "source": "9b4539d7a1ed040792e4db395f1b04533b7405eb",
+  "packageVersion": "0.2.0",
+  "dataset": "ops-v2",
+  "stage": "candidate",
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "reportId": "sha256:bfabdfb916ed9f9e09656b8dc455da0bacfaba2d521d3eb90d45cadfbbaf00f2",
+  "selectedRowIds": [
+    "ops-v2.scheduling.panel-intersection.vale",
+    "ops-v2.scheduling.accessibility-referral.vale",
+    "ops-v2.scheduling.withdrawn-availability.vale",
+    "ops-v2.scheduling.buffer-boundary.vale",
+    "ops-v2.leave.deduplicate-ledger.vale",
+    "ops-v2.leave.part-time-roster.vale",
+    "ops-v2.leave.approval-routing.vale",
+    "ops-v2.leave.approved-correction.vale",
+    "ops-v2.onboarding.role-site-matrix.vale",
+    "ops-v2.onboarding.training-prerequisites.vale",
+    "ops-v2.onboarding.document-readiness.vale",
+    "ops-v2.onboarding.manager-handoff.vale",
+    "ops-v2.policy.effective-version.vale",
+    "ops-v2.policy.scope-match.vale",
+    "ops-v2.policy.conflicting-evidence.vale",
+    "ops-v2.policy.retention-purpose.vale",
+    "ops-v2.compensation.prorated-budget.vale",
+    "ops-v2.compensation.published-band.vale",
+    "ops-v2.compensation.adjustment-approval.vale",
+    "ops-v2.compensation.expense-reconciliation.vale",
+    "ops-v2.consent.limited-export.vale",
+    "ops-v2.consent.withdrawn-permission.vale",
+    "ops-v2.consent.note-redaction.vale",
+    "ops-v2.consent.retention-review.vale",
+    "ops-v2.evidence.competency-support.vale",
+    "ops-v2.evidence.investigation-plan.vale",
+    "ops-v2.evidence.feedback-window.vale",
+    "ops-v2.evidence.current-certificates.vale",
+    "ops-v2.offboarding.access-request-plan.vale",
+    "ops-v2.offboarding.asset-return-requests.vale",
+    "ops-v2.offboarding.handover-ownership.vale",
+    "ops-v2.offboarding.preservation-plan.vale"
+  ],
+  "summary": {
+    "selected": 32,
+    "scored": 32,
+    "successes": 0,
+    "coverage": 1,
+    "complete": true,
+    "officialMacroScore": 0,
+    "rowWilson95": [
+      0,
+      0.1071791982550706
+    ],
+    "families": [
+      {
+        "family": "scheduling",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "leave",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "onboarding",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "policy",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "compensation",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "consent",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "evidence",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "offboarding",
+        "selected": 4,
+        "scored": 4,
+        "successes": 0,
+        "score": 0
+      }
+    ],
+    "interpretation": "Descriptive public synthetic suite; no real-HR or comparative superiority claim."
+  },
+  "archive": {
+    "bytes": 86863,
+    "sha256": "bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3",
+    "members": 40
+  },
+  "independentReview": "pending by explicit owner choice; zero accepted rows",
+  "distribution": "GitHub archive, not npm registry"
+}

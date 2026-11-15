@@ -1,0 +1,1383 @@
+{
+  "tier": "T2",
+  "cases": [
+    {
+      "id": "B01",
+      "passed": true,
+      "dataset": "ops-v1",
+      "modelSuccess": "0/8",
+      "readableCards": true
+    },
+    {
+      "id": "B02",
+      "passed": true,
+      "dataset": "ops-v2",
+      "visibleEvaluationCases": 32,
+      "sources": [
+        {
+          "href": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/",
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.eeoc.gov/laws/guidance/practical-advice-drafting-and-implementing-reasonable-accommodation-procedures-under",
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        }
+      ],
+      "modelBarCount": 1,
+      "publishedModelReportId": "sha256:bfabdfb916ed9f9e09656b8dc455da0bacfaba2d521d3eb90d45cadfbbaf00f2"
+    },
+    {
+      "id": "B03",
+      "passed": true,
+      "taskDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.public-task.json",
+        "bytes": 1280,
+        "sha256": "c4470373fb669241c32d31acacd3e4acc578738658e71c679783ced176445ad0"
+      },
+      "reportDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.report.json",
+        "bytes": 10137,
+        "sha256": "b0041f1c97dff13fe0fe7f13180b87d5fbf69a6b4085ddc8fa3326c5bfb49a05"
+      },
+      "forgedGradeRefused": true,
+      "literalMarkupInert": true
+    },
+    {
+      "id": "B04",
+      "passed": true,
+      "delayedDatasetIsolated": true,
+      "delayedFileReadIsolated": true,
+      "transport": "controlled native browser route/File.text fixtures"
+    },
+    {
+      "id": "B05-320",
+      "passed": true,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "touchAndKeyboard": true
+    },
+    {
+      "id": "B05-390",
+      "passed": true,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "touchAndKeyboard": true
+    }
+  ],
+  "contexts": [
+    {
+      "id": "B01",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B02",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B03",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B04",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B05-320",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B05-390",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "https://hr-bench.vercel.app/",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "https://hr-bench.vercel.app/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    }
+  ],
+  "bodies": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 11513,
+      "sha256": "7e0c76ca611c401738f0ad8a7bd777debda8472d675b77f604e00084b6aaea66",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"8ea062278c881ef49f4b4b956452d939\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::ftlzj-1794749023353-283c245983d1"
+      }
+    },
+    {
+      "path": "app.mjs",
+      "status": 200,
+      "bytes": 19985,
+      "sha256": "75eaaead48cbb2fa94a01dbec772e7fb8e35f44bf5d25acff5b07ee97610fd4f",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"app.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"97a868e715df1a713bc55d33d01b5a5c\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::fhjht-1794749023410-e5ec00b1a7c0"
+      }
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 14191,
+      "sha256": "ea85528c0edb40d7e822f22f0a1753b9b1081c6a36dfe1d5f0f3251d9b90f0f6",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"style.css\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "text/css; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"20b44a56e0c24ab7d35ceed7344844fd\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::fhjht-1794749023449-e0d79cfd2e0b"
+      }
+    },
+    {
+      "path": "icon.svg",
+      "status": 200,
+      "bytes": 248,
+      "sha256": "6fe6a15340aa5f4f7ddeb1538457fcfd3428513670793b493776a1e966287d63",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"icon.svg\"",
+        "content-length": "248",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "image/svg+xml",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "\"6b51f5f670f6f62f69ac35953a367bce\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::fhjht-1794749023490-a5e047e39fb4"
+      }
+    },
+    {
+      "path": "core.mjs",
+      "status": 200,
+      "bytes": 14772,
+      "sha256": "55f0f0440eaeb6597ecc8db3cc52ff25bdec680f032bdd0924efb277a3409f52",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"core.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"0ab65559888b2ec4f879666e2c9a482f\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::xql99-1794749023607-8072365b3201"
+      }
+    },
+    {
+      "path": "strict-json.mjs",
+      "status": 200,
+      "bytes": 3499,
+      "sha256": "e1e2bda6a12b82b8ea535c038fb36201870280879a7054d04785166cce390f44",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"strict-json.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"eb58471ee9d184b0706ea5d39e97159b\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::77lz6-1794749023639-2d2e5c3ef6d1"
+      }
+    },
+    {
+      "path": "manifest.mjs",
+      "status": 200,
+      "bytes": 1891,
+      "sha256": "472bf7761f0b427ee905bddfaf0d5314887c9918cf6c8539a2b76a417fabccc3",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"manifest.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"2e64740279b5826eb61384730c78c21c\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::77lz6-1794749023669-0c333fe6ca40"
+      }
+    },
+    {
+      "path": "report.mjs",
+      "status": 200,
+      "bytes": 7165,
+      "sha256": "757c68a59b10ee2876b4099d6cdaf7d6792d4808eeff23c26f41808cc323cb4d",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"report.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"5d42503b5568e5a9b326cead96960e75\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::77lz6-1794749023696-208fdf743867"
+      }
+    },
+    {
+      "path": "tasks.json",
+      "status": 200,
+      "bytes": 64685,
+      "sha256": "a5e053406b563e250a067c88fdf6e9d66f34e9b523aeb398a0353d8f0401cc85",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"tasks.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"cfb2ed30890224158e3245976607fb38\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:40 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::77lz6-1794749023722-7ac8b5e57dd9"
+      }
+    },
+    {
+      "path": "policy.json",
+      "status": 200,
+      "bytes": 843,
+      "sha256": "180876bbdf57966cbc6d3049c74f87e4bd0a9ed2ac857e746d380c91ae872790",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"policy.json\"",
+        "content-length": "843",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "\"ef61265796ab8591df60533afd75a12b\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:40 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::72tgk-1794749023749-3999446b2034"
+      }
+    },
+    {
+      "path": "prompt.txt",
+      "status": 200,
+      "bytes": 892,
+      "sha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"prompt.txt\"",
+        "content-length": "892",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "text/plain; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "\"46596ff2d78604640dc810666b00a792\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:40 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::xvjlw-1794749023782-7330b03ce28a"
+      }
+    },
+    {
+      "path": "manifest.json",
+      "status": 200,
+      "bytes": 5177,
+      "sha256": "46a7fd7dc44dd60da30ae192da7c006083157be4ebd998fb8b6fe01284e6d442",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"manifest.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"74d3af4d5bce62a9e521c4986b069e55\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:40 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::fhjht-1794749023820-f2442d3f474a"
+      }
+    },
+    {
+      "path": "explorer.mjs",
+      "status": 200,
+      "bytes": 4115,
+      "sha256": "d9f87a90733a8eac8ed284a345e7a1969389f76a017c6c5bcea6c1f1bf4f5f58",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"explorer.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"5c3cb213aabf567eb94fb2a3231a3e65\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::fkld5-1794749023845-e8ca29a2485c"
+      }
+    },
+    {
+      "path": "v2/manifest.mjs",
+      "status": 200,
+      "bytes": 5619,
+      "sha256": "f96e476a52e552113f1f61c21722c8b94761795bbda0b8f03b38b1adedc8d423",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"manifest.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"81f1a9977eba2830e75022bdcd6c4c59\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::fqjmj-1794749023874-0e947a543fe8"
+      }
+    },
+    {
+      "path": "v2/report.mjs",
+      "status": 200,
+      "bytes": 6518,
+      "sha256": "f228eea823bf7c8c070b88495b9d1182b6407809c6b8ba0c82db66491316f7e0",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "123",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"report.mjs\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:43 GMT",
+        "etag": "W/\"194aa7f5597e094adb2fedcb86fe2189\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:39 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::xql99-1794749023924-c2cbe87dc3a4"
+      }
+    },
+    {
+      "path": "v2/tasks.json",
+      "status": 200,
+      "bytes": 297409,
+      "sha256": "b112feb87a81011266052857a17d1019c2f57eea415e53cd764d991c7b1a1664",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"tasks.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"8815690f0cc39cf246a8b748d6f00f48\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::xql99-1794749023950-a983a855cf3e"
+      }
+    },
+    {
+      "path": "v2/policy.json",
+      "status": 200,
+      "bytes": 1022,
+      "sha256": "d878cf6a429dbcd7c3750c39cd3e2c7b8d9c3dbabbf61b1874d4669182acb256",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"policy.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"e264940dd0eff9d3bc0bab1bbfee2d74\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::ftlzj-1794749024072-a0b793232447"
+      }
+    },
+    {
+      "path": "v2/prompt.txt",
+      "status": 200,
+      "bytes": 892,
+      "sha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"prompt.txt\"",
+        "content-length": "892",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "text/plain; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "\"46596ff2d78604640dc810666b00a792\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::fqjmj-1794749024201-381b3ba4a495"
+      }
+    },
+    {
+      "path": "v2/manifest.json",
+      "status": 200,
+      "bytes": 21608,
+      "sha256": "590ee80165f688f665d6d3f2b66a0ea3f1602d1b00b710fc3a31acdbf1d4d610",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"manifest.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"07cf40269772ba9de7b05322adadb41b\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::xql99-1794749024343-cc68e42f7987"
+      }
+    },
+    {
+      "path": "v2/sources.json",
+      "status": 200,
+      "bytes": 5571,
+      "sha256": "90e8df702c2a6ea8d3f6192805798d3b10fdc4ef5db2895c06203148a2d117a2",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"sources.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"76a8ef9417a3071564365d0bbbd09efb\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::fqjmj-1794749024456-86acf22cd9ed"
+      }
+    },
+    {
+      "path": "v2/provenance.json",
+      "status": 200,
+      "bytes": 37602,
+      "sha256": "2c49461429e3ee32fda6efd1d72f893307a3603cffd724a8c28937375c7db9c2",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"provenance.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"aae96867c93cb17f276ea59f5eb6d99c\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::fqjmj-1794749024571-66c3aac11c99"
+      }
+    },
+    {
+      "path": "pilot.json",
+      "status": 200,
+      "bytes": 449165,
+      "sha256": "237872c077379f84d4c970cab785930c0eb763680f91289c85c3ba30feae1d0a",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "124",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"pilot.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"83164f8d64b9553101b2e56008d513dd\"",
+        "last-modified": "Sun, 15 Nov 2026 13:21:40 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "sfo1::xvjlw-1794749024694-0420e0364832"
+      }
+    },
+    {
+      "path": "v2/pilot.json",
+      "status": 200,
+      "bytes": 2120005,
+      "sha256": "9a09c9f0a6dc47deb90e712f76f6ae719241bdc5bfa94bd302bd0e4443f52dfd",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"pilot.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"0c697d61c28b25e19ebe516bc5aaee41\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::snnnm-1794749024725-a6b01f21e461"
+      }
+    },
+    {
+      "path": "build.json",
+      "status": 200,
+      "bytes": 3124,
+      "sha256": "fa5b99827211946db143bb0dc1147926e6402ec1644a11b663abe6cd5fca819d",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline; filename=\"build.json\"",
+        "content-encoding": "br",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "etag": "W/\"e642fa1e8836fcc6d5712b4660937c4e\"",
+        "last-modified": "Sun, 15 Nov 2026 13:23:44 GMT",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "server": "Vercel",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-vercel-cache": "MISS",
+        "x-vercel-id": "sfo1::jknxb-1794749024860-71e4aed9b45c"
+      }
+    }
+  ],
+  "browserClosed": true,
+  "serverClosed": true,
+  "browserVersion": "141.0.7390.37",
+  "passed": true
+}

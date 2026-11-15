@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "testedDeployment": {
+    "id": "dpl_HewUCckdLZCzD68Hqw9UkCGj9J4g",
+    "url": "hr-bench-lnr89kjmv-my-team-4f230354.vercel.app",
+    "readyState": "READY",
+    "aliases": [
+      "hr-bench.vercel.app",
+      "hr-bench-my-team-4f230354.vercel.app",
+      "hr-bench-git-main-my-team-4f230354.vercel.app"
+    ],
+    "source": "9b4539d7a1ed040792e4db395f1b04533b7405eb",
+    "project": "prj_rcLQoczv3LjIrGHb3PwjM66C6hXx"
+  },
+  "canonicalURL": "https://hr-bench.vercel.app",
+  "hostedRun": 43718717814,
+  "hostedJob": 132825788343,
+  "qualifiedReleaseSource": "9b4539d7a1ed040792e4db395f1b04533b7405eb",
+  "releaseEquality": {
+    "packageMembers": 40,
+    "buildInputs": 28,
+    "allBytesAndModesEqual": true
+  },
+  "qaDeploymentCount": 0,
+  "providerStateObservedBeforeHostedRun": true,
+  "note": "Any later evidence-only main deployment carries acceptance only after exact source/build/package blob equality; no second browser invocation is implied."
+}

@@ -1,0 +1,4 @@
+bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3  alvarovillalbaa-hr-bench-0.2.0.tgz
+5061f5c4546e6cc6796f9296c24ee398313719c9da183025c495ebb15224e740  v2-qwen-report.json
+badb91bcfdd6fbaf46cd3d54b1f1129f879af545faa96160a0af2ca8541ea186  v2-runtime-provenance.json
+db42f9f21b93b02770505dc9a0e9e5cf5b172699ba22a46898090f9863278f23  release-provenance.json

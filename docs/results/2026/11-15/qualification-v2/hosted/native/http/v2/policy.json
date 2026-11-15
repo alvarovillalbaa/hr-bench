@@ -1,0 +1,17 @@
+{
+  "version": "hrbench-data-policy-v2",
+  "tier": "T2-authored-synthetic-source-grounded",
+  "unit": "task-episode",
+  "population": "96 public fictional tasks, 32 scenario templates, eight families, three worlds per template; not an independently sampled HR population",
+  "splits": {
+    "development": 64,
+    "evaluation_public": 32,
+    "blind_holdout": 0
+  },
+  "sources": "Eight inspected professional/agency primary sources motivate workflows only; no third-party benchmark tasks or private HR data",
+  "independentReviewAtFreeze": "pending",
+  "authority": "Only explicit in-memory fields; no external HR action, ranking, hiring decision, payment, access change or deletion",
+  "grading": "Exact final state and protected/authority invariants; unchanged state-v1 engine, six tools-v1 calls",
+  "infrastructure": "Unscored failures; incomplete coverage has no official aggregate",
+  "comparison": "V1 reports/results cannot be relabelled or pooled with V2; no comparative superiority or real-HR validity claim"
+}

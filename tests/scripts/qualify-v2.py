@@ -125,6 +125,11 @@ try:
                 raise RuntimeError("Archive bytes/mode differ: " + name)
             members.append({"path": name, "bytes": len(value), "sha256": sha(value), "mode": member.mode})
     (output / "package-manifest.json").write_text(json.dumps({"file": tarball.name, "bytes": tarball.stat().st_size, "sha256": sha(tarball.read_bytes()), "members": members}, indent=2))
+    if mode == "hosted":
+        expected = os.environ["HRBENCH_RELEASE_ARCHIVE_SHA256"]
+        final = json.loads((repo / "docs/results/2026/11-15/qualification-v2/final-package/package-manifest.json").read_text())
+        if sha(tarball.read_bytes()) != expected or final["sha256"] != expected or members != final["members"]:
+            raise RuntimeError("Hosted checkout does not reproduce the exact qualified release archive")
     if mode == "final-native":
         baseline = json.loads((repo / "docs/results/2026/11-15/v2-qwen/preflight/package-manifest.json").read_text())
         old = {item["path"]: item for item in baseline["members"]}

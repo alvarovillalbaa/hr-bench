@@ -1,0 +1,145 @@
+{
+  "source": "9b4539d7a1ed040792e4db395f1b04533b7405eb",
+  "tag": "v0.2.0",
+  "stage": "candidate",
+  "passed": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/repos/alvarovillalbaa/hr-bench/git/ref/heads/main",
+      "status": 200,
+      "responseSha256": "0b5b42a351da75127567d685e9c7aec2b8ad0b0987150c95f2b6b3db271ac81d"
+    },
+    {
+      "method": "GET",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/tags/v0.2.0",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/repos/alvarovillalbaa/hr-bench/git/ref/tags/v0.2.0",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases",
+      "status": 201,
+      "responseSha256": "3bfe66ca08cba81a314c756e5110eab62539f4561e6b43d4cefd081b3edcaef7"
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/446077836/assets",
+      "status": 201,
+      "responseSha256": "e12293ddb888159fa10d63b02cf01d3443ec82542809a182b7d9d435f57c67f5"
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/446077836/assets",
+      "status": 201,
+      "responseSha256": "00228ae76ff45096bb3a991063e7fc953d5642052cbe883d6183df33f9dc46f9"
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/446077836/assets",
+      "status": 201,
+      "responseSha256": "83293a50308a4feff21b5206ad7a3e6b46fe9052df225e46573bb25e2dfeb84d"
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/446077836/assets",
+      "status": 201,
+      "responseSha256": "06ad3379a512e9d18508c8f2b8ac6a1a5fd2a977602491773b174eb326a3fafa"
+    },
+    {
+      "method": "POST",
+      "path": "/repos/alvarovillalbaa/hr-bench/releases/446077836/assets",
+      "status": 201,
+      "responseSha256": "dc686d5e7fa4597d7dfac893e1f88bea2166c2dbfad709702a1328fa8cf4d72d"
+    },
+    {
+      "method": "GET",
+      "path": "/repos/alvarovillalbaa/hr-bench/git/ref/tags/v0.2.0",
+      "status": 200,
+      "responseSha256": "5bcba1c7b03a195b65584e397ab719110b87be61d82d5c81bd03b49c535dbcc1"
+    },
+    {
+      "method": "GET",
+      "path": "/repos/alvarovillalbaa/hr-bench/git/ref/heads/main",
+      "status": 200,
+      "responseSha256": "0b5b42a351da75127567d685e9c7aec2b8ad0b0987150c95f2b6b3db271ac81d"
+    }
+  ],
+  "release": {
+    "id": 446077836,
+    "url": "https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.2.0",
+    "tag": "v0.2.0",
+    "prerelease": true
+  },
+  "assets": [
+    {
+      "id": 751080350,
+      "name": "alvarovillalbaa-hr-bench-0.2.0.tgz",
+      "bytes": 86863,
+      "sha256": "bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3",
+      "url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.2.0/alvarovillalbaa-hr-bench-0.2.0.tgz",
+      "anonymousDownload": {
+        "status": 200,
+        "bytes": 86863,
+        "sha256": "bc02cf093b0f4cc5a5446aa75a956df55845dbe9192e51206e350b91210a6ea3",
+        "equal": true
+      }
+    },
+    {
+      "id": 751080427,
+      "name": "v2-qwen-report.json",
+      "bytes": 2090897,
+      "sha256": "5061f5c4546e6cc6796f9296c24ee398313719c9da183025c495ebb15224e740",
+      "url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.2.0/v2-qwen-report.json",
+      "anonymousDownload": {
+        "status": 200,
+        "bytes": 2090897,
+        "sha256": "5061f5c4546e6cc6796f9296c24ee398313719c9da183025c495ebb15224e740",
+        "equal": true
+      }
+    },
+    {
+      "id": 751080477,
+      "name": "v2-runtime-provenance.json",
+      "bytes": 59380,
+      "sha256": "badb91bcfdd6fbaf46cd3d54b1f1129f879af545faa96160a0af2ca8541ea186",
+      "url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.2.0/v2-runtime-provenance.json",
+      "anonymousDownload": {
+        "status": 200,
+        "bytes": 59380,
+        "sha256": "badb91bcfdd6fbaf46cd3d54b1f1129f879af545faa96160a0af2ca8541ea186",
+        "equal": true
+      }
+    },
+    {
+      "id": 751080546,
+      "name": "release-provenance.json",
+      "bytes": 3546,
+      "sha256": "db42f9f21b93b02770505dc9a0e9e5cf5b172699ba22a46898090f9863278f23",
+      "url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.2.0/release-provenance.json",
+      "anonymousDownload": {
+        "status": 200,
+        "bytes": 3546,
+        "sha256": "db42f9f21b93b02770505dc9a0e9e5cf5b172699ba22a46898090f9863278f23",
+        "equal": true
+      }
+    },
+    {
+      "id": 751080593,
+      "name": "SHA256SUMS.txt",
+      "bytes": 370,
+      "sha256": "2288dbb9c177961044fc9e881ecca1c2f4fcd24eda73a0cce81a5abcb87040bf",
+      "url": "https://github.com/alvarovillalbaa/hr-bench/releases/download/v0.2.0/SHA256SUMS.txt",
+      "anonymousDownload": {
+        "status": 200,
+        "bytes": 370,
+        "sha256": "2288dbb9c177961044fc9e881ecca1c2f4fcd24eda73a0cce81a5abcb87040bf",
+        "equal": true
+      }
+    }
+  ]
+}
