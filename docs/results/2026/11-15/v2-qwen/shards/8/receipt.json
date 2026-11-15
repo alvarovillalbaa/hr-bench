@@ -1,0 +1,146 @@
+{
+  "mode": "model-shard",
+  "passed": true,
+  "cleanup": true,
+  "commands": [
+    {
+      "name": "node-version",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.004441544999963298,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.10023862100001679,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "syntax",
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.3118101599999932,
+      "stdoutBytes": 197,
+      "stderrBytes": 0,
+      "stdoutSha256": "8a0564caeecde2792f34d4d5e9898c82a608dbf5044b5af1fd9e8168ed7004d4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-v3-artifact"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 1.8541358809999906,
+      "stdoutBytes": 4575,
+      "stderrBytes": 0,
+      "stdoutSha256": "6d0a218dd69360460239e0b30f9ac8c2b4b1ed5463a041abaac33dc5ab57564e",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-v3-artifact/alvarovillalbaa-hr-bench-0.2.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.40908050300004106,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "65ab87c330a666b17fe7595e2b075a3808ec5eaf6b38635db239ef889ea65ba4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model-dependencies",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 4.107240875000002,
+      "stdoutBytes": 25,
+      "stderrBytes": 128,
+      "stdoutSha256": "1840cef0d2e7d872c32e07c1bae7c15525654bba9f1747f918cc63914c2cc5d5",
+      "stderrSha256": "a79e4d8ee28132a825b18a6728298bfe8dcea7ecd2f8ce8541d2aa732a4af3b5"
+    },
+    {
+      "name": "model-shard",
+      "argv": [
+        "node",
+        "tests/scripts/v2-campaign.mjs",
+        "shard"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 508.424084184,
+      "stdoutBytes": 530,
+      "stderrBytes": 0,
+      "stdoutSha256": "1fad3fe9ed3e63d666188f83b5e5447e3ca059ecf8e48089a4f765e995ffc170",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "storage": {
+    "freeBytes": 91516588032,
+    "requiredBytes": 36507222016,
+    "passed": true
+  },
+  "frozenV1Preserved": {
+    "inputs": 10,
+    "baselineReceiptSha256": "712d5f821fbffe042915419a16e038516535d06c902ffaa5dc7e90daf0b1b2bb",
+    "allEqual": true
+  },
+  "sourceUnchanged": true,
+  "sourceGuardPassed": true,
+  "scratchBytes": 1032383214
+}

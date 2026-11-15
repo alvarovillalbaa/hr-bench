@@ -1,0 +1,200 @@
+{
+  "dataset": "ops-v2",
+  "stage": "candidate",
+  "independentReview": "pending",
+  "manifest": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "tasks": [
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "title": "Draft a panel interview that everyone can attend"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "title": "Route an interview adjustment request privately"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "title": "Reconcile a withdrawn interview confirmation"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "title": "Preserve the panel’s interview buffer"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "title": "Apply each approved leave request once"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "title": "Draft leave against the supplied part-time roster"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "title": "Route a leave request with incomplete approval"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "title": "Reconcile an approved correction as a delta"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "title": "Prepare the right first-week onboarding plan"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "title": "Separate ready training from blocked training"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "title": "Prepare a document readiness checklist"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "title": "Draft an authorized onboarding handoff"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "title": "Answer from the handbook effective on the requested date"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "title": "Keep a policy answer inside its stated scope"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "title": "Escalate contradictory published policy evidence"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "title": "Look up a fictional retention review period by purpose"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "title": "Draft a prorated monthly budget estimate"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "title": "Extract a published role pay band without personal salaries"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "title": "Prepare a pay adjustment approval request"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "title": "Prepare a duplicate-safe expense subtotal"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "title": "Prepare only the fields permitted by a verified request"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "title": "Stop a pending use after permission is withdrawn"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "title": "Prepare a shareable, job-related note extract"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "title": "Prepare retention review without deleting held records"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "title": "Separate supported competencies from follow-up questions"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "title": "Prepare a neutral investigation evidence checklist"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "title": "Prepare a dated, evidence-only feedback brief"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "title": "Check current certificate evidence without inferring qualification"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "title": "Prepare managed-access and shared-credential requests"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "title": "Prepare outstanding company-property return requests"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "title": "Draft a handover with unresolved ownership visible"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "title": "Separate offboarding preservation from disposal review"
+    }
+  ]
+}

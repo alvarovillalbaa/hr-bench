@@ -1,0 +1,90 @@
+[
+  {
+    "id": "opm-interviews",
+    "publisher": "U.S. Office of Personnel Management",
+    "title": "Structured Interviews",
+    "checked": "2026-11-15",
+    "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/",
+    "locator": "Public introduction under Structured Interviews",
+    "basis": "Structured interviews gather evidence about job-related competencies through systematic questions.",
+    "limits": "Workflow motivation only. This source does not specify our scheduling algorithms, labels or grading, and did not review these tasks.",
+    "access": "public-page"
+  },
+  {
+    "id": "cipd-induction",
+    "publisher": "CIPD",
+    "title": "Employee induction",
+    "checked": "2026-11-15",
+    "url": "https://www.cipd.org/en/knowledge/guides/employee-induction/",
+    "locator": "Public introduction before the membership boundary; guide dated 4 April 2025",
+    "basis": "Induction includes information about the organization, team, role, responsibilities and ways of working.",
+    "limits": "Only the public introduction was used. Member-only tools were not accessed or copied. Fictional checklists and deadlines are authored here.",
+    "access": "public-introduction-only"
+  },
+  {
+    "id": "acas-absence",
+    "publisher": "Acas",
+    "title": "Recording absence",
+    "checked": "2026-11-15",
+    "url": "https://www.acas.org.uk/recording-and-reducing-sickness-absence",
+    "locator": "How to record sickness absence; Avoiding discrimination; Data protection",
+    "basis": "Absence records require careful recording and relevant, confidential sharing; different contexts must not be collapsed indiscriminately.",
+    "limits": "Our half-day arithmetic and approval rules are fictional. No statutory leave, medical eligibility or discriminatory trigger scoring is modeled.",
+    "access": "public-page"
+  },
+  {
+    "id": "ico-records",
+    "publisher": "Information Commissioner’s Office",
+    "title": "Collecting and keeping employment records",
+    "checked": "2026-11-15",
+    "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/employment-practices-and-data-protection-keeping-employment-records/collecting-and-keeping-employment-records/",
+    "locator": "Data minimisation, accuracy, retention and the page’s guidance-under-review notice",
+    "basis": "Records should be limited to the stated purpose, kept accurate, and reviewed for retention.",
+    "limits": "The page is under review following legislation. No current legal deadline, lawful-basis conclusion or universal consent rule is imported into fixtures.",
+    "access": "public-page-under-review"
+  },
+  {
+    "id": "eeoc-request-tracking",
+    "publisher": "U.S. Equal Employment Opportunity Commission",
+    "title": "Practical Advice for Drafting and Implementing Reasonable Accommodation Procedures Under Executive Order 13164",
+    "checked": "2026-11-15",
+    "url": "https://www.eeoc.gov/laws/guidance/practical-advice-drafting-and-implementing-reasonable-accommodation-procedures-under",
+    "locator": "Initiating the accommodation process: purpose and limits of request-confirmation forms",
+    "basis": "Request tracking should be distinguished from deciding an accommodation and unnecessarily gathering medical documentation.",
+    "limits": "Historical federal guidance is motivation for a narrow fictional referral. No eligibility, legal compliance, employer obligation or medical judgment is scored.",
+    "access": "public-historical-guidance"
+  },
+  {
+    "id": "cipd-pay-structures",
+    "publisher": "CIPD",
+    "title": "Pay Structures and Pay Progression",
+    "checked": "2026-11-15",
+    "url": "https://www.cipd.org/en/knowledge/factsheets/pay-structures-factsheet/",
+    "locator": "Public factsheet overview and pay-band discussion",
+    "basis": "Pay structures use grades or ranges associated with job families and organizational needs.",
+    "limits": "No market salaries, private pay data, member-only tools or approved remuneration decisions were taken. All amounts/thresholds are fictional.",
+    "access": "public-content-only"
+  },
+  {
+    "id": "acas-investigations",
+    "publisher": "Acas",
+    "title": "Investigations at work: carrying out an investigation",
+    "checked": "2026-11-15",
+    "url": "https://www.acas.org.uk/investigations-for-discipline-and-grievance-step-by-step/step-3-carrying-out-an-investigation",
+    "locator": "Opening evidence/objectivity/confidentiality guidance and Getting physical evidence",
+    "basis": "An investigation gathers reasonable evidence objectively and confidentially rather than trying to prove guilt.",
+    "limits": "Our task prepares a checklist only. It does not investigate real people, determine guilt, recommend sanctions or make an employment decision.",
+    "access": "public-page"
+  },
+  {
+    "id": "nist-personnel",
+    "publisher": "NIST Joint Task Force",
+    "title": "SP 800-53 Revision 5, Personnel Termination PS-4",
+    "checked": "2026-11-15",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+    "locator": "2020 publication, PDF page 250 / printed page 224, PS-4; account-management discussion",
+    "basis": "Personnel separation involves access, authenticators, organization property and continuity of organizational information.",
+    "limits": "The fixture agent is only a preparer. Actual control implementation, revocation, legal holds, property receipt and standards compliance are not asserted.",
+    "access": "public-2020-publication"
+  }
+]

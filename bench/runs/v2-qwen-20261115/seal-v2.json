@@ -1,0 +1,5 @@
+{
+  "planSha256": "11f721bd697a5c4a2fb6c45d674911f02fc8b9f34d64cb5016b205cedb043033",
+  "canonicalization": "state-v1 canonical JSON; sha256 over canonical(plan)",
+  "authorization": "standing owner AGENTS.md per-job scope; this content digest is integrity, not an authority grant"
+}

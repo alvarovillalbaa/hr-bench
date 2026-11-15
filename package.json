@@ -1,13 +1,13 @@
 {
   "name": "@alvarovillalbaa/hr-bench",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Versioned executable human-resources workflow benchmark with deterministic state grading",
   "type": "module",
   "license": "MIT",
   "engines": { "node": ">=22" },
-  "bin": { "hrbench": "bin/hrbench.mjs" },
-  "exports": { ".": "./src/core.mjs", "./runner": "./src/runner.mjs", "./manifest": "./src/manifest.mjs", "./report": "./src/report.mjs" },
-  "files": ["bin/", "src/", "bench/", "docs/specs/", "docs/references/", "README.md", "LICENSE"],
+  "bin": { "hrbench": "bin/hrbench.mjs", "hrbench-v2": "bin/hrbench-v2.mjs" },
+  "exports": { ".": "./src/core.mjs", "./runner": "./src/runner.mjs", "./manifest": "./src/manifest.mjs", "./report": "./src/report.mjs", "./v2/runner": "./src/v2/runner.mjs", "./v2/manifest": "./src/v2/manifest.mjs", "./v2/report": "./src/v2/report.mjs" },
+  "files": ["bin/", "src/", "bench/", "docs/specs/", "docs/references/", "docs/reviews/", "README.md", "LICENSE"],
   "scripts": {
     "test": "node --test tests/unit/*.test.mjs",
     "check": "node --check src/core.mjs && node --check src/strict-json.mjs && node --check src/runner.mjs && node --check bin/hrbench.mjs && node --check web/app.mjs",

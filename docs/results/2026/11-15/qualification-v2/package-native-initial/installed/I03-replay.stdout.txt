@@ -1,0 +1,29 @@
+{
+  "replay": "verified",
+  "dataset": "ops-v2",
+  "stage": "candidate",
+  "reportId": "sha256:bbe75f014284affdd1155407ca65aff7abafd61824f19c54440a757b6d294a8a",
+  "summary": {
+    "selected": 1,
+    "scored": 1,
+    "successes": 0,
+    "coverage": 1,
+    "complete": true,
+    "officialMacroScore": 0,
+    "rowWilson95": [
+      0,
+      0.7934506856227626
+    ],
+    "families": [
+      {
+        "family": "scheduling",
+        "selected": 1,
+        "scored": 1,
+        "successes": 0,
+        "score": 0
+      }
+    ],
+    "interpretation": "Descriptive public synthetic suite; no real-HR or comparative superiority claim."
+  },
+  "identity": "Replay-checked candidate trace; no independent expert validation or independently audited target identity."
+}

@@ -1,0 +1,147 @@
+{
+  "mode": "model-shard",
+  "passed": false,
+  "cleanup": true,
+  "commands": [
+    {
+      "name": "node-version",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.003077007000001686,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.06683908799999472,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "syntax",
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.21502766200001133,
+      "stdoutBytes": 197,
+      "stderrBytes": 0,
+      "stdoutSha256": "8a0564caeecde2792f34d4d5e9898c82a608dbf5044b5af1fd9e8168ed7004d4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-v2-artifact"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 1.4592469929999652,
+      "stdoutBytes": 4217,
+      "stderrBytes": 0,
+      "stdoutSha256": "a9c16d01d543718be14d59d6a941fa38ba027248d5af83e13346a041479d2fe9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-v2-artifact/alvarovillalbaa-hr-bench-0.2.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.24005852100003722,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "e01f78f355926522029407309c9d9e715a31f1756a60966fd51fd26e1bd3dc5e",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model-dependencies",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 2.7005350800000087,
+      "stdoutBytes": 25,
+      "stderrBytes": 128,
+      "stdoutSha256": "4818fa1185a354bc76db82d97ef3bf8c9f6fe084ade6fa10aea9751c22beb319",
+      "stderrSha256": "a79e4d8ee28132a825b18a6728298bfe8dcea7ecd2f8ce8541d2aa732a4af3b5"
+    },
+    {
+      "name": "model-shard",
+      "argv": [
+        "node",
+        "tests/scripts/v2-campaign.mjs",
+        "shard"
+      ],
+      "exit": -15,
+      "timedOut": true,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 760.2353864860002,
+      "stdoutBytes": 0,
+      "stderrBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "storage": {
+    "freeBytes": 94959489024,
+    "requiredBytes": 36507222016,
+    "passed": true
+  },
+  "frozenV1Preserved": {
+    "inputs": 10,
+    "baselineReceiptSha256": "712d5f821fbffe042915419a16e038516535d06c902ffaa5dc7e90daf0b1b2bb",
+    "allEqual": true
+  },
+  "error": "RuntimeError('model-shard did not close successfully')",
+  "sourceUnchanged": true,
+  "sourceGuardPassed": true,
+  "scratchBytes": 1032347617
+}

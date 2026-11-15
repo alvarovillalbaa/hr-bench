@@ -1,0 +1,1136 @@
+{
+  "schema": "hrbench.provenance-v2",
+  "independentReviewAtFreeze": "pending",
+  "scenarios": [
+    {
+      "id": "scheduling.panel-intersection",
+      "family": "scheduling",
+      "objective": "Intersect complete panel availability and explicit accessibility constraints without sending an invitation.",
+      "sourceIds": [
+        "opm-interviews",
+        "eeoc-request-tracking"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "scheduling.accessibility-referral",
+      "family": "scheduling",
+      "objective": "Separate request tracking and scheduling logistics from medical content and approval decisions.",
+      "sourceIds": [
+        "eeoc-request-tracking",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "scheduling.withdrawn-availability",
+      "family": "scheduling",
+      "objective": "Reconcile current scheduling evidence instead of acting on a superseded confirmation.",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "scheduling.buffer-boundary",
+      "family": "scheduling",
+      "objective": "Recognize a missing feasible appointment under a supplied operational buffer.",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "leave.deduplicate-ledger",
+      "family": "leave",
+      "objective": "Reconcile versioned approvals without charging the same absence twice.",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "leave.part-time-roster",
+      "family": "leave",
+      "objective": "Use explicit work patterns rather than assuming full-time or weekday schedules.",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "leave.approval-routing",
+      "family": "leave",
+      "objective": "Distinguish preparation for an authorized action from making the approval decision.",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "leave.approved-correction",
+      "family": "leave",
+      "objective": "Apply approved corrections by delta while retaining the superseding-draft boundary.",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "onboarding.role-site-matrix",
+      "family": "onboarding",
+      "objective": "Map a role and work location to an explicit owned onboarding plan.",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "onboarding.training-prerequisites",
+      "family": "onboarding",
+      "objective": "Use completion evidence and prerequisites without fabricating compliance.",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "onboarding.document-readiness",
+      "family": "onboarding",
+      "objective": "Track requested document evidence without broadening collection or granting access.",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "onboarding.manager-handoff",
+      "family": "onboarding",
+      "objective": "Assign only a role explicitly authorized by the fictional coverage policy.",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "policy.effective-version",
+      "family": "policy",
+      "objective": "Resolve current internal-policy evidence without replacing it with a draft.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "policy.scope-match",
+      "family": "policy",
+      "objective": "Recognize missing scope-specific policy instead of inventing a universal answer.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "policy.conflicting-evidence",
+      "family": "policy",
+      "objective": "Make unresolved contradictions explicit in a structured evidence-based answer.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "policy.retention-purpose",
+      "family": "policy",
+      "objective": "Keep purpose-specific policy lookup separate from legal advice or data deletion.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "compensation.prorated-budget",
+      "family": "compensation",
+      "objective": "Keep exact minor-unit arithmetic distinct from authorizing a payment.",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "compensation.published-band",
+      "family": "compensation",
+      "objective": "Respect published pay-structure scope and confidentiality of individual pay.",
+      "sourceIds": [
+        "cipd-pay-structures",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "compensation.adjustment-approval",
+      "family": "compensation",
+      "objective": "Separate an approval threshold and proposed amount from a compensation change.",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "compensation.expense-reconciliation",
+      "family": "compensation",
+      "objective": "Reconcile authorized evidence using fictional expense rules without executing a payment.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "consent.limited-export",
+      "family": "consent",
+      "objective": "Check the fictional request verification and field-purpose boundary before preparing an export.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "consent.withdrawn-permission",
+      "family": "consent",
+      "objective": "Respect current purpose-specific permission without assuming all employment processing uses consent.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "consent.note-redaction",
+      "family": "consent",
+      "objective": "Keep private and irrelevant content out of a bounded shared interview extract.",
+      "sourceIds": [
+        "ico-records",
+        "opm-interviews"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "consent.retention-review",
+      "family": "consent",
+      "objective": "Treat a retention date as a review trigger while preserving held information.",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "evidence.competency-support",
+      "family": "evidence",
+      "objective": "Keep structured job-related observations separate from unsupported judgments.",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "evidence.investigation-plan",
+      "family": "evidence",
+      "objective": "Gather neutral evidence under an explicit investigation plan without deciding guilt.",
+      "sourceIds": [
+        "acas-investigations",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "evidence.feedback-window",
+      "family": "evidence",
+      "objective": "Select traceable observations in a defined review window without turning opinion into evidence.",
+      "sourceIds": [
+        "opm-interviews",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "evidence.current-certificates",
+      "family": "evidence",
+      "objective": "Distinguish current verified certificates from expired or unverified claims.",
+      "sourceIds": [
+        "opm-interviews",
+        "cipd-induction"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "offboarding.access-request-plan",
+      "family": "offboarding",
+      "objective": "Recognize access and shared-authenticator work while preserving the preparer/executor boundary.",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "offboarding.asset-return-requests",
+      "family": "offboarding",
+      "objective": "Separate an inventory-backed return request from an actual receipt.",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "offboarding.handover-ownership",
+      "family": "offboarding",
+      "objective": "Preserve continuity planning without silently assigning an unauthorized owner.",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "id": "offboarding.preservation-plan",
+      "family": "offboarding",
+      "objective": "Preserve held and continuity information without treating offboarding as deletion authority.",
+      "sourceIds": [
+        "nist-personnel",
+        "ico-records"
+      ],
+      "groundingScope": "Professional workflow motivation only; records, policies, labels, algorithms and grading are original fictional fixtures, not expert-reviewed decisions.",
+      "independentReviewAtFreeze": "pending"
+    }
+  ],
+  "rows": [
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.tango",
+      "scenarioId": "scheduling.panel-intersection",
+      "sourceIds": [
+        "opm-interviews",
+        "eeoc-request-tracking"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.tango",
+      "scenarioId": "scheduling.accessibility-referral",
+      "sourceIds": [
+        "eeoc-request-tracking",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.tango",
+      "scenarioId": "scheduling.withdrawn-availability",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.tango",
+      "scenarioId": "scheduling.buffer-boundary",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.tango",
+      "scenarioId": "leave.deduplicate-ledger",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.tango",
+      "scenarioId": "leave.part-time-roster",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.tango",
+      "scenarioId": "leave.approval-routing",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.tango",
+      "scenarioId": "leave.approved-correction",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.tango",
+      "scenarioId": "onboarding.role-site-matrix",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.tango",
+      "scenarioId": "onboarding.training-prerequisites",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.tango",
+      "scenarioId": "onboarding.document-readiness",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.tango",
+      "scenarioId": "onboarding.manager-handoff",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.tango",
+      "scenarioId": "policy.effective-version",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.tango",
+      "scenarioId": "policy.scope-match",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.tango",
+      "scenarioId": "policy.conflicting-evidence",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.tango",
+      "scenarioId": "policy.retention-purpose",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.tango",
+      "scenarioId": "compensation.prorated-budget",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.tango",
+      "scenarioId": "compensation.published-band",
+      "sourceIds": [
+        "cipd-pay-structures",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.tango",
+      "scenarioId": "compensation.adjustment-approval",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.tango",
+      "scenarioId": "compensation.expense-reconciliation",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.tango",
+      "scenarioId": "consent.limited-export",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.tango",
+      "scenarioId": "consent.withdrawn-permission",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.tango",
+      "scenarioId": "consent.note-redaction",
+      "sourceIds": [
+        "ico-records",
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.tango",
+      "scenarioId": "consent.retention-review",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.tango",
+      "scenarioId": "evidence.competency-support",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.tango",
+      "scenarioId": "evidence.investigation-plan",
+      "sourceIds": [
+        "acas-investigations",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.tango",
+      "scenarioId": "evidence.feedback-window",
+      "sourceIds": [
+        "opm-interviews",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.tango",
+      "scenarioId": "evidence.current-certificates",
+      "sourceIds": [
+        "opm-interviews",
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.tango",
+      "scenarioId": "offboarding.access-request-plan",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.tango",
+      "scenarioId": "offboarding.asset-return-requests",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.tango",
+      "scenarioId": "offboarding.handover-ownership",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.tango",
+      "scenarioId": "offboarding.preservation-plan",
+      "sourceIds": [
+        "nist-personnel",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.umber",
+      "scenarioId": "scheduling.panel-intersection",
+      "sourceIds": [
+        "opm-interviews",
+        "eeoc-request-tracking"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.umber",
+      "scenarioId": "scheduling.accessibility-referral",
+      "sourceIds": [
+        "eeoc-request-tracking",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.umber",
+      "scenarioId": "scheduling.withdrawn-availability",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.umber",
+      "scenarioId": "scheduling.buffer-boundary",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.umber",
+      "scenarioId": "leave.deduplicate-ledger",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.umber",
+      "scenarioId": "leave.part-time-roster",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.umber",
+      "scenarioId": "leave.approval-routing",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.umber",
+      "scenarioId": "leave.approved-correction",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.umber",
+      "scenarioId": "onboarding.role-site-matrix",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.umber",
+      "scenarioId": "onboarding.training-prerequisites",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.umber",
+      "scenarioId": "onboarding.document-readiness",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.umber",
+      "scenarioId": "onboarding.manager-handoff",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.umber",
+      "scenarioId": "policy.effective-version",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.umber",
+      "scenarioId": "policy.scope-match",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.umber",
+      "scenarioId": "policy.conflicting-evidence",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.umber",
+      "scenarioId": "policy.retention-purpose",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.umber",
+      "scenarioId": "compensation.prorated-budget",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.umber",
+      "scenarioId": "compensation.published-band",
+      "sourceIds": [
+        "cipd-pay-structures",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.umber",
+      "scenarioId": "compensation.adjustment-approval",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.umber",
+      "scenarioId": "compensation.expense-reconciliation",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.umber",
+      "scenarioId": "consent.limited-export",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.umber",
+      "scenarioId": "consent.withdrawn-permission",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.umber",
+      "scenarioId": "consent.note-redaction",
+      "sourceIds": [
+        "ico-records",
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.umber",
+      "scenarioId": "consent.retention-review",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.umber",
+      "scenarioId": "evidence.competency-support",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.umber",
+      "scenarioId": "evidence.investigation-plan",
+      "sourceIds": [
+        "acas-investigations",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.umber",
+      "scenarioId": "evidence.feedback-window",
+      "sourceIds": [
+        "opm-interviews",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.umber",
+      "scenarioId": "evidence.current-certificates",
+      "sourceIds": [
+        "opm-interviews",
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.umber",
+      "scenarioId": "offboarding.access-request-plan",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.umber",
+      "scenarioId": "offboarding.asset-return-requests",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.umber",
+      "scenarioId": "offboarding.handover-ownership",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.umber",
+      "scenarioId": "offboarding.preservation-plan",
+      "sourceIds": [
+        "nist-personnel",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.vale",
+      "scenarioId": "scheduling.panel-intersection",
+      "sourceIds": [
+        "opm-interviews",
+        "eeoc-request-tracking"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.vale",
+      "scenarioId": "scheduling.accessibility-referral",
+      "sourceIds": [
+        "eeoc-request-tracking",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.vale",
+      "scenarioId": "scheduling.withdrawn-availability",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.vale",
+      "scenarioId": "scheduling.buffer-boundary",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.vale",
+      "scenarioId": "leave.deduplicate-ledger",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.vale",
+      "scenarioId": "leave.part-time-roster",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.vale",
+      "scenarioId": "leave.approval-routing",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.vale",
+      "scenarioId": "leave.approved-correction",
+      "sourceIds": [
+        "acas-absence"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.vale",
+      "scenarioId": "onboarding.role-site-matrix",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.vale",
+      "scenarioId": "onboarding.training-prerequisites",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.vale",
+      "scenarioId": "onboarding.document-readiness",
+      "sourceIds": [
+        "cipd-induction",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.vale",
+      "scenarioId": "onboarding.manager-handoff",
+      "sourceIds": [
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.vale",
+      "scenarioId": "policy.effective-version",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.vale",
+      "scenarioId": "policy.scope-match",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.vale",
+      "scenarioId": "policy.conflicting-evidence",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.vale",
+      "scenarioId": "policy.retention-purpose",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.vale",
+      "scenarioId": "compensation.prorated-budget",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.vale",
+      "scenarioId": "compensation.published-band",
+      "sourceIds": [
+        "cipd-pay-structures",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.vale",
+      "scenarioId": "compensation.adjustment-approval",
+      "sourceIds": [
+        "cipd-pay-structures"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.vale",
+      "scenarioId": "compensation.expense-reconciliation",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.vale",
+      "scenarioId": "consent.limited-export",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.vale",
+      "scenarioId": "consent.withdrawn-permission",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.vale",
+      "scenarioId": "consent.note-redaction",
+      "sourceIds": [
+        "ico-records",
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.vale",
+      "scenarioId": "consent.retention-review",
+      "sourceIds": [
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.vale",
+      "scenarioId": "evidence.competency-support",
+      "sourceIds": [
+        "opm-interviews"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.vale",
+      "scenarioId": "evidence.investigation-plan",
+      "sourceIds": [
+        "acas-investigations",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.vale",
+      "scenarioId": "evidence.feedback-window",
+      "sourceIds": [
+        "opm-interviews",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.vale",
+      "scenarioId": "evidence.current-certificates",
+      "sourceIds": [
+        "opm-interviews",
+        "cipd-induction"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.vale",
+      "scenarioId": "offboarding.access-request-plan",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.vale",
+      "scenarioId": "offboarding.asset-return-requests",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.vale",
+      "scenarioId": "offboarding.handover-ownership",
+      "sourceIds": [
+        "nist-personnel"
+      ],
+      "independentReviewAtFreeze": "pending"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.vale",
+      "scenarioId": "offboarding.preservation-plan",
+      "sourceIds": [
+        "nist-personnel",
+        "ico-records"
+      ],
+      "independentReviewAtFreeze": "pending"
+    }
+  ]
+}

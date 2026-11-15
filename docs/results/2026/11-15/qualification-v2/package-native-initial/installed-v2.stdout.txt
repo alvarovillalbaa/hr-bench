@@ -1,0 +1,1 @@
+{"passed":true,"version":"0.2.0","installedCLI":true,"cases":5,"fullOracle":96,"fullNull":96,"exportedModules":3}

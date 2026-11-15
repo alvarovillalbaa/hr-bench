@@ -1,0 +1,215 @@
+{
+  "mode": "package-native",
+  "passed": false,
+  "cleanup": true,
+  "commands": [
+    {
+      "name": "node-version",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.005361100000001784,
+      "stdoutBytes": 9,
+      "stderrBytes": 0,
+      "stdoutSha256": "6a0cec2e157365c1a8ac6d1715733b7c3321a7c5565862a701ca71ef00359d04",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.09988302899999724,
+      "stdoutBytes": 8,
+      "stderrBytes": 0,
+      "stdoutSha256": "acb90e420303a6e949fec90f74faf64cc372894b3964e310a261689b898f41b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "syntax",
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.26588021099999537,
+      "stdoutBytes": 197,
+      "stderrBytes": 0,
+      "stdoutSha256": "8a0564caeecde2792f34d4d5e9898c82a608dbf5044b5af1fd9e8168ed7004d4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "pack",
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/home/runner/work/_temp/hrbench-v2-artifact"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.7532181010000016,
+      "stdoutBytes": 4217,
+      "stderrBytes": 0,
+      "stdoutSha256": "a9c16d01d543718be14d59d6a941fa38ba027248d5af83e13346a041479d2fe9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "offline-install",
+      "argv": [
+        "npm",
+        "install",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/home/runner/work/_temp/hrbench-v2-artifact/alvarovillalbaa-hr-bench-0.2.0.tgz"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.411603472000003,
+      "stdoutBytes": 26,
+      "stderrBytes": 0,
+      "stdoutSha256": "2d3a2dad03e33a1d0b8d8a50f91ded81cca800933db901646914ef093a147d48",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "campaign-guards-node24",
+      "argv": [
+        "node",
+        "--test",
+        "tests/unit/v2-campaign.test.mjs"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 6.552122041000004,
+      "stdoutBytes": 652,
+      "stderrBytes": 0,
+      "stdoutSha256": "4e24263f799df896f61a958d02d6cbb03f9577b4a39718fdb7f5928987c28b4f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "installed-v2",
+      "argv": [
+        "node",
+        "tests/integration/v2-installed.mjs"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 5.327872242000005,
+      "stdoutBytes": 114,
+      "stderrBytes": 0,
+      "stdoutSha256": "60c573ab4fa24ff91fad009766aaa74ef1ac5cdd2a9fc139165d166f75548844",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.42856296100000435,
+      "stdoutBytes": 158,
+      "stderrBytes": 0,
+      "stdoutSha256": "0031d8e57f1270b36327e5d134f0a267a17acd905fefbd2d01caad90765192de",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser-dependencies",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 0.6431834779999974,
+      "stdoutBytes": 27,
+      "stderrBytes": 0,
+      "stdoutSha256": "1d6a43f234b9932979543f16144cce395a55babbbb2e854889ffda12525ea33d",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browser-install",
+      "argv": [
+        "node",
+        "/tmp/hrbench-v2-i62_pa21/browser-tools/node_modules/playwright/cli.js",
+        "install",
+        "--with-deps",
+        "chromium"
+      ],
+      "exit": 0,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 19.813754213999992,
+      "stdoutBytes": 16035,
+      "stderrBytes": 237,
+      "stdoutSha256": "a6f1dc576bd210f348571a963d2ef8f8830035075a01ecf29214fc66ceb58d4e",
+      "stderrSha256": "3b419c69ff321ee6851fa5489a2bb0c9a2ef093815a709dbd05391f89767267f"
+    },
+    {
+      "name": "native",
+      "argv": [
+        "node",
+        "tests/e2e/v2-explorer.mjs"
+      ],
+      "exit": 1,
+      "timedOut": false,
+      "leaderReaped": true,
+      "groupAbsent": true,
+      "seconds": 16.440482808000013,
+      "stdoutBytes": 2092,
+      "stderrBytes": 407,
+      "stdoutSha256": "997013dac23efc9252f6a6c1ef5a78cd26a37d9e20150f16fc9932716307e31e",
+      "stderrSha256": "55cd16ea174fc5d8b89d6f82559c3ebd3f077ef90ad03fdc299ee107f1b16056"
+    }
+  ],
+  "storage": {
+    "freeBytes": 91516784640,
+    "requiredBytes": 36507222016,
+    "passed": true
+  },
+  "frozenV1Preserved": {
+    "inputs": 10,
+    "baselineReceiptSha256": "712d5f821fbffe042915419a16e038516535d06c902ffaa5dc7e90daf0b1b2bb",
+    "allEqual": true
+  },
+  "error": "RuntimeError('native did not close successfully')",
+  "sourceUnchanged": true,
+  "sourceGuardPassed": true,
+  "scratchBytes": 987087116
+}

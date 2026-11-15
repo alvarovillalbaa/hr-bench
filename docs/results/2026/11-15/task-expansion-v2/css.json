@@ -1,0 +1,8 @@
+{
+  "scope": "source CSS parse only; no browser",
+  "parser": "postcss",
+  "version": "8.5.23",
+  "rules": 217,
+  "declarations": 587,
+  "sha256": "ea85528c0edb40d7e822f22f0a1753b9b1081c6a36dfe1d5f0f3251d9b90f0f6"
+}

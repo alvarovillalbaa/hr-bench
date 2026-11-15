@@ -1,0 +1,758 @@
+{
+  "tier": "T2",
+  "cases": [
+    {
+      "id": "B01",
+      "passed": true,
+      "dataset": "ops-v1",
+      "modelSuccess": "0/8",
+      "readableCards": true
+    },
+    {
+      "id": "B02",
+      "passed": true,
+      "dataset": "ops-v2",
+      "visibleEvaluationCases": 32,
+      "sources": [
+        {
+          "href": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/",
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.eeoc.gov/laws/guidance/practical-advice-drafting-and-implementing-reasonable-accommodation-procedures-under",
+          "rel": "noopener noreferrer",
+          "target": "_blank"
+        }
+      ],
+      "modelBarCount": 1,
+      "publishedModelReportId": "sha256:bfabdfb916ed9f9e09656b8dc455da0bacfaba2d521d3eb90d45cadfbbaf00f2"
+    },
+    {
+      "id": "B03",
+      "passed": true,
+      "taskDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.public-task.json",
+        "bytes": 1280,
+        "sha256": "c4470373fb669241c32d31acacd3e4acc578738658e71c679783ced176445ad0"
+      },
+      "reportDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.report.json",
+        "bytes": 10137,
+        "sha256": "0b82a758ec37987f6a94afc2509aadc4a933a8f8b54def0ebb271391145fd03f"
+      },
+      "forgedGradeRefused": true,
+      "literalMarkupInert": true
+    },
+    {
+      "id": "B04",
+      "passed": true,
+      "delayedDatasetIsolated": true,
+      "delayedFileReadIsolated": true,
+      "transport": "controlled native browser route/File.text fixtures"
+    },
+    {
+      "id": "B05-320",
+      "passed": true,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "touchAndKeyboard": true
+    },
+    {
+      "id": "B05-390",
+      "passed": true,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "touchAndKeyboard": true
+    }
+  ],
+  "contexts": [
+    {
+      "id": "B01",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B02",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B03",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B04",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B05-320",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    },
+    {
+      "id": "B05-390",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:36991/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:36991/v2/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    }
+  ],
+  "bodies": [],
+  "browserClosed": true,
+  "serverClosed": true,
+  "browserVersion": "141.0.7390.37",
+  "passed": true
+}

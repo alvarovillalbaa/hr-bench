@@ -1,0 +1,156 @@
+[
+  {
+    "name": "I01-v2-list",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "list"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 19322,
+    "stderrBytes": 0,
+    "stdoutSha256": "c55469901c5eac62e65f0240d7b423be64ef27644207092b0b1dc410b38ea26e",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I01-v1-list",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench",
+    "args": [
+      "list"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 4419,
+    "stderrBytes": 0,
+    "stdoutSha256": "fe24c0ce550cb1f2da7d02d3b8a0fa2307dce9dac0d1ad6ca4252a18f1b40f70",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I02-oracle",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "control",
+      "--kind",
+      "oracle",
+      "--out",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/oracle.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 1580,
+    "stderrBytes": 0,
+    "stdoutSha256": "23784c77baec9a43bbac182054a6c903a5a2105037af142380185bd83db5c818",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I02-replay-oracle",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "replay",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/oracle.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 1728,
+    "stderrBytes": 0,
+    "stdoutSha256": "6f9f32b976924de7c2d5f4e05052c6913bac2ce9461f8fbd288c2b62f5a554d9",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I02-null",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "control",
+      "--kind",
+      "null",
+      "--out",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/null.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 1593,
+    "stderrBytes": 0,
+    "stdoutSha256": "4193cf163fc5c2174d117d49d8024c91f3a6bf168ce08cd778ff27633cc3fcd5",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I02-replay-null",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "replay",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/null.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 1741,
+    "stderrBytes": 0,
+    "stdoutSha256": "4e12c72c226750cd17416c8a91c1b5185c334585bb538ce5bdddba05a4465ff6",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I03-scripted",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "run",
+      "--adapter",
+      "/tmp/hrbench-v2-i62_pa21/source/tests/fixtures/null-adapter.mjs",
+      "--target",
+      "/tmp/hrbench-v2-i62_pa21/source/tests/fixtures/scripted-target.json",
+      "--row",
+      "ops-v2.scheduling.panel-intersection.vale",
+      "--out",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/scripted.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 612,
+    "stderrBytes": 0,
+    "stdoutSha256": "0b3775ca5fe48073a5d9e32e04c2c8f0e5b02571a55a506eaf24b36c882a3680",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I03-replay",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "replay",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/scripted.json"
+    ],
+    "exit": 0,
+    "signal": null,
+    "stdoutBytes": 760,
+    "stderrBytes": 0,
+    "stdoutSha256": "72204e2581582f8a986edec41eba03e29baf57f251c2934eb7ac4cfcd6c7444d",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "I04-existing-output",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "control",
+      "--kind",
+      "oracle",
+      "--out",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/existing.json"
+    ],
+    "exit": 1,
+    "signal": null,
+    "stdoutBytes": 0,
+    "stderrBytes": 104,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "d13a2a9269ec9ea2a0fb46408fd7647688fec07645f51e540859e3dfa72f4b5d"
+  },
+  {
+    "name": "I05-forged-report",
+    "executable": "/tmp/hrbench-v2-i62_pa21/consumer/node_modules/.bin/hrbench-v2",
+    "args": [
+      "replay",
+      "/home/runner/work/_temp/hrbench-v2-artifact/installed/forged.json"
+    ],
+    "exit": 1,
+    "signal": null,
+    "stdoutBytes": 0,
+    "stderrBytes": 33,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "a7183912e490a649c659e7cab6551dafb0c23a36f2e58b7be283bb6c995a8dd6"
+  }
+]

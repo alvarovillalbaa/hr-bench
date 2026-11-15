@@ -1,0 +1,5 @@
+{
+  "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+  "canonicalization": "state-v1 canonical JSON; sha256 over canonical(plan)",
+  "authorization": "standing per-job owner scope; digest binds content only"
+}

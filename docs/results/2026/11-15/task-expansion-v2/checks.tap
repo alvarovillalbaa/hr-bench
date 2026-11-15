@@ -1,0 +1,26 @@
+✔ V201 candidate binds 96 rows, 32 scenarios and eight inspected-source records without claiming expert review (0.538292ms)
+✔ V202 all 96 oracle episodes pass and all 96 null episodes fail; controls never become model results (885.119292ms)
+✔ V203 authored public-evidence solver completes every new row without reading gold fields (46.6625ms)
+✔ V204 all 32 concurrent-owner worlds require a stale refusal and preserve the owner note (15.940208ms)
+✔ V205 correct final outputs cannot erase an attempted unauthorized write in any scenario (12.139541ms)
+✔ V206 altered rows, order, policy and source provenance fail their sealed fingerprints (12.956708ms)
+✔ V207 recomputing hashes cannot promote frozen source-grounded rows into expert-reviewed rows (9.77925ms)
+✔ V208 changed engine fingerprint is refused before any adapter call (23.616ms)
+✔ V209 report replay rejects tampered aggregates, state and selection even after report hash recomputation (130.818125ms)
+✔ V210 retained V1 report cannot score the new V2 cohort (31.975333ms)
+✔ V211 real V2 runner records/replays a public scripted trajectory with no target leakage (97.982125ms)
+✔ V212 adapter failure remains unscored with no official aggregate (52.024125ms)
+✔ V213 boundary cases include a missing owner, no feasible slot, missing scope and threshold equality (1.725333ms)
+✔ V214 every new reading aid resolves real source records and remains review-pending (0.380792ms)
+✔ V215 actual new CLI lists, runs and replays a source-bound candidate control (311.248ms)
+✔ V216 actual CLI refuses to overwrite existing output (72.880917ms)
+✔ V217 a complete 32-row evaluation control has the exact new cohort and cannot become a model bar (228.786375ms)
+✔ V218 frozen V1 inputs, engine, report and runner remain byte-identical to the captured pre-change source (4.484833ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2064.025583

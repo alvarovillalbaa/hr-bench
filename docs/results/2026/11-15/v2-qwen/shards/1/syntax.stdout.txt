@@ -1,0 +1,4 @@
+
+> @alvarovillalbaa/hr-bench@0.2.0 check
+> node --check src/core.mjs && node --check src/strict-json.mjs && node --check src/runner.mjs && node --check bin/hrbench.mjs && node --check web/app.mjs
+

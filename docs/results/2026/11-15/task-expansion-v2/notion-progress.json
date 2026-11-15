@@ -1,0 +1,15 @@
+{
+  "purpose": "GEN-3659 HRBench V2 source progress",
+  "page_id": "418a1ee8-bd06-80c9-9343-ea23eb42d0dd",
+  "acknowledgement": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"page_id\":\"418a1ee8-bd06-80c9-9343-ea23eb42d0dd\"}"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  },
+  "verification_boundary": "Successful warning-free targeted write acknowledgement; no post-write fetch or rendered verification"
+}

@@ -1,0 +1,153 @@
+{
+  "tier": "T2",
+  "cases": [
+    {
+      "id": "B03",
+      "passed": true,
+      "taskDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.public-task.json",
+        "bytes": 1280,
+        "sha256": "c4470373fb669241c32d31acacd3e4acc578738658e71c679783ced176445ad0"
+      },
+      "reportDownload": {
+        "name": "ops-v2.scheduling.panel-intersection.vale.report.json",
+        "bytes": 10137,
+        "sha256": "5678d6a42c13c1c0245450e68e4c184bb5f81aad9a59fcfe52bf9c2a6f3559f5"
+      },
+      "forgedGradeRefused": true,
+      "literalMarkupInert": true
+    }
+  ],
+  "contexts": [
+    {
+      "id": "B03",
+      "closed": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:37113/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/manifest.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/report.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/explorer.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/sources.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/provenance.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/core.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/strict-json.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/v2/pilot.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/tasks.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/policy.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/prompt.txt",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/manifest.json",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:37113/pilot.json",
+          "method": "GET"
+        }
+      ],
+      "externalRequests": []
+    }
+  ],
+  "bodies": [],
+  "browserClosed": true,
+  "serverClosed": true,
+  "browserVersion": "141.0.7390.37",
+  "passed": true
+}
