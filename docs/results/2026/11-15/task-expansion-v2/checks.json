@@ -1,0 +1,25 @@
+{
+  "scope": "18 new authored Node checks; no browser/build/server/model/provider",
+  "exit_code": 0,
+  "elapsed_seconds": 2.242,
+  "source_stable": true,
+  "sha256": {
+    "bench/v2/manifest.json": "590ee80165f688f665d6d3f2b66a0ea3f1602d1b00b710fc3a31acdbf1d4d610",
+    "bench/v2/policy.json": "d878cf6a429dbcd7c3750c39cd3e2c7b8d9c3dbabbf61b1874d4669182acb256",
+    "bench/v2/prompt.txt": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+    "bench/v2/provenance.json": "2c49461429e3ee32fda6efd1d72f893307a3603cffd724a8c28937375c7db9c2",
+    "bench/v2/sources.json": "90e8df702c2a6ea8d3f6192805798d3b10fdc4ef5db2895c06203148a2d117a2",
+    "bench/v2/tasks.json": "b112feb87a81011266052857a17d1019c2f57eea415e53cd764d991c7b1a1664",
+    "bin/hrbench-v2.mjs": "7a61414352d127e547e642e0c108215bfdd3c8041795c881c9a9dc2c62f6c062",
+    "src/core.mjs": "55f0f0440eaeb6597ecc8db3cc52ff25bdec680f032bdd0924efb277a3409f52",
+    "src/strict-json.mjs": "e1e2bda6a12b82b8ea535c038fb36201870280879a7054d04785166cce390f44",
+    "src/v2/manifest.mjs": "f96e476a52e552113f1f61c21722c8b94761795bbda0b8f03b38b1adedc8d423",
+    "src/v2/report.mjs": "f228eea823bf7c8c070b88495b9d1182b6407809c6b8ba0c82db66491316f7e0",
+    "src/v2/runner.mjs": "52836ff8d047f3a53324e38862cdf48c60f1407be3171a6c1b8b34e96baaf5f0",
+    "tests/fixtures/v2-public-solver.mjs": "6e6ab3de169bab0d6bd3a126655a74af5d50c9bb3631440f3eb84b65625d684a",
+    "tests/unit/v2.test.mjs": "ff4411678c66ddf3a919f3ff512764b8c54da354bd18a8c04d6c250830018815",
+    "web/explorer.mjs": "d9f87a90733a8eac8ed284a345e7a1969389f76a017c6c5bcea6c1f1bf4f5f58"
+  },
+  "stdout_sha256": "48c7c1b33e410606ef71d4675d1ad4cfb51752dce24de5a22e23e7eae100c21f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

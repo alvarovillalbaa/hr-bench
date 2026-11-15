@@ -1,0 +1,15 @@
+{
+  "final_documentation_delta": [
+    "docs/results/2026/11-15/task-expansion-v2/result.md"
+  ],
+  "all_qualified_runtime_data_test_inputs_unchanged": true,
+  "frozen_v1_unchanged": true,
+  "new_test_cases_passed": 18,
+  "observed_node": "v26.8.2",
+  "final_result_sha256": "d1ffc01ef8267dee6bd0f1c218e305f61f09c10f9a1709a922f45b0f43edd376",
+  "notion_acknowledged_without_error": true,
+  "final_link_whitespace_checks": "passed",
+  "application_build_browser_model_provider": "not executed",
+  "independent_expert_reviewed_rows": 0,
+  "publication": "not performed"
+}

@@ -1,0 +1,5 @@
+{
+  "planSha256": "1463cc87a17027685a376295610280e172f4e004e44c714224d856e92a43294f",
+  "canonicalization": "state-v1 canonical JSON; sha256 over canonical(plan)",
+  "authorization": "content integrity only; additional CI remains inactive until explicit owner approval"
+}

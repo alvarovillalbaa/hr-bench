@@ -1,0 +1,288 @@
+{
+  "schema": "hrbench.v2-campaign",
+  "version": 1,
+  "dataset": "ops-v2",
+  "stage": "candidate",
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "dataPolicyFingerprint": "sha256:6ef061d370421518445921fdf09b6b0e8bf20c6abd8b977ac89d5ae6a07d03eb",
+  "promptSha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+  "sourcesSha256": "73b0a78267589abb86885fe359afa89cd56d2e5d48aebde40588dc36eecee043",
+  "provenanceSha256": "9ffdfcefad9519c199713719413528819b8a6800b71925213411b5bf9cc808dc",
+  "target": {
+    "kind": "model",
+    "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+    "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+    "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+    "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+    "dtype": "q8",
+    "device": "cpu",
+    "settings": {
+      "doSample": false,
+      "repetitionPenalty": 1.05,
+      "maxNewTokens": 256,
+      "contextTokens": 16384,
+      "maxCalls": 6,
+      "threads": "runtime default"
+    }
+  },
+  "targetConfigSha256": "bb8b16b9300ad7d96bf555b703857e1cfbc2f2f69b73098efaf286d1e1dac61b",
+  "orderedRows": [
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "dfb872f67b53034cfe307d1cfbe66185ee96d0c7f72559921a76e03a212b1116"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "fc63b9af83012dfd18fc26563790fc3d232566df12088356ec1bef2d4959f452"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "601288b0176ad72673c6087eb918565ca95d845c270cfa18e65e6a3fec434c46"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "30bf991775af94a215e7e2494c70b7643d333430c05bed0708e1f633cbcec1f6"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "85ba06e8bbd240b2fb865e3746592488287138ee6b7f11610df5421ac0b448b5"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "b7707adbfee361211119a1616b6ea2c97bf4c300a2490c5b32b6bdb4b509df78"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "adc775b93c3b8050f897c9810bf4ad220ffc010e5c9005e19dcda4a3966a1f9b"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "d1d26695289bc90347c9e4aed74b669cab5e824c99e0f8abd38362fa21605445"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "ce4998699b715c77eee32d8dae892e5fee9ea7a0c44d6e8d5d09818787a5a827"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "3605d8a3688c02a1d2e5f477bd6cce4adc9bb60188de7ed1ee8921f369d0d689"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "360963a6d619c36f1789bb4f89938bd6201ba40d800fca601754d057d383270b"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "772442d1c401ebc962ac8f1d872e722a84d0ab6f830ec36001c9d6b657416f32"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "5212e3f3ab4bf064e2ba49284b2e282fcb18794aa9b513b7c9832b0c9160ef56"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "44f01d0b9301abcf95743671d66366caf2fe1b5bcf61dfc9f02c9a59d719e73e"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "d8deda7c747ffb4bc32727766f5fd389b4bd6c6de1fdff590e46aa270e971b62"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "f59659324b09a28638588765c11b6dfc3e930add8e1eace7fca4a9e6a65f080e"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "5833d5b04db226e1d1bd238fd054be988b93c344829e1fa674f3400ac470a965"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "e2d6799f67d089149ba7576b4c4d68a46c0f27bf49914481b3c9533863149b63"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "29275e651fdf87948d54fa12638bef977fd3a427797c477ea6a85b0278d178e0"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "de6d3f92ac5aa43f4435810e28e393dafdec42710df093f893ab2fb77ce3caaa"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "1e2d6f4b4f53cab90af11ab41dcdc897dff391a9e82f98f9e0056f3743d6bd26"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "73977267575d3cb32ffd311d1694d5186b4be608adb95637c2232a46dfc098fe"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "c62e27465a3b1be3270ca67552a97daef29468342f9618945666b0079fab2109"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "427f7dd7f94c4f41b788b4f864bd19699906a29d8963685bb45099bde0d95c3b"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "1a2b14655ec033941a99291a77160ecf810249066ecbb0fbcb3ae23ce5365c9f"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "02a902ce4f3df08d199a6bbe6088d8f28700799b0c9c7eb635a6618014aa8d5d"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "c022a0fdf58574503ca8358dc2c47b5b1d4c4806a2d7c428b86f96cb1bdc383e"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "bfaf759498c10a0d57cdde99915b69ab2a35aa616dd214d538728f6b74d3c007"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "176db722021d7b606bfb7718749854feb1343b1c54d1bcc714e662a90f474de7"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "9cddc916180193072c7aaa1795ce5b06bdedbfae61ef672ac4f1611bd27cbe1b"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "cc85f4e2fc6e2c24c8d88fd1fca9f9e8de2f19a03a4e017a3966ee693b63fc45"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "4b70a132f9a75d18a806fe9512dd6a20c60bbd479c1904240ae58fe92cf00573"
+    }
+  ],
+  "shards": [
+    {
+      "index": 0,
+      "rowIds": [
+        "ops-v2.scheduling.panel-intersection.vale",
+        "ops-v2.scheduling.accessibility-referral.vale",
+        "ops-v2.scheduling.withdrawn-availability.vale",
+        "ops-v2.scheduling.buffer-boundary.vale",
+        "ops-v2.leave.deduplicate-ledger.vale",
+        "ops-v2.leave.part-time-roster.vale",
+        "ops-v2.leave.approval-routing.vale",
+        "ops-v2.leave.approved-correction.vale"
+      ]
+    },
+    {
+      "index": 1,
+      "rowIds": [
+        "ops-v2.onboarding.role-site-matrix.vale",
+        "ops-v2.onboarding.training-prerequisites.vale",
+        "ops-v2.onboarding.document-readiness.vale",
+        "ops-v2.onboarding.manager-handoff.vale",
+        "ops-v2.policy.effective-version.vale",
+        "ops-v2.policy.scope-match.vale",
+        "ops-v2.policy.conflicting-evidence.vale",
+        "ops-v2.policy.retention-purpose.vale"
+      ]
+    },
+    {
+      "index": 2,
+      "rowIds": [
+        "ops-v2.compensation.prorated-budget.vale",
+        "ops-v2.compensation.published-band.vale",
+        "ops-v2.compensation.adjustment-approval.vale",
+        "ops-v2.compensation.expense-reconciliation.vale",
+        "ops-v2.consent.limited-export.vale",
+        "ops-v2.consent.withdrawn-permission.vale",
+        "ops-v2.consent.note-redaction.vale",
+        "ops-v2.consent.retention-review.vale"
+      ]
+    },
+    {
+      "index": 3,
+      "rowIds": [
+        "ops-v2.evidence.competency-support.vale",
+        "ops-v2.evidence.investigation-plan.vale",
+        "ops-v2.evidence.feedback-window.vale",
+        "ops-v2.evidence.current-certificates.vale",
+        "ops-v2.offboarding.access-request-plan.vale",
+        "ops-v2.offboarding.asset-return-requests.vale",
+        "ops-v2.offboarding.handover-ownership.vale",
+        "ops-v2.offboarding.preservation-plan.vale"
+      ]
+    }
+  ],
+  "maxCalls": 6,
+  "maxNewTokens": 256,
+  "contextTokens": 16384,
+  "perShardCommandSeconds": 840,
+  "perJobInternalSeconds": 1020,
+  "currentAuthorizedCumulativeSeconds": 1200,
+  "requestedCumulativeSeconds": 3600,
+  "additionalSecondsRequiringOwnerApproval": 2400,
+  "execution": "inactive pending additional owner CI approval; exactly once per row; no score threshold",
+  "combination": "replay every shard; exact disjoint coverage in original manifest order; join episodes by row_id and recompute aggregate; never average shard percentages",
+  "limits": "public correlated synthetic scenarios; no independently reviewed rows, blind holdout or real-HR inference"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "hrbench.domain-review-draft",
+  "status": "blank-not-submitted",
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "reviewerConsentReference": null,
+  "reviewerExpertise": null,
+  "reviewerIndependenceEvidence": null,
+  "conflictsOfInterest": null,
+  "publicAttributionAuthorized": false,
+  "reviewedAt": null,
+  "rows": []
+}

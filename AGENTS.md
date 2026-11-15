@@ -1,12 +1,31 @@
 # HRBench Ops
 
-Last updated: 2026-11-14
+Last updated: 2026-11-15
 
 - Owner brief: personal Notion portfolio311a1ee8bd06805caa21c5306dd315ac,
   “HR-Bench — creating a benchmark for HR, globally adopted (like SWE-bench).”
   The connector returns an unverified3November snapshot. Detailed workflow,
   dataset and interface choices are delegated execution judgment.
+- Current GEN-3659 explicitly requests more tasks/expert-backed tasks, a readable
+  library, overall model chart and website usage/publication docs. The first UI
+  iteration is in `docs/results/2026/11-14/explorer-iteration.md`. Candidate
+  ops-v2 now has 96 new tasks / 32 scenarios, primary-source provenance,
+  separate CLI/report and web selector. See docs/specs/benchmark-v2.md and
+  docs/results/2026/11-15/task-expansion-v2/result.md. Eighteen new focused
+  Node checks pass, including 96 oracle/null/public-solver cases. These are
+  authored software controls; actual HR review and V2 model measurement remain
+  pending. Never turn source provenance into reviewer acceptance.
+- V2 inputs/provenance/manifest are sealed. Its report is version 2/candidate;
+  do not pool or relabel V1 results. All frozen V1 files/engine/prompt/pilot
+  remain unchanged. Actual reviewer attestations must be new records bound to
+  exact row hashes. Native switching/import/download, installed/hosted and V2
+  publication remain pending. No new CI, installation or model ran in this scope.
+- UI-only reading aids live in web/explorer.mjs, separate from frozen contracts.
+  Keep original goals accessible. The public chart uses replayed published model
+  reports on the exact complete ordered evaluation cohort. Controls, incomplete
+  coverage, subsets and private imports must not become public model bars.
 - Read README.md, docs/specs/benchmark-v1.md and docs/specs/qualification-v1.md.
+  For V2 read docs/specs/benchmark-v2.md and docs/reviews/v2-review.md.
   This is an executable task benchmark, CLI and public explorer. A synthetic
   first release is not proof of domain validity or global adoption.
 - Preserve user work. Manual edits use apply_patch. New isolated personal repo;

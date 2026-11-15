@@ -1,0 +1,594 @@
+{
+  "dataset": "ops-v2",
+  "evaluator": "state-v1",
+  "protocol": "tools-v1",
+  "promptVersion": "tool-agent-v1",
+  "stage": "candidate",
+  "promptSha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+  "dataPolicyFingerprint": "sha256:6ef061d370421518445921fdf09b6b0e8bf20c6abd8b977ac89d5ae6a07d03eb",
+  "sourcesSha256": "73b0a78267589abb86885fe359afa89cd56d2e5d48aebde40588dc36eecee043",
+  "provenanceSha256": "9ffdfcefad9519c199713719413528819b8a6800b71925213411b5bf9cc808dc",
+  "engineFiles": {
+    "src/core.mjs": "55f0f0440eaeb6597ecc8db3cc52ff25bdec680f032bdd0924efb277a3409f52",
+    "src/strict-json.mjs": "e1e2bda6a12b82b8ea535c038fb36201870280879a7054d04785166cce390f44"
+  },
+  "samples": [
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.tango",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "d6a2999d13ec5d65716f3f2d57e444517eb0d45e823cba5479f0074db9c88942"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.tango",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "da045161f4cddc6b8f67fcfc4cdae1d1fe867e6cb81abb4cb22750c0723c0709"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.tango",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "db58edd64c99b578cd8b53703a199d8c3b3e592a068e93c3696084ec50b96f71"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.tango",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "aed93ade676e4f48bbe8bd146344338802ee0057f91c815f7e92a4493604c1e1"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.tango",
+      "family": "leave",
+      "split": "development",
+      "sha256": "87d888e9c0df918e1137303e5d86c9cd2ec9c928982f93e4f9d5b71863283622"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.tango",
+      "family": "leave",
+      "split": "development",
+      "sha256": "2003ac73d486962f118852dbb7e71bdcb987acc639b54f400bbe7d67a044aec4"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.tango",
+      "family": "leave",
+      "split": "development",
+      "sha256": "447be78f17666ec286cb5dbda65a5445962d84f054ce3cf6f8ffe362de691248"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.tango",
+      "family": "leave",
+      "split": "development",
+      "sha256": "42ef1754cb671c436cab667f654591175a7e882df1d0a5d26623f8302701406a"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.tango",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "9f2fcb9f88030ffe62888f88eb274578e2f5ddca8efe127139f16416a70babe1"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.tango",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "6fcea4245b4d4f5e8aa89665f430249a16ac30ae2b6b643ac546f05c8c995a0f"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.tango",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "567d4216eec297afbe39ee5c256e838a7a031300cd8f518182a7ee0a6c148554"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.tango",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "cbc6778dc939b3a5025ca90fd436f4d80dd0e56209fcc7ac936c1db32408001c"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.tango",
+      "family": "policy",
+      "split": "development",
+      "sha256": "58b79ce5854276eed7cbe1c73d9d559ae89e7747ed8c232ae04f8a3d344209bd"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.tango",
+      "family": "policy",
+      "split": "development",
+      "sha256": "f246afa85acf7b814616ceaf27e0aed14676c13f5991c2a074559a41d48ca7eb"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.tango",
+      "family": "policy",
+      "split": "development",
+      "sha256": "aa560d82253142bfa1b3ffe76160412400808492732c236ce7e43c514011159c"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.tango",
+      "family": "policy",
+      "split": "development",
+      "sha256": "d177698a028bcad047170d4d0751065fe7c74c04fed074dc821bb49f393b9764"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.tango",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "3e9c57d27a2ec07f08aeca0e331705fe2fb6c00a9b7de0a5e6b92a79d4ef276d"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.tango",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "93a76f596a6605eb7b132a19fedb27d84628cf765d2e79d90d164379e7d57e2c"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.tango",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "b6c34eff2652efa35aed3ad27ed1adcde4935bd9b162a4a4afba9c46fb865ae0"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.tango",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "4a0f3b3b3c8e39c6641b96145d39d2c8ff429867a62020957a94dda5d7b3666d"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.tango",
+      "family": "consent",
+      "split": "development",
+      "sha256": "a2ec3291967d7bc8bdfeb4ed555db022737e01637de0b7abd6d280539bd95279"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.tango",
+      "family": "consent",
+      "split": "development",
+      "sha256": "ecf21680206660f58ff1c37dfabcc8bd43917d74fb24fe49a1278de03b4108f6"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.tango",
+      "family": "consent",
+      "split": "development",
+      "sha256": "8bdd8b26fe42adf114055c85d725b014cad38785c48d7c16ef548d214acc1c06"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.tango",
+      "family": "consent",
+      "split": "development",
+      "sha256": "6685cc59714cf41341ac600a3a82c881e82975182a249f18e84b90bdcbf0a010"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.tango",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "925284c20c4ab6654b875946d46ab8d00548919b60e8db05c71a78496adbd6d6"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.tango",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "34d614268b70398bc2f1bc0e2b57d56965aa119c45c8e79026a63c8a4d4b91de"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.tango",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "5e4b4721847151e56189f5415f8a2ff6b0051ece74c620e578877fcba2547e50"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.tango",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "5de630c386951d15d8b95fe01bb832549d7d64a03b197cb966c13b17fa610e18"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.tango",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "4933f685988f4685319982cd37b753c2b7f7fdc9550a5f767c287b40e375e429"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.tango",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "f000e6a8b7fc9c67d4f7c6ecb018874ff2f7452524bf4ff3b7d52e7fa16deddd"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.tango",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "fa621332fc4cdf2987d70aef919201b880450f77572dc5f4338096db0850eda7"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.tango",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "922b15c3c9c7acc16ab4296357d99fe172d651791d293e40f486ae078231138f"
+    },
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.umber",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "b3f38795628a2ca2a259894176b975314da9d1fae911414b90ec65cd8da2db42"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.umber",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "abd5f5144d6880d57a59a1d9afcb980117984559cc7275d476961ac0fb9f2c69"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.umber",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "34f6bc4c556cad6f035359d9540b35fb855c206eaa09c61440d4cb7210eb4489"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.umber",
+      "family": "scheduling",
+      "split": "development",
+      "sha256": "1bb728e815fee6251ebe4ae16d455ecccade9b5ff8eadc8364d48c5c2ca84c69"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.umber",
+      "family": "leave",
+      "split": "development",
+      "sha256": "de205b7d6e3c22012868e18f9e24625a5a93822a38b41a8452d9eb8447e5453e"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.umber",
+      "family": "leave",
+      "split": "development",
+      "sha256": "6c6a5c8ea6815aee4ae9e00ae088daa72a21b656d0a14448d35b9585ef8025d5"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.umber",
+      "family": "leave",
+      "split": "development",
+      "sha256": "a437058f232ce87162cf6f489e6092ae203a8fe06466b78fd419ecb4aad135c7"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.umber",
+      "family": "leave",
+      "split": "development",
+      "sha256": "51109e4d3f6cea690c1d07111108f4b4d1059b57b8a1ad8d522d70b56c63fd13"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.umber",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "e9d37626ee18cfb0fde9fd9e544122adc886114657bf70447eb8f70ffb2ac0a8"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.umber",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "01a2e66d8e4a2847150ac0556d585d08ac1ed577492b6bcb5eae382277abfad6"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.umber",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "4ba014603b608cf290fd31d461f9634f2c658e0c4610c1d78d2c0c205b6411a9"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.umber",
+      "family": "onboarding",
+      "split": "development",
+      "sha256": "8811f7e24b935f0d72b0309966ae0c3db213c3e9d604bc5fb492e55ae37a79e8"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.umber",
+      "family": "policy",
+      "split": "development",
+      "sha256": "ab22750eb1af20a65a1e7bca2807fa9b661c4426d7f7c2f757824af50bf2f6e4"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.umber",
+      "family": "policy",
+      "split": "development",
+      "sha256": "b900294b681e28903f1387bc8cbaaf2e286d30b0c2a59090a38a5f7fb4ab42a9"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.umber",
+      "family": "policy",
+      "split": "development",
+      "sha256": "6178ca886614b14014fc1a1c5790c4ddfbf02294d9c30dbc210181894d5568e0"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.umber",
+      "family": "policy",
+      "split": "development",
+      "sha256": "2589d0ecf723c0b15f93f685b2afac4874fec5e0ef2f13bb3a6d8bbf73c3ea60"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.umber",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "d451843258c5b3f3c44eb699cae4f868974fb3ae890cf4f1ffbdc2c216e901bc"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.umber",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "41dcea35c3c8559b3f4f4c1dd0612c34218fda519080ec340df51a45290fd6ad"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.umber",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "b1c6be570472397a8e4de7b25d63ef95117356c2c0d167e4f93c9104e42ae826"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.umber",
+      "family": "compensation",
+      "split": "development",
+      "sha256": "9e673f30fbc45281edb8eaf8f0148703bed82af381eb30cebfb234485fae02a2"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.umber",
+      "family": "consent",
+      "split": "development",
+      "sha256": "1422c31262a50288a5c17d7d24077e3094a60b750859a0969083ecfed4faef2c"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.umber",
+      "family": "consent",
+      "split": "development",
+      "sha256": "fc614141df7770d118a8e987cf554ae38517a646ad56deb304e1fffe53d4230a"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.umber",
+      "family": "consent",
+      "split": "development",
+      "sha256": "3c878e59e5e90e8d6c901658d1e3b28a2b25874ad614b0b91a2134d40a99a2f7"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.umber",
+      "family": "consent",
+      "split": "development",
+      "sha256": "0d83bdce445fb37a2f03a8a33a285a6c53e68e3e70c0b8076c3aaf0d20417eb8"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.umber",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "aca117616fea07b5f4b91033d0411e54266200f1bf91fd752cab98199f39cbdc"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.umber",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "2790972a5b027d12ab5ef7cb621b6dd9f65321513ef0b48a80babfb006511581"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.umber",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "86b7f712b4dcd975679b493eec96545f47f46d9933399224bf22641aee26c178"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.umber",
+      "family": "evidence",
+      "split": "development",
+      "sha256": "fc0c1d4f55a27f7d6ad3a4e4d3d06a26a8396812437b447b66dcdb6008b4e57f"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.umber",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "0321856d9257fb541db878b43e69bcbd3790f8da2241645ddfb76b825d224ad8"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.umber",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "511e1aad88d1db20ace2eb66c71b2da145217baf8b96890ca7a6a0ee28ea7714"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.umber",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "668d1eea4e5a26ed03d61eb5feaaacf281b0dec30d977676a23a178dd85888c5"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.umber",
+      "family": "offboarding",
+      "split": "development",
+      "sha256": "2bfa967a67d26c57b98403f1452e838c6f5161e9ee6239e02ecab43dfcb9e484"
+    },
+    {
+      "row_id": "ops-v2.scheduling.panel-intersection.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "dfb872f67b53034cfe307d1cfbe66185ee96d0c7f72559921a76e03a212b1116"
+    },
+    {
+      "row_id": "ops-v2.scheduling.accessibility-referral.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "fc63b9af83012dfd18fc26563790fc3d232566df12088356ec1bef2d4959f452"
+    },
+    {
+      "row_id": "ops-v2.scheduling.withdrawn-availability.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "601288b0176ad72673c6087eb918565ca95d845c270cfa18e65e6a3fec434c46"
+    },
+    {
+      "row_id": "ops-v2.scheduling.buffer-boundary.vale",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "sha256": "30bf991775af94a215e7e2494c70b7643d333430c05bed0708e1f633cbcec1f6"
+    },
+    {
+      "row_id": "ops-v2.leave.deduplicate-ledger.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "85ba06e8bbd240b2fb865e3746592488287138ee6b7f11610df5421ac0b448b5"
+    },
+    {
+      "row_id": "ops-v2.leave.part-time-roster.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "b7707adbfee361211119a1616b6ea2c97bf4c300a2490c5b32b6bdb4b509df78"
+    },
+    {
+      "row_id": "ops-v2.leave.approval-routing.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "adc775b93c3b8050f897c9810bf4ad220ffc010e5c9005e19dcda4a3966a1f9b"
+    },
+    {
+      "row_id": "ops-v2.leave.approved-correction.vale",
+      "family": "leave",
+      "split": "evaluation_public",
+      "sha256": "d1d26695289bc90347c9e4aed74b669cab5e824c99e0f8abd38362fa21605445"
+    },
+    {
+      "row_id": "ops-v2.onboarding.role-site-matrix.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "ce4998699b715c77eee32d8dae892e5fee9ea7a0c44d6e8d5d09818787a5a827"
+    },
+    {
+      "row_id": "ops-v2.onboarding.training-prerequisites.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "3605d8a3688c02a1d2e5f477bd6cce4adc9bb60188de7ed1ee8921f369d0d689"
+    },
+    {
+      "row_id": "ops-v2.onboarding.document-readiness.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "360963a6d619c36f1789bb4f89938bd6201ba40d800fca601754d057d383270b"
+    },
+    {
+      "row_id": "ops-v2.onboarding.manager-handoff.vale",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "sha256": "772442d1c401ebc962ac8f1d872e722a84d0ab6f830ec36001c9d6b657416f32"
+    },
+    {
+      "row_id": "ops-v2.policy.effective-version.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "5212e3f3ab4bf064e2ba49284b2e282fcb18794aa9b513b7c9832b0c9160ef56"
+    },
+    {
+      "row_id": "ops-v2.policy.scope-match.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "44f01d0b9301abcf95743671d66366caf2fe1b5bcf61dfc9f02c9a59d719e73e"
+    },
+    {
+      "row_id": "ops-v2.policy.conflicting-evidence.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "d8deda7c747ffb4bc32727766f5fd389b4bd6c6de1fdff590e46aa270e971b62"
+    },
+    {
+      "row_id": "ops-v2.policy.retention-purpose.vale",
+      "family": "policy",
+      "split": "evaluation_public",
+      "sha256": "f59659324b09a28638588765c11b6dfc3e930add8e1eace7fca4a9e6a65f080e"
+    },
+    {
+      "row_id": "ops-v2.compensation.prorated-budget.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "5833d5b04db226e1d1bd238fd054be988b93c344829e1fa674f3400ac470a965"
+    },
+    {
+      "row_id": "ops-v2.compensation.published-band.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "e2d6799f67d089149ba7576b4c4d68a46c0f27bf49914481b3c9533863149b63"
+    },
+    {
+      "row_id": "ops-v2.compensation.adjustment-approval.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "29275e651fdf87948d54fa12638bef977fd3a427797c477ea6a85b0278d178e0"
+    },
+    {
+      "row_id": "ops-v2.compensation.expense-reconciliation.vale",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "sha256": "de6d3f92ac5aa43f4435810e28e393dafdec42710df093f893ab2fb77ce3caaa"
+    },
+    {
+      "row_id": "ops-v2.consent.limited-export.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "1e2d6f4b4f53cab90af11ab41dcdc897dff391a9e82f98f9e0056f3743d6bd26"
+    },
+    {
+      "row_id": "ops-v2.consent.withdrawn-permission.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "73977267575d3cb32ffd311d1694d5186b4be608adb95637c2232a46dfc098fe"
+    },
+    {
+      "row_id": "ops-v2.consent.note-redaction.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "c62e27465a3b1be3270ca67552a97daef29468342f9618945666b0079fab2109"
+    },
+    {
+      "row_id": "ops-v2.consent.retention-review.vale",
+      "family": "consent",
+      "split": "evaluation_public",
+      "sha256": "427f7dd7f94c4f41b788b4f864bd19699906a29d8963685bb45099bde0d95c3b"
+    },
+    {
+      "row_id": "ops-v2.evidence.competency-support.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "1a2b14655ec033941a99291a77160ecf810249066ecbb0fbcb3ae23ce5365c9f"
+    },
+    {
+      "row_id": "ops-v2.evidence.investigation-plan.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "02a902ce4f3df08d199a6bbe6088d8f28700799b0c9c7eb635a6618014aa8d5d"
+    },
+    {
+      "row_id": "ops-v2.evidence.feedback-window.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "c022a0fdf58574503ca8358dc2c47b5b1d4c4806a2d7c428b86f96cb1bdc383e"
+    },
+    {
+      "row_id": "ops-v2.evidence.current-certificates.vale",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "sha256": "bfaf759498c10a0d57cdde99915b69ab2a35aa616dd214d538728f6b74d3c007"
+    },
+    {
+      "row_id": "ops-v2.offboarding.access-request-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "176db722021d7b606bfb7718749854feb1343b1c54d1bcc714e662a90f474de7"
+    },
+    {
+      "row_id": "ops-v2.offboarding.asset-return-requests.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "9cddc916180193072c7aaa1795ce5b06bdedbfae61ef672ac4f1611bd27cbe1b"
+    },
+    {
+      "row_id": "ops-v2.offboarding.handover-ownership.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "cc85f4e2fc6e2c24c8d88fd1fca9f9e8de2f19a03a4e017a3966ee693b63fc45"
+    },
+    {
+      "row_id": "ops-v2.offboarding.preservation-plan.vale",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "sha256": "4b70a132f9a75d18a806fe9512dd6a20c60bbd479c1904240ae58fe92cf00573"
+    }
+  ],
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644"
+}

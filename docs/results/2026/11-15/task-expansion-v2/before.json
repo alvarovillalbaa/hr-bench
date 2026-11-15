@@ -1,0 +1,17 @@
+{
+  "scope": "pre-change frozen v1 source and existing dirty work",
+  "frozen_sha256": {
+    "bench/v1/manifest.json": "46a7fd7dc44dd60da30ae192da7c006083157be4ebd998fb8b6fe01284e6d442",
+    "bench/v1/policy.json": "180876bbdf57966cbc6d3049c74f87e4bd0a9ed2ac857e746d380c91ae872790",
+    "bench/v1/prompt.txt": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+    "bench/v1/target-qwen-v1.json": "6fc982ccdecd6658813ec7c04c0c303b5e73e3b16fa89eb492f76f34ccdec3dd",
+    "bench/v1/tasks.json": "a5e053406b563e250a067c88fdf6e9d66f34e9b523aeb398a0353d8f0401cc85",
+    "src/core.mjs": "55f0f0440eaeb6597ecc8db3cc52ff25bdec680f032bdd0924efb277a3409f52",
+    "src/manifest.mjs": "472bf7761f0b427ee905bddfaf0d5314887c9918cf6c8539a2b76a417fabccc3",
+    "src/report.mjs": "757c68a59b10ee2876b4099d6cdaf7d6792d4808eeff23c26f41808cc323cb4d",
+    "src/runner.mjs": "524d9ffd0431d37591bbc71dbcf0550667076683c3829a5592228be623c0fc16",
+    "src/strict-json.mjs": "e1e2bda6a12b82b8ea535c038fb36201870280879a7054d04785166cce390f44"
+  },
+  "initial_status": " M AGENTS.md\n M README.md\n M scripts/build.mjs\n M web/app.mjs\n M web/index.html\n M web/style.css\n?? docs/references/publishing-results.md\n?? docs/results/2026/11-14/explorer-iteration.md\n?? tests/unit/explorer.test.mjs\n?? web/explorer.mjs\n",
+  "initial_head": "3cdf192cc812c8f8665a2646ed798e355d437f14"
+}

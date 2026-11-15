@@ -1,6 +1,6 @@
 # HRBench Ops
 
-Last updated: 2026-11-14
+Last updated: 2026-11-15
 
 An open benchmark for agents doing human-resources work: read the supplied
 records, use the permitted tools, complete the task, preserve everything else.
@@ -48,6 +48,26 @@ a model. Use an adapter/endpoint you own; keys stay in its environment.
 The explorer offers task filtering, an actual interactive sandbox,
 reference-control demonstrations and local report import/replay. No account,
 database or application service is required; browser state is disposable.
+
+The local explorer iteration presents a readable task-card library, plain-language
+workflow introductions, an overall model-results chart and run/publication
+instructions. The chart replays the retained report and requires the exact
+complete public evaluation cohort; it currently contains one measured model.
+These UI changes are unpublished. See the [local receipt](docs/results/2026/11-14/explorer-iteration.md)
+and [publication/contribution guide](docs/references/publishing-results.md).
+An unpublished [ops-v2 candidate](docs/specs/benchmark-v2.md) adds 96 original
+tasks / 32 scenarios, eight inspected professional/agency source records and
+per-row provenance. A separate source CLI and website dataset selector preserve
+V1 as the default; scores are never pooled. Eighteen focused Node checks pass,
+including all 96 oracle/null cases and an authored public-evidence solver.
+These are software controls, not expert review. Actual HR review, V2 model
+measurement, native/installed/hosted qualification and publication remain
+pending. The frozen V1 inputs, engine/prompt and negative pilot are unchanged.
+
+From this source checkout use `node bin/hrbench-v2.mjs list` and
+`node bin/hrbench-v2.mjs replay v2-run.json`. The existing 0.1.0 archive does
+not contain V2. See the [review handoff](docs/reviews/v2-review.md) and
+[expansion evidence](docs/results/2026/11-15/task-expansion-v2/result.md).
 
 The [real local q8 Qwen pilot](docs/results/2026/11-14/pilot/result.md) scored
 **0/8** on all eight public evaluation tasks:48 completions failed the strict
