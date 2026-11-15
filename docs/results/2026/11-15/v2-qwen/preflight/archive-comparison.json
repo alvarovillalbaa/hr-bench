@@ -1,0 +1,10 @@
+{
+  "allExistingMembersBytesAndModesEqual": true,
+  "unchangedMembers": 37,
+  "addedMetadataMembers": [
+    "bench/runs/v2-qwen-20261115/plan-v3.json",
+    "bench/runs/v2-qwen-20261115/seal-v3.json",
+    "docs/reviews/v2-owner-deferral-20261115.md"
+  ],
+  "baselineArchiveSha256": "fd902d674df937174a98d1c295afd3a1ac81aeb0a3104685328a4e3f45d643ef"
+}

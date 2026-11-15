@@ -1,0 +1,62 @@
+{
+  "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+  "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+  "dtype": "q8",
+  "device": "cpu",
+  "config": {
+    "kind": "model",
+    "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+    "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+    "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+    "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+    "dtype": "q8",
+    "device": "cpu",
+    "settings": {
+      "doSample": false,
+      "repetitionPenalty": 1.05,
+      "maxNewTokens": 256,
+      "contextTokens": 16384,
+      "maxCalls": 6,
+      "threads": "runtime default"
+    }
+  },
+  "node": "v24.22.2",
+  "network": [
+    {
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "bodies": [
+    {
+      "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+      "bytes": 512096557,
+      "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+    }
+  ],
+  "loaded": true,
+  "disposed": true,
+  "expectedWeightMatch": true,
+  "beforeInferenceWeightMatch": true
+}

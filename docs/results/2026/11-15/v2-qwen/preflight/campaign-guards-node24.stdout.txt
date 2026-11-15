@@ -1,0 +1,13 @@
+✔ P01 corrected campaign seal binds the same32 evaluation rows and16 disjoint two-row shards before its inference (0.492343ms)
+✔ P02 merging replayed shards joins exact row IDs and preserves an authored negative control (590.053791ms)
+✔ P03 duplicate/missing/unplanned shards cannot produce an overall report (76.107577ms)
+✔ P04 changed target, forged grades and other-edition reports are rejected before aggregation (74.474513ms)
+✔ P05 infrastructure failure stays unscored even with complete disjoint selected coverage (688.010314ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4342.793856
