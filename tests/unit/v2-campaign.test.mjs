@@ -13,8 +13,8 @@ const bundle = await loadDatasetV2(), frozen = await loadCampaign(bundle);
 const plan = structuredClone(frozen); plan.target = { kind: 'scripted', name: 'Authored campaign merge control' }; plan.targetConfigSha256 = await digest(canonical(plan.target));
 const rows = await Promise.all(plan.orderedRows.map(async row => runCandidateV2(bundle, { generate: async request => ({ id: request.id, text: '{"tool":"finish","args":{}}' }) }, plan.target, { row: row.row_id })));
 const reports = await Promise.all(plan.shards.map(shard => createReportV2(bundle, bundle.tasks.filter(task => shard.rowIds.includes(task.row_id)), plan.target, rows.filter(report => shard.rowIds.includes(report.selectedRowIds[0])).flatMap(report => report.episodes))));
-test('P01 campaign seal binds the exact32 evaluation rows and four disjoint fixed shards before inference', () => {
-  assert.equal(frozen.orderedRows.length, 32); assert.equal(frozen.shards.length, 4); assert.equal(frozen.target.kind, 'model'); assert.equal(frozen.campaignOperationalCeilingSeconds, 3600); assert.equal(frozen.ownerJobCapSeconds, 1200);
+test('P01 corrected campaign seal binds the same32 evaluation rows and16 disjoint two-row shards before its inference', () => {
+  assert.equal(frozen.orderedRows.length, 32); assert.equal(frozen.shards.length, 16); assert.equal(frozen.target.kind, 'model'); assert.equal(frozen.campaignOperationalCeilingSeconds, 18000); assert.equal(frozen.ownerJobCapSeconds, 1200);
 });
 test('P02 merging replayed shards joins exact row IDs and preserves an authored negative control', async () => {
   const report = await mergeCampaignReports(bundle, plan, [...reports].reverse());
@@ -23,7 +23,7 @@ test('P02 merging replayed shards joins exact row IDs and preserves an authored 
 });
 test('P03 duplicate/missing/unplanned shards cannot produce an overall report', async () => {
   await assert.rejects(mergeCampaignReports(bundle, plan, reports.slice(0, 3)));
-  await assert.rejects(mergeCampaignReports(bundle, plan, [reports[0], reports[0], reports[2], reports[3]]));
+  await assert.rejects(mergeCampaignReports(bundle, plan, [reports[0], reports[0], ...reports.slice(2)]));
   await assert.rejects(mergeCampaignReports(bundle, plan, [rows[0], ...reports.slice(1)]));
 });
 test('P04 changed target, forged grades and other-edition reports are rejected before aggregation', async () => {

@@ -123,6 +123,15 @@ try:
                 raise RuntimeError("Archive bytes/mode differ: " + name)
             members.append({"path": name, "bytes": len(value), "sha256": sha(value), "mode": member.mode})
     (output / "package-manifest.json").write_text(json.dumps({"file": tarball.name, "bytes": tarball.stat().st_size, "sha256": sha(tarball.read_bytes()), "members": members}, indent=2))
+    if mode == "campaign-check":
+        baseline_path = repo / "docs/results/2026/11-15/qualification-v2/package-native-initial/package-manifest.json"
+        baseline = json.loads(baseline_path.read_text())
+        old = {item["path"]: item for item in baseline["members"]}
+        actual = {item["path"]: item for item in members}
+        allowed = {"bench/runs/v2-qwen-20261115/plan-v3.json", "bench/runs/v2-qwen-20261115/seal-v3.json", "docs/reviews/v2-owner-deferral-20261115.md"}
+        if not set(old).issubset(actual) or set(actual) - set(old) != allowed or any(actual[name] != item for name, item in old.items()):
+            raise RuntimeError("The resource correction changed the qualified existing archive payload")
+        (output / "archive-comparison.json").write_text(json.dumps({"allExistingMembersBytesAndModesEqual": True, "unchangedMembers": len(old), "addedMetadataMembers": sorted(allowed), "baselineArchiveSha256": baseline["sha256"]}, indent=2))
     consumer = scratch / "consumer"
     consumer.mkdir()
     (consumer / "package.json").write_text('{"name":"hrbench-v2-owned-consumer","version":"0.0.0","private":true,"type":"module"}')
@@ -139,15 +148,17 @@ try:
         for package, version in [("@huggingface/transformers", "3.8.1"), ("onnxruntime-node", "1.21.0")]:
             if lock["packages"]["node_modules/" + package]["version"] != version:
                 raise RuntimeError("Frozen model runtime differs")
-        plan = json.loads((work / "bench/runs/v2-qwen-20261115/plan-v2.json").read_text())
+        plan = json.loads((work / "bench/runs/v2-qwen-20261115/plan-v3.json").read_text())
         (scratch / "model-target.json").write_text(json.dumps(plan["target"], indent=2))
         env.update(HRBENCH_TRANSFORMERS=str(model / "node_modules/@huggingface/transformers/src/transformers.js"), HRBENCH_MODEL_CACHE=str(scratch / "model-cache"), HRBENCH_TARGET=str(scratch / "model-target.json"), HRBENCH_MODEL_PROVENANCE=str(output / "model-provenance.json"), HRBENCH_CAMPAIGN_OUTPUT=str(output), HRBENCH_ADAPTER_EXIT=str(output / "model-adapter-exit.json"))
         execute("model-shard", ["node", "tests/scripts/v2-campaign.mjs", "shard"], plan["perShardCommandSeconds"])
         report = json.loads((output / ("shard-" + env["HRBENCH_SHARD_INDEX"] + ".json")).read_text())
         provenance = json.loads((output / "model-provenance.json").read_text())
         adapter_exit = json.loads((output / "model-adapter-exit.json").read_text())
-        if report["summary"]["scored"] != 8 or not report["summary"]["complete"] or not provenance["loaded"] or not provenance["disposed"] or not provenance["expectedWeightMatch"] or not adapter_exit["normalExit"]:
+        if report["summary"]["scored"] != len(plan["shards"][int(env["HRBENCH_SHARD_INDEX"])] ["rowIds"]) or not report["summary"]["complete"] or not provenance["loaded"] or not provenance["disposed"] or not provenance["expectedWeightMatch"] or not provenance["beforeInferenceWeightMatch"] or not adapter_exit["normalExit"]:
             raise RuntimeError("Model infrastructure/weight/disposal coverage is incomplete; no score threshold applies")
+    elif mode == "campaign-check":
+        execute("campaign-guards-node24", ["node", "--test", "tests/unit/v2-campaign.test.mjs"], 30)
     elif mode in ["package-native", "native", "hosted"]:
         execute("build", ["npm", "run", "build"], 30)
         shutil.copyfile(work / "dist/build.json", output / "build.json")
