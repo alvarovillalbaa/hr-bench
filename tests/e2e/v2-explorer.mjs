@@ -37,7 +37,7 @@ async function scenario(id, options, action) {
   catch (error) { row.error = error.stack; await writeFile(join(output, id + '-failure.txt'), await page.locator('body').innerText().catch(() => 'Unavailable')); }
   finally { await page.screenshot({ path: join(output, id + '.png'), animations: 'disabled' }).catch(error => { row.screenshotError = error.message; row.passed = false; }); await context.close(); entry.closed = true; result.cases.push(row); console.log(JSON.stringify(row)); }
 }
-async function edition(page, version) { await page.locator('#dataset-version').selectOption(version); await text(page, '#task-count', version === 'v2' ? '96 of 96 tasks' : '24 of 24 tasks'); }
+async function edition(page, version) { await page.locator('#search').fill(''); await page.locator('#dataset-version').selectOption(version); await text(page, '#task-count', version === 'v2' ? '96 of 96 tasks' : '24 of 24 tasks'); }
 async function choose(page, task) { await page.locator('#family-filter').selectOption('all'); await page.locator('#split-filter').selectOption('all'); await page.locator('#search').fill(task.row_id); await page.locator('.task-card').click(); await text(page, '#task-id', task.row_id); }
 try {
   server = createServer(async (request, response) => {
