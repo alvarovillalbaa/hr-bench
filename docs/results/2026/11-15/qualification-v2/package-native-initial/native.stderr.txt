@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: All selected native cases and owned closures must pass
+
+false !== true
+
+    at file:///tmp/hrbench-v2-i62_pa21/source/tests/e2e/v2-explorer.mjs:125:8 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.2

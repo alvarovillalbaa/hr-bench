@@ -1,0 +1,2 @@
+{"id":"B03","passed":true,"taskDownload":{"name":"ops-v2.scheduling.panel-intersection.vale.public-task.json","bytes":1280,"sha256":"c4470373fb669241c32d31acacd3e4acc578738658e71c679783ced176445ad0"},"reportDownload":{"name":"ops-v2.scheduling.panel-intersection.vale.report.json","bytes":10137,"sha256":"5678d6a42c13c1c0245450e68e4c184bb5f81aad9a59fcfe52bf9c2a6f3559f5"},"forgedGradeRefused":true,"literalMarkupInert":true}
+{"passed":true,"cases":[{"id":"B03","passed":true}],"browserClosed":true,"serverClosed":true}

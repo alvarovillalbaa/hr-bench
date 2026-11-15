@@ -1,0 +1,1556 @@
+{
+  "version": 1,
+  "trial": "resource-corrected-v3",
+  "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+  "runId": 43714588256,
+  "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+  "reportId": "sha256:bfabdfb916ed9f9e09656b8dc455da0bacfaba2d521d3eb90d45cadfbbaf00f2",
+  "reportFileSha256": "5061f5c4546e6cc6796f9296c24ee398313719c9da183025c495ebb15224e740",
+  "target": {
+    "kind": "model",
+    "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+    "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+    "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+    "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+    "dtype": "q8",
+    "device": "cpu",
+    "settings": {
+      "doSample": false,
+      "repetitionPenalty": 1.05,
+      "maxNewTokens": 256,
+      "contextTokens": 16384,
+      "maxCalls": 6,
+      "threads": "runtime default"
+    }
+  },
+  "aggregationRuntime": {
+    "arch": "arm64",
+    "node": "v26.8.2",
+    "platform": "darwin"
+  },
+  "independentExpertReviewedRows": 0,
+  "expertReview": "Owner deferred; not expert backed",
+  "initialInterruptedTrial": "../v2-qwen-initial/result.md",
+  "shards": [
+    {
+      "shardIndex": 0,
+      "job": {
+        "id": 132813320549,
+        "name": "model (0)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:35:21Z",
+        "completed_at": "2026-11-15T12:44:03Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:989b48a334422e251a16009587bc35f51649ecef4fa6cf4e4b1c62e04e14d9c0",
+      "selectedRowIds": [
+        "ops-v2.scheduling.panel-intersection.vale",
+        "ops-v2.scheduling.accessibility-referral.vale"
+      ],
+      "reportFileSha256": "62c1a4091da10af521acbecf81d823fc79065160a423ba753d3bd36ba3fc7a82",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 0,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 1,
+      "job": {
+        "id": 132813320582,
+        "name": "model (1)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:35:21Z",
+        "completed_at": "2026-11-15T12:44:27Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:2759407aacd2bd3836ca7f73912cff5c2d639e3d1773fe6d17e9954c4d70020f",
+      "selectedRowIds": [
+        "ops-v2.scheduling.withdrawn-availability.vale",
+        "ops-v2.scheduling.buffer-boundary.vale"
+      ],
+      "reportFileSha256": "7f27b61477986fad1d26503dbe4c5cbf6b5919a560651a5b63eb2dbac1c6601b",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 1,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 2,
+      "job": {
+        "id": 132813320574,
+        "name": "model (2)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:35:21Z",
+        "completed_at": "2026-11-15T12:43:55Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:0d3ccf632a38b258fe7d3f26ce097066d3672bfbfbd120a3d487abc73861fae2",
+      "selectedRowIds": [
+        "ops-v2.leave.deduplicate-ledger.vale",
+        "ops-v2.leave.part-time-roster.vale"
+      ],
+      "reportFileSha256": "797cba13e7cfc53a1b5ab76fc6e3fdbd542a2a91b14f86bd4f6d2bc0576b0cfc",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 2,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 3,
+      "job": {
+        "id": 132813320586,
+        "name": "model (3)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:35:21Z",
+        "completed_at": "2026-11-15T12:40:50Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:e075667cbc4cb72a2371892baa5a654335ceab9fcfce2be870eec9ae4837fe83",
+      "selectedRowIds": [
+        "ops-v2.leave.approval-routing.vale",
+        "ops-v2.leave.approved-correction.vale"
+      ],
+      "reportFileSha256": "54ed5703083c3e0e9fa6cb93ee6f0bfdf5541567b8e49871514fe3b3ff2f8fe6",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 3,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 4,
+      "job": {
+        "id": 132813320578,
+        "name": "model (4)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:40:52Z",
+        "completed_at": "2026-11-15T12:42:39Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:2aecbca578059e44120761878d732b7c58618072f7f0b96de489faade8dc5423",
+      "selectedRowIds": [
+        "ops-v2.onboarding.role-site-matrix.vale",
+        "ops-v2.onboarding.training-prerequisites.vale"
+      ],
+      "reportFileSha256": "92844338b2f0d91225bce450a80dde01b2950310cd87b19784f19529215e88e9",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 4,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 5,
+      "job": {
+        "id": 132813320659,
+        "name": "model (5)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:42:42Z",
+        "completed_at": "2026-11-15T12:44:38Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:51f89008064fd8deb233c98a294faef37a691ce4f756e596d317bf46702dee57",
+      "selectedRowIds": [
+        "ops-v2.onboarding.document-readiness.vale",
+        "ops-v2.onboarding.manager-handoff.vale"
+      ],
+      "reportFileSha256": "d3b4e3b0e5c5e7c4186c37a9c51ff44d0f9610bdaea7dda4e3d47d72414ff489",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 5,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 6,
+      "job": {
+        "id": 132813320622,
+        "name": "model (6)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:43:57Z",
+        "completed_at": "2026-11-15T12:48:57Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:297e956fc38dd3517293e8568a699a3341c56f7f102f32a4703893029d67f637",
+      "selectedRowIds": [
+        "ops-v2.policy.effective-version.vale",
+        "ops-v2.policy.scope-match.vale"
+      ],
+      "reportFileSha256": "637834b7ea8ef8e5cd64b89af1a2f94b9d143e73da7809a94feeb74f8ca8a54a",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 6,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 7,
+      "job": {
+        "id": 132813320596,
+        "name": "model (7)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:44:05Z",
+        "completed_at": "2026-11-15T12:51:08Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:6138a124e0e65db1f3ff9adba5ede0082a0647a4b23ad2c325b03ef788d8595e",
+      "selectedRowIds": [
+        "ops-v2.policy.conflicting-evidence.vale",
+        "ops-v2.policy.retention-purpose.vale"
+      ],
+      "reportFileSha256": "1c32c94ca59f0cf724363086d9ba7bf25aa973f0b128251602480ecbc6feb4f3",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 7,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 8,
+      "job": {
+        "id": 132813320555,
+        "name": "model (8)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:44:29Z",
+        "completed_at": "2026-11-15T12:53:14Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:a3746ba083240252afe521174a651fbd7f7470ecaf0013f6f01bb1801ea7f634",
+      "selectedRowIds": [
+        "ops-v2.compensation.prorated-budget.vale",
+        "ops-v2.compensation.published-band.vale"
+      ],
+      "reportFileSha256": "ff73c8be9227bd780afb5cbd139e9f08c792630b3fcba244a1682ba73ed78b14",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 8,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 9,
+      "job": {
+        "id": 132813320638,
+        "name": "model (9)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:44:41Z",
+        "completed_at": "2026-11-15T12:49:26Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:22f4efe9f559c29d15ff043c087e9fbef920a3cbfba1e04d3786fbf5aa88bcd1",
+      "selectedRowIds": [
+        "ops-v2.compensation.adjustment-approval.vale",
+        "ops-v2.compensation.expense-reconciliation.vale"
+      ],
+      "reportFileSha256": "d69c607f6282fbfc1c618610c47d4c7a7eaf72e510417f157b27e5e159334012",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 9,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 10,
+      "job": {
+        "id": 132813320602,
+        "name": "model (10)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:49:00Z",
+        "completed_at": "2026-11-15T12:58:06Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:5161d5fd9a721d800159a9132bb5c213672547a282aca39968c4681c99d4d757",
+      "selectedRowIds": [
+        "ops-v2.consent.limited-export.vale",
+        "ops-v2.consent.withdrawn-permission.vale"
+      ],
+      "reportFileSha256": "71298f6dcf1fb738dafe1287fdae84f254bd5d50e8038b4680498ab9ff40ff86",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 10,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 11,
+      "job": {
+        "id": 132813320625,
+        "name": "model (11)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:49:29Z",
+        "completed_at": "2026-11-15T12:54:34Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:88726fbf5aaf28d5c4ad41d73b488ae6db592bc5718bc2d0d68acb8bb7bf6b2a",
+      "selectedRowIds": [
+        "ops-v2.consent.note-redaction.vale",
+        "ops-v2.consent.retention-review.vale"
+      ],
+      "reportFileSha256": "55304ad3efd154d43974d53c0938d3be18b71ddda89cc1cb92c3b5dabb18a73a",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 11,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 12,
+      "job": {
+        "id": 132813320698,
+        "name": "model (12)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:51:11Z",
+        "completed_at": "2026-11-15T13:00:12Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:0fa88666c0eb6a044c7f1e2a6faabf30de4dc3a2475af23fbc4b2f971f270ec9",
+      "selectedRowIds": [
+        "ops-v2.evidence.competency-support.vale",
+        "ops-v2.evidence.investigation-plan.vale"
+      ],
+      "reportFileSha256": "562f367c81af9f90302e4a6fc1c26500ff923fcf029c57c00bf99976dec76e99",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 12,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 13,
+      "job": {
+        "id": 132813320674,
+        "name": "model (13)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:53:17Z",
+        "completed_at": "2026-11-15T13:01:07Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:9c1da1d40c635cdf48538b281e0965f3652b84e8f9b3d0b516b24fa5080933cf",
+      "selectedRowIds": [
+        "ops-v2.evidence.feedback-window.vale",
+        "ops-v2.evidence.current-certificates.vale"
+      ],
+      "reportFileSha256": "16d664753b10bffa7333a0c28e125d81e2c382c5ea745979cd769af56feea8ff",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 13,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 14,
+      "job": {
+        "id": 132813321605,
+        "name": "model (14)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:54:36Z",
+        "completed_at": "2026-11-15T13:02:19Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:aa427c9352b8dcf181777fb9b2444d5320c3db962e43435904235052ed880bee",
+      "selectedRowIds": [
+        "ops-v2.offboarding.access-request-plan.vale",
+        "ops-v2.offboarding.asset-return-requests.vale"
+      ],
+      "reportFileSha256": "240c0493bc0b02cc0f3a5361ddfa452dc1a4f64b2cdb9ca6b1f827e49ba8f6ec",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 14,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    },
+    {
+      "shardIndex": 15,
+      "job": {
+        "id": 132813321595,
+        "name": "model (15)",
+        "head_sha": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "started_at": "2026-11-15T12:58:09Z",
+        "completed_at": "2026-11-15T13:02:06Z",
+        "conclusion": "success"
+      },
+      "reportId": "sha256:aaf73bc7f165e56c3ebc1022074dddeae9166f73eae51967cccc5b6298cd562d",
+      "selectedRowIds": [
+        "ops-v2.offboarding.handover-ownership.vale",
+        "ops-v2.offboarding.preservation-plan.vale"
+      ],
+      "reportFileSha256": "dbd39b8c987ca1e980a38577f68662ddcf96ed7565cea2ced7c5c16d359343e5",
+      "runtime": {
+        "node": "v24.22.2",
+        "planSha256": "0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f",
+        "shardIndex": 15,
+        "source": "769e7b556f468007a280949bd32d441e7d7461b6",
+        "trial": "resource-corrected-v3"
+      },
+      "model": {
+        "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+        "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+        "dtype": "q8",
+        "device": "cpu",
+        "config": {
+          "kind": "model",
+          "name": "Qwen2.5 0.5B Instruct · local q8 pilot",
+          "model": "onnx-community/Qwen2.5-0.5B-Instruct",
+          "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+          "runtime": "Transformers.js 3.8.1 / ONNX Runtime Node 1.21.0",
+          "dtype": "q8",
+          "device": "cpu",
+          "settings": {
+            "doSample": false,
+            "repetitionPenalty": 1.05,
+            "maxNewTokens": 256,
+            "contextTokens": 16384,
+            "maxCalls": 6,
+            "threads": "runtime default"
+          }
+        },
+        "node": "v24.22.2",
+        "network": [
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/tokenizer.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/generation_config.json",
+            "method": "GET",
+            "status": 200
+          },
+          {
+            "url": "https://huggingface.co/onnx-community/Qwen2.5-0.5B-Instruct/resolve/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "method": "GET",
+            "status": 200
+          }
+        ],
+        "bodies": [
+          {
+            "file": "onnx-community/Qwen2.5-0.5B-Instruct/22942cb7d7ba4cc81bb4673549ca4d4614469b5e/onnx/model_quantized.onnx",
+            "bytes": 512096557,
+            "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100"
+          }
+        ],
+        "loaded": true,
+        "disposed": true,
+        "expectedWeightMatch": true,
+        "beforeInferenceWeightMatch": true
+      },
+      "adapterExit": {
+        "code": 0,
+        "signal": null,
+        "forwardedSignals": [],
+        "normalExit": true
+      },
+      "sourceGuardPassed": true,
+      "cleanup": true,
+      "packageSha256": "3e1932789f21095501071afb312783dc94762ade59b3577cdc09011aa9f432f3"
+    }
+  ]
+}

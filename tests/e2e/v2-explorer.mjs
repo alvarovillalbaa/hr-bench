@@ -16,6 +16,15 @@ const known = ['B01', 'B02', 'B03', 'B04', 'B05-320', 'B05-390']; assert.ok(!sel
 const hash = value => createHash('sha256').update(value).digest('hex');
 const config = JSON.parse(await readFile(join(root, 'vercel.json'), 'utf8'));
 const manifest = JSON.parse(await readFile(join(root, 'dist/build.json'), 'utf8'));
+const candidateEnvelope = JSON.parse(await readFile(join(root, 'dist/v2/pilot.json'), 'utf8'));
+let candidateMeasured;
+if (candidateEnvelope.status === 'measured') {
+  candidateMeasured = await verifyReportV2(bundle, candidateEnvelope.report);
+  assert.equal(candidateMeasured.report.target.kind, 'model');
+  assert.deepEqual(candidateMeasured.report.selectedRowIds, bundle.tasks.filter(task => task.split === 'evaluation_public').map(task => task.row_id));
+} else assert.equal(candidateEnvelope.status, 'pending');
+const candidateHasOverall = Boolean(candidateMeasured?.summary.complete && candidateMeasured.summary.scored === 32 && Number.isFinite(candidateMeasured.summary.officialMacroScore));
+const candidateChartText = candidateHasOverall ? `${(candidateMeasured.summary.officialMacroScore * 100).toFixed(0)}% · ${candidateMeasured.summary.successes}/32` : 'No measured model result for ops-v2';
 let browser, server;
 const text = (page, selector, value) => page.waitForFunction(({ selector, value }) => document.querySelector(selector)?.textContent.includes(value), { selector, value });
 async function download(page, selector, name) {
@@ -70,18 +79,19 @@ try {
     await page.locator('#model-results-title').scrollIntoViewIfNeeded(); row.dataset = 'ops-v1'; row.modelSuccess = '0/8'; row.readableCards = true;
   });
   await scenario('B02', {}, async (page, row) => {
-    await edition(page, 'v2'); await text(page, '#model-chart', 'No measured model result for ops-v2'); assert.equal(await page.locator('#model-chart .model-bar-row').count(), 0);
+    await edition(page, 'v2'); await text(page, '#model-chart', candidateChartText); assert.equal(await page.locator('#model-chart .model-bar-row').count(), candidateHasOverall ? 1 : 0);
     await page.locator('#split-filter').selectOption('evaluation_public'); assert.equal(await page.locator('.task-card').count(), 32);
+    await page.locator('.task-card').first().scrollIntoViewIfNeeded(); await page.screenshot({ path: join(output, 'B02-library.png'), animations: 'disabled' });
     const task = bundle.tasks.find(task => task.split === 'evaluation_public'); await choose(page, task);
     const sources = await page.locator('#professional-sources a').evaluateAll(nodes => nodes.map(node => ({ href: node.href, rel: node.rel, target: node.target })));
     const provenance = bundle.provenance.rows.find(item => item.row_id === task.row_id); assert.deepEqual(sources.map(item => item.href), provenance.sourceIds.map(id => bundle.sources.find(item => item.id === id).url)); assert.ok(sources.every(item => item.target === '_blank' && item.rel.includes('noopener')));
     assert.match(await page.locator('#task-provenance').innerText(), /independent review pending/);
     await page.getByText('Exact instructions given to the agent', { exact: true }).click(); assert.equal(await page.locator('#task-instructions').innerText(), task.goal);
     await page.getByText('Professional sources and review status', { exact: true }).click();
-    await page.locator('#professional-sources').scrollIntoViewIfNeeded(); row.dataset = 'ops-v2'; row.visibleEvaluationCases = 32; row.sources = sources; row.modelBarCount = 0;
+    await page.locator('#professional-sources').scrollIntoViewIfNeeded(); row.dataset = 'ops-v2'; row.visibleEvaluationCases = 32; row.sources = sources; row.modelBarCount = candidateHasOverall ? 1 : 0; row.publishedModelReportId = candidateMeasured?.report.reportId ?? null;
   });
   await scenario('B03', {}, async (page, row) => {
-    await edition(page, 'v2'); const task = bundle.tasks.find(task => task.split === 'evaluation_public'); await choose(page, task);
+    await edition(page, 'v2'); await text(page, '#model-chart', candidateChartText); const publicChartBefore = await page.locator('#model-chart').textContent(); const task = bundle.tasks.find(task => task.split === 'evaluation_public'); await choose(page, task);
     const observation = await download(page, '#download-task', 'B03-public-task.json'); assert.equal(observation.value.row_id, task.row_id); assert.equal(Object.hasOwn(observation.value, 'expect'), false);
     await page.locator('#start-practice').click(); await page.locator('#run-reference').click(); await text(page, '#score-summary', 'Task completed · 1/1'); await text(page, '#score-summary', 'not model performance');
     const downloaded = await download(page, '#download-report', 'B03-report.json'); assert.equal(downloaded.value.version, 2); assert.equal((await verifyReportV2(bundle, downloaded.value)).summary.successes, 1);
@@ -90,7 +100,7 @@ try {
     await importReport(page, await resign(forged), 'authored-forged.json'); await text(page, '#report-status', 'previous report and practice episodes are preserved'); assert.equal(await page.locator('#report-view').textContent(), prior);
     const literal = structuredClone(downloaded.value); literal.target.name = '<img src=x onerror="window.injected=true">'; literal.targetConfigSha256 = await digest(canonical(literal.target));
     await importReport(page, await resign(literal), 'authored-literal.json'); await text(page, '#report-view', literal.target.name); assert.equal(await page.locator('#report-view img').count(), 0); assert.equal(await page.evaluate(() => window.injected), undefined);
-    assert.equal(await page.locator('#model-chart .model-bar-row').count(), 0);
+    assert.equal(await page.locator('#model-chart .model-bar-row').count(), candidateHasOverall ? 1 : 0); assert.equal(await page.locator('#model-chart').textContent(), publicChartBefore, 'Private reports never change the published model chart');
     await edition(page, 'v1'); await importReport(page, downloaded.value, 'wrong-edition.json'); await text(page, '#report-status', 'previous report and practice episodes are preserved'); await text(page, '#model-chart', '0% · 0/8');
     row.taskDownload = { name: observation.name, bytes: observation.bytes, sha256: observation.sha256 }; row.reportDownload = { name: downloaded.name, bytes: downloaded.bytes, sha256: downloaded.sha256 }; row.forgedGradeRefused = true; row.literalMarkupInert = true;
     await page.locator('#import-title').scrollIntoViewIfNeeded();

@@ -40,7 +40,9 @@ export async function mergeCampaignReports(bundle, plan, reports) {
   const combined = await createReportV2(bundle, tasks, plan.target, selectedIds.map(id => episodes.get(id)), {
     aggregation: 'Exact disjoint predeclared shard episodes; replayed together, not averaged shard scores.',
     sourceReports: plan.shards.map(shard => shards.get(shard.index).reportId),
-    node: process.version, platform: process.platform, arch: process.arch,
+    sourceRuntimes: plan.shards.map(shard => ({ shardIndex: shard.index, runtime: shards.get(shard.index).runtime })),
+    aggregationRuntime: { node: process.version, platform: process.platform, arch: process.arch },
+    trial: plan.trial,
   });
   await verifyReportV2(bundle, combined);
   return combined;

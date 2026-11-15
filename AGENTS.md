@@ -13,13 +13,14 @@ Last updated: 2026-11-15
   separate CLI/report and web selector. See docs/specs/benchmark-v2.md and
   docs/results/2026/11-15/task-expansion-v2/result.md. Eighteen new focused
   Node checks pass, including 96 oracle/null/public-solver cases. These are
-  authored software controls; actual HR review and V2 model measurement remain
+  authored software controls. Actual V2 measurement now replays32/32 scored
+  cases,0/32 successes, with verified weight/runtime provenance; HR review stays
   pending. Never turn source provenance into reviewer acceptance.
 - V2 inputs/provenance/manifest are sealed. Its report is version 2/candidate;
   do not pool or relabel V1 results. All frozen V1 files/engine/prompt/pilot
   remain unchanged. Actual reviewer attestations must be new records bound to
-  exact row hashes. Native switching/import/download, installed/hosted and V2
-  publication remain pending. No new CI, installation or model ran in this scope.
+  exact row hashes. Installed archive and six native identities are accepted;
+  the final model-bearing page/archive and hosted/publication are next.
 - UI-only reading aids live in web/explorer.mjs, separate from frozen contracts.
   Keep original goals accessible. The public chart uses replayed published model
   reports on the exact complete ordered evaluation cohort. Controls, incomplete
@@ -52,4 +53,23 @@ Last updated: 2026-11-15
   dependencies, credentials or local-only configuration in Git/artifacts.
 - Temporary CI has a20-minute job cap,17-minute internal deadline, exact owner
   scratch identity, complete streams/source guards and teardown; retire it.
+- Initial V2 campaign: qa/hrbench-v2-20261115 at
+  25fea481cf34af81cd93ae8c519f2f7080c90e71, run43712560360. Its push workflow
+  ran four predeclared real-model shards, max two concurrently; all four
+  exhausted760seconds and are retained as interrupted infrastructure evidence.
+  Corrected source769e7b556f468007a280949bd32d441e7d7461b6,
+  run43714588256, completed16 two-row jobs,32/32 scored,0/32 successes.
+  Do not push
+  documentation/source onto this ref while that model recipe is active: doing
+  so would repeat inference. Poll the existing run/jobs; change the recipe to
+  the next phase in the same later commit before moving the ref.
+- Active sealed campaign is bench/runs/v2-qwen-20261115/plan-v3.json, hash
+  0b4b7324b7d361f5e52aabd9ed4bc7140a640e2bb05e256a97fe7b9ee684b57f.
+  The owner cap above is per job; no new cumulative approval was needed.
+  Operator bounds are14minutes/job and300minutes covering the retained initial
+  and corrected trials plus auxiliary work, not a claimed new owner grant.
+  Plan-v1 is an unused preserved pre-inference authority-interpretation error.
+- Owner explicitly answered “Mantener revisión pendiente” on15November2026;
+  see docs/reviews/v2-owner-deferral-20261115.md. Zero independently reviewed
+  rows; continue software/model/publication without contacting a reviewer.
 - Use git diff --check. Record canonical results in docs/results/YYYY/MM-DD/.

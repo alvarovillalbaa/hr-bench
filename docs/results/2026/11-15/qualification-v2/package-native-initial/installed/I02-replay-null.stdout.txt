@@ -1,0 +1,78 @@
+{
+  "replay": "verified",
+  "dataset": "ops-v2",
+  "stage": "candidate",
+  "reportId": "sha256:370af4003f5d0e28af1050a89f70a2c77044ec0839cd72b32f3c8eea22f27c71",
+  "summary": {
+    "selected": 96,
+    "scored": 96,
+    "successes": 0,
+    "coverage": 1,
+    "complete": true,
+    "officialMacroScore": 0,
+    "rowWilson95": [
+      3.469446951953614e-18,
+      0.038475587857675686
+    ],
+    "families": [
+      {
+        "family": "scheduling",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "leave",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "onboarding",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "policy",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "compensation",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "consent",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "evidence",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      },
+      {
+        "family": "offboarding",
+        "selected": 12,
+        "scored": 12,
+        "successes": 0,
+        "score": 0
+      }
+    ],
+    "interpretation": "Descriptive public synthetic suite; no real-HR or comparative superiority claim."
+  },
+  "identity": "Replay-checked candidate trace; no independent expert validation or independently audited target identity."
+}

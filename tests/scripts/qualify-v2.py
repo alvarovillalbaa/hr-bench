@@ -24,6 +24,8 @@ scratch = None
 copied_ready = False
 sha = lambda value: hashlib.sha256(value).hexdigest()
 roots = ["src", "bin", "bench", "scripts", "web", "tests", "docs/specs", "docs/references", "docs/reviews", "README.md", "LICENSE", "package.json", "vercel.json", "docs/results/2026/11-14/pilot/report.json"]
+if (repo / "docs/results/2026/11-15/v2-qwen/report.json").is_file():
+    roots.append("docs/results/2026/11-15/v2-qwen/report.json")
 names = sorted(os.fsdecode(name) for name in subprocess.check_output(["git", "ls-files", "-z", "--", *roots], cwd=repo).split(b"\0") if name)
 def vector(root):
     return [{"path": name, "bytes": (root / name).stat().st_size, "sha256": sha((root / name).read_bytes())} for name in names]
@@ -76,7 +78,7 @@ def tools(kind):
 
 try:
     if remaining_ci < 60:
-        raise RuntimeError("Cumulative owner CI budget cannot start another job")
+        raise RuntimeError("Remaining operator job budget cannot start another job")
     if mode == "model-shard" and os.environ.get("HRBENCH_MODEL_AUTHORIZATION") != "standing-owner-job-cap-20m":
         raise RuntimeError("Model execution requires the standing scoped owner campaign")
     free = shutil.disk_usage(tempfile.gettempdir()).free
@@ -123,6 +125,15 @@ try:
                 raise RuntimeError("Archive bytes/mode differ: " + name)
             members.append({"path": name, "bytes": len(value), "sha256": sha(value), "mode": member.mode})
     (output / "package-manifest.json").write_text(json.dumps({"file": tarball.name, "bytes": tarball.stat().st_size, "sha256": sha(tarball.read_bytes()), "members": members}, indent=2))
+    if mode == "final-native":
+        baseline = json.loads((repo / "docs/results/2026/11-15/v2-qwen/preflight/package-manifest.json").read_text())
+        old = {item["path"]: item for item in baseline["members"]}
+        actual = {item["path"]: item for item in members}
+        changed = sorted(name for name in old if old[name] != actual.get(name))
+        allowed = {"README.md", "docs/references/publishing-results.md"}
+        if set(old) != set(actual) or not set(changed).issubset(allowed):
+            raise RuntimeError("Final archive changed qualified runtime/data/plan bytes or membership")
+        (output / "archive-comparison.json").write_text(json.dumps({"allRuntimeDataPlanBytesAndModesEqual": True, "unchangedMembers": len(old) - len(changed), "changedDocumentationMembers": changed, "baselineArchiveSha256": baseline["sha256"]}, indent=2))
     if mode == "campaign-check":
         baseline_path = repo / "docs/results/2026/11-15/qualification-v2/package-native-initial/package-manifest.json"
         baseline = json.loads(baseline_path.read_text())
@@ -138,6 +149,10 @@ try:
     execute("offline-install", ["npm", "install", "--offline", "--ignore-scripts", "--no-audit", "--no-fund", str(tarball)], 30, consumer)
     shutil.copyfile(consumer / "package-lock.json", output / "installed-lock.json")
     env["HRBENCH_CONSUMER_ROOT"] = str(consumer)
+    if mode == "final-native":
+        cli = consumer / "node_modules/.bin/hrbench-v2"
+        execute("final-installed-evaluation-list", [str(cli), "list", "--split", "evaluation_public"], 30, consumer)
+        execute("final-installed-model-replay", [str(cli), "replay", str(work / "docs/results/2026/11-15/v2-qwen/report.json")], 60, consumer)
     if mode == "package-native":
         execute("campaign-guards-node24", ["node", "--test", "tests/unit/v2-campaign.test.mjs"], 30)
         env["HRBENCH_INSTALLED_OUTPUT"] = str(output / "installed")
@@ -159,7 +174,7 @@ try:
             raise RuntimeError("Model infrastructure/weight/disposal coverage is incomplete; no score threshold applies")
     elif mode == "campaign-check":
         execute("campaign-guards-node24", ["node", "--test", "tests/unit/v2-campaign.test.mjs"], 30)
-    elif mode in ["package-native", "native", "hosted"]:
+    elif mode in ["package-native", "native", "final-native", "hosted"]:
         execute("build", ["npm", "run", "build"], 30)
         shutil.copyfile(work / "dist/build.json", output / "build.json")
         browser = tools("browser")

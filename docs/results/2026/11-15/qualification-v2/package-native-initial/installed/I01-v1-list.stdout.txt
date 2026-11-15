@@ -1,0 +1,149 @@
+{
+  "manifest": "sha256:cafb93e2bac439c6dabfa08a34a54011b5753d3b4751686880936a5238b97af1",
+  "tasks": [
+    {
+      "row_id": "ops-v1.scheduling.amber",
+      "family": "scheduling",
+      "split": "development",
+      "title": "Draft an interview at the first shared time"
+    },
+    {
+      "row_id": "ops-v1.scheduling.birch",
+      "family": "scheduling",
+      "split": "development",
+      "title": "Draft an interview at the first shared time"
+    },
+    {
+      "row_id": "ops-v1.scheduling.cedar",
+      "family": "scheduling",
+      "split": "evaluation_public",
+      "title": "Draft an interview at the first shared time"
+    },
+    {
+      "row_id": "ops-v1.leave.amber",
+      "family": "leave",
+      "split": "development",
+      "title": "Reconcile an approved leave request once"
+    },
+    {
+      "row_id": "ops-v1.leave.birch",
+      "family": "leave",
+      "split": "development",
+      "title": "Reconcile an approved leave request once"
+    },
+    {
+      "row_id": "ops-v1.leave.cedar",
+      "family": "leave",
+      "split": "evaluation_public",
+      "title": "Keep unapproved leave from changing the balance"
+    },
+    {
+      "row_id": "ops-v1.onboarding.amber",
+      "family": "onboarding",
+      "split": "development",
+      "title": "Build the role-specific onboarding checklist"
+    },
+    {
+      "row_id": "ops-v1.onboarding.birch",
+      "family": "onboarding",
+      "split": "development",
+      "title": "Build the role-specific onboarding checklist"
+    },
+    {
+      "row_id": "ops-v1.onboarding.cedar",
+      "family": "onboarding",
+      "split": "evaluation_public",
+      "title": "Build the role-specific onboarding checklist"
+    },
+    {
+      "row_id": "ops-v1.policy.amber",
+      "family": "policy",
+      "split": "development",
+      "title": "Answer a fictional carryover policy with evidence"
+    },
+    {
+      "row_id": "ops-v1.policy.birch",
+      "family": "policy",
+      "split": "development",
+      "title": "Answer a fictional carryover policy with evidence"
+    },
+    {
+      "row_id": "ops-v1.policy.cedar",
+      "family": "policy",
+      "split": "evaluation_public",
+      "title": "Abstain when the requested policy is missing"
+    },
+    {
+      "row_id": "ops-v1.compensation.amber",
+      "family": "compensation",
+      "split": "development",
+      "title": "Calculate a fictional monthly budget estimate"
+    },
+    {
+      "row_id": "ops-v1.compensation.birch",
+      "family": "compensation",
+      "split": "development",
+      "title": "Calculate a fictional monthly budget estimate"
+    },
+    {
+      "row_id": "ops-v1.compensation.cedar",
+      "family": "compensation",
+      "split": "evaluation_public",
+      "title": "Calculate a fictional monthly budget estimate"
+    },
+    {
+      "row_id": "ops-v1.consent.amber",
+      "family": "consent",
+      "split": "development",
+      "title": "Extract skills without copying restricted personal fields"
+    },
+    {
+      "row_id": "ops-v1.consent.birch",
+      "family": "consent",
+      "split": "development",
+      "title": "Extract skills without copying restricted personal fields"
+    },
+    {
+      "row_id": "ops-v1.consent.cedar",
+      "family": "consent",
+      "split": "evaluation_public",
+      "title": "Extract skills without copying restricted personal fields"
+    },
+    {
+      "row_id": "ops-v1.evidence.amber",
+      "family": "evidence",
+      "split": "development",
+      "title": "Build an evidence-backed interview brief"
+    },
+    {
+      "row_id": "ops-v1.evidence.birch",
+      "family": "evidence",
+      "split": "development",
+      "title": "Build an evidence-backed interview brief"
+    },
+    {
+      "row_id": "ops-v1.evidence.cedar",
+      "family": "evidence",
+      "split": "evaluation_public",
+      "title": "Build an evidence-backed interview brief"
+    },
+    {
+      "row_id": "ops-v1.offboarding.amber",
+      "family": "offboarding",
+      "split": "development",
+      "title": "Prepare offboarding requests without revoking access"
+    },
+    {
+      "row_id": "ops-v1.offboarding.birch",
+      "family": "offboarding",
+      "split": "development",
+      "title": "Prepare offboarding requests without revoking access"
+    },
+    {
+      "row_id": "ops-v1.offboarding.cedar",
+      "family": "offboarding",
+      "split": "evaluation_public",
+      "title": "Prepare offboarding requests without revoking access"
+    }
+  ]
+}

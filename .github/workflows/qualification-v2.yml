@@ -1,13 +1,13 @@
-name: Temporary HRBench V2 resource-corrected qualification
+name: Temporary HRBench V2 final package and native qualification
 on:
   push:
     branches: ['qa/hrbench-v2-20261115']
 permissions:
   contents: read
 jobs:
-  preflight:
+  final-native:
     runs-on: ubuntu-24.04
-    timeout-minutes: 4
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -15,47 +15,16 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
           node-version: '24.22.2'
-      - name: Freeze and archive composition guards
+      - name: Qualify final archive and full model-bearing explorer
         env:
-          HRBENCH_MODE: campaign-check
-          HRBENCH_REMAINING_SECONDS: '240'
-          HRBENCH_OUTPUT: ${{ runner.temp }}/hrbench-v3-artifact
+          HRBENCH_MODE: final-native
+          HRBENCH_REMAINING_SECONDS: '480'
+          HRBENCH_OUTPUT: ${{ runner.temp }}/hrbench-v2-final-artifact
         run: python3 tests/scripts/qualify-v2.py
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
-          name: hrbench-v3-preflight-${{ github.run_id }}
-          path: ${{ runner.temp }}/hrbench-v3-artifact
-          if-no-files-found: error
-          retention-days: 7
-  model:
-    needs: preflight
-    strategy:
-      fail-fast: false
-      max-parallel: 4
-      matrix:
-        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-    runs-on: ubuntu-24.04
-    timeout-minutes: 14
-    steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
-        with:
-          node-version: '24.22.2'
-      - name: Frozen two-case real-model shard
-        env:
-          HRBENCH_MODE: model-shard
-          HRBENCH_MODEL_AUTHORIZATION: standing-owner-job-cap-20m
-          HRBENCH_REMAINING_SECONDS: '840'
-          HRBENCH_SHARD_INDEX: ${{ matrix.shard }}
-          HRBENCH_OUTPUT: ${{ runner.temp }}/hrbench-v3-artifact
-        run: python3 tests/scripts/qualify-v2.py
-      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
-        if: always()
-        with:
-          name: hrbench-v3-shard-${{ matrix.shard }}-${{ github.run_id }}
-          path: ${{ runner.temp }}/hrbench-v3-artifact
+          name: hrbench-v2-final-${{ github.run_id }}
+          path: ${{ runner.temp }}/hrbench-v2-final-artifact
           if-no-files-found: error
           retention-days: 7

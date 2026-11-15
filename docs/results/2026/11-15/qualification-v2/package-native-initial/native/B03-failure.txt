@@ -1,0 +1,117 @@
+HR
+HRBench / Ops
+Source ↗
+How it works
+
+OPEN BENCHMARK · VERSIONED EVIDENCE
+
+Measure the work.
+Not the promise.
+
+Can an agent finish an HR task without changing what it shouldn’t?
+
+24 released tasks. 96 new candidate cases. Eight workflows, with separate datasets and replayable results.
+
+Explore the tasks ↓
+Measured pilot
+Public synthetic cases
+Qwen2.5 0.5B Instruct · local q8 pilot
+
+8 public synthetic tasks · 0 successes · complete measured coverage
+
+0%
+Inspect the report ↗
+
+A measured result on 8 public synthetic tasks; independent HR review remains pending. No production or comparative-quality claim.
+
+Descriptive row Wilson95% interval: 0.0%–32.4%. Public templated rows are not a validated population sample.
+
+THE REPLAYED RESULTS
+
+How did each model do?
+Overall task success · 8 public evaluation tasks across 8 workflows
+Qwen2.5 0.5B Instruct · local q8 pilot
+0% · 0/8
+0%
+25%
+50%
+75%
+100%
+
+Equal weight per workflow. Only the published model run is shown. Oracle/null controls and private imports are excluded. Zero is a measured result, not missing data.
+
+The ops-v1 cohort has 8 public synthetic cases. It does not establish real-HR competence or comparative superiority.
+
+EXPLORE THE WORK
+
+Small tasks. Clear boundaries.
+0 of 24 tasks
+
+Choose a situation to see the goal, the fictional source and what the agent is allowed to change. Independent HR review is pending in both editions.
+
+Dataset edition
+V1 · 24 released tasks
+V2 candidate · 96 new tasks
+
+V1 released dataset · 24 authored tasks · 0 independently reviewed rows. Its original model measurement remains unchanged.
+
+What would you like to explore?
+Type of work
+All types of work
+Interview scheduling
+Time off
+Joining a team
+Policy questions
+Budget calculations
+Permission to use data
+Interview evidence
+Leaving a team
+Task set
+All cases
+Practice cases
+Public evaluation cases
+
+No matching tasks. Try another term or filter.
+
+No matching tasks.
+
+USE IT. INSPECT IT. SHARE THE EVIDENCE.
+
+Run a benchmark of your own.
+1. Run and replay
+
+Download the verified source or release archive. Use Node 22 or later. Connect your own adapter through the documented JSON-lines protocol; keep provider credentials in its environment.
+
+node bin/hrbench.mjs list
+node bin/hrbench.mjs run --adapter ./my-adapter.mjs --target target.json --out run.json
+node bin/hrbench.mjs replay run.json
+
+The target file describes the actual model and settings. A replay confirms the trace and score; it does not independently authenticate a model.
+
+Adapter protocol ↗
+2. Publish a measured result
+
+Keep the exact dataset manifest, target configuration, raw model/tool turns, all selected rows and failures. Publish the replayable report with runtime/source evidence and clearly state coverage.
+
+Use the same complete public evaluation cohort for comparisons. Infrastructure failures do not become a score of zero. Oracle and manual controls stay separate from model results.
+
+More tasks and expert-backed cohorts require a new frozen dataset version and documented review. The current suite has no independently expert-validated rows.
+
+Publication and contribution guide ↗
+
+BRING YOUR OWN RUN
+
+A score is a claim.
+The trace is the evidence.
+
+Import a report to replay every action against the frozen dataset. Supplied target identities are self-reported. Reports never replace your practice episodes.
+
+Replay a local report
+
+JSON, up to 4 MiB. Select the matching dataset; nothing is uploaded.
+
+HRBench Ops / v0.1
+
+Authored synthetic workflows. No claim of real-HR validity, global adoption or a secret test set.
+
+Read the protocol ↗

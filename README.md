@@ -7,8 +7,8 @@ records, use the permitted tools, complete the task, preserve everything else.
 Scoring executes the trajectory against a fresh sandbox and checks final state.
 
 [Open the explorer](https://hr-bench.vercel.app) ·
-[Download 0.1.0](https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.1.0) ·
-[Release evidence](docs/results/2026/11-14/release.md)
+[Download 0.2.0 candidate](https://github.com/alvarovillalbaa/hr-bench/releases/tag/v0.2.0) ·
+[Release evidence](docs/results/2026/11-15/qualification-v2/result.md)
 
 The first version contains24 authored synthetic tasks across scheduling, leave
 reconciliation, onboarding, policy answers, compensation arithmetic,
@@ -49,27 +49,51 @@ The explorer offers task filtering, an actual interactive sandbox,
 reference-control demonstrations and local report import/replay. No account,
 database or application service is required; browser state is disposable.
 
-The local explorer iteration presents a readable task-card library, plain-language
+The0.2.0 candidate explorer presents a readable task-card library, plain-language
 workflow introductions, an overall model-results chart and run/publication
 instructions. The chart replays the retained report and requires the exact
-complete public evaluation cohort; it currently contains one measured model.
-These UI changes are unpublished. See the [local receipt](docs/results/2026/11-14/explorer-iteration.md)
+complete public evaluation cohort. Each edition has one measurement of the same
+pinned model, displayed separately: V1 0/8 and candidate V2 0/32.
+See the [original UI receipt](docs/results/2026/11-14/explorer-iteration.md)
 and [publication/contribution guide](docs/references/publishing-results.md).
-An unpublished [ops-v2 candidate](docs/specs/benchmark-v2.md) adds 96 original
+The [ops-v2 candidate](docs/specs/benchmark-v2.md) adds 96 original
 tasks / 32 scenarios, eight inspected professional/agency source records and
 per-row provenance. A separate source CLI and website dataset selector preserve
 V1 as the default; scores are never pooled. Eighteen focused Node checks pass,
 including all 96 oracle/null cases and an authored public-evidence solver.
-These are software controls, not expert review. Actual HR review, V2 model
-measurement, native/installed/hosted qualification and publication remain
-pending. The frozen V1 inputs, engine/prompt and negative pilot are unchanged.
+These are software controls, not expert review. The owner explicitly kept
+[professional review pending](docs/reviews/v2-owner-deferral-20261115.md).
+Actual installed/native acceptance and the separate model/publication state
+are recorded in the [0.2.0 receipt](docs/results/2026/11-15/qualification-v2/result.md).
+The frozen V1 inputs, engine/prompt and negative pilot are unchanged.
 
-From this source checkout use `node bin/hrbench-v2.mjs list` and
-`node bin/hrbench-v2.mjs replay v2-run.json`. The existing 0.1.0 archive does
-not contain V2. See the [review handoff](docs/reviews/v2-review.md) and
+The0.2.0 archive includes both `hrbench` (V1) and `hrbench-v2` (candidate V2)
+executables, with no application dependencies. After verifying SHA256SUMS:
+
+~~~sh
+npm install --offline --ignore-scripts ./alvarovillalbaa-hr-bench-0.2.0.tgz
+./node_modules/.bin/hrbench-v2 list
+./node_modules/.bin/hrbench-v2 run --adapter ./my-adapter.mjs --target target.json --out v2-run.json
+./node_modules/.bin/hrbench-v2 replay v2-run.json
+~~~
+
+V2 selects all32 public evaluation rows by default. Keep their exact ordered
+manifest when comparing results; do not pool editions or publish a subset as
+an overall score. Node integrations use `/v2/runner`, `/v2/manifest` and
+`/v2/report`. Source users can run `node bin/hrbench-v2.mjs` directly.
+The preserved0.1.0 archive contains V1 only. See the [review handoff](docs/reviews/v2-review.md) and
 [expansion evidence](docs/results/2026/11-15/task-expansion-v2/result.md).
 
-The [real local q8 Qwen pilot](docs/results/2026/11-14/pilot/result.md) scored
+The [candidate V2 real-model report](docs/results/2026/11-15/v2-qwen/report.json)
+scores **0/32**, with all32 public cases scored and replayed. Sixteen disjoint
+two-case jobs used the sealed target, prompt and grader; each verified the actual
+512,096,557-byte ONNX weight digest before inference and after disposal.
+The earlier interrupted four-job trial is retained separately and contributes
+no episodes to this result. See [runtime provenance](docs/results/2026/11-15/v2-qwen/runtime-provenance.json).
+These public synthetic tasks are correlated and inspectable; this measurement
+does not establish representative HR capability or expert validation.
+
+The [original local q8 Qwen pilot](docs/results/2026/11-14/pilot/result.md) scored
 **0/8** on all eight public evaluation tasks:48 completions failed the strict
 tool protocol. Infrastructure coverage was complete. Raw actions, inputs,
 replayable grades and actual weight/runtime provenance are preserved. This

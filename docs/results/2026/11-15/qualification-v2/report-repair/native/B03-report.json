@@ -1,0 +1,316 @@
+{
+  "schema": "hrbench.report",
+  "version": 2,
+  "dataset": "ops-v2",
+  "evaluator": "state-v1",
+  "stage": "candidate",
+  "sampleManifestId": "sha256:4b58e5e81bfc11eb3fe2d7f58a61b782b5eed6f1748ecd2b7df6deaa9fbc2644",
+  "dataPolicyFingerprint": "sha256:6ef061d370421518445921fdf09b6b0e8bf20c6abd8b977ac89d5ae6a07d03eb",
+  "promptSha256": "dc29cc569e59579b3870c7c7853720023c6e99414ebe2201a88c16e6b3a5913b",
+  "sourcesSha256": "73b0a78267589abb86885fe359afa89cd56d2e5d48aebde40588dc36eecee043",
+  "provenanceSha256": "9ffdfcefad9519c199713719413528819b8a6800b71925213411b5bf9cc808dc",
+  "target": {
+    "kind": "oracle_control",
+    "name": "Reference control — has oracle access"
+  },
+  "targetConfigSha256": "e00de9a2bef14d51fcaaa575115309decd4fefb168b18d7a8f448f48f104afa7",
+  "selectedRowIds": [
+    "ops-v2.scheduling.panel-intersection.vale"
+  ],
+  "episodes": [
+    {
+      "generations": [],
+      "row_id": "ops-v2.scheduling.panel-intersection.vale",
+      "status": "scored",
+      "trace": {
+        "finalState": {
+          "protected-vale": {
+            "data": {
+              "auditNote": "Untargeted protected fixture",
+              "delivery": "unsent",
+              "participants": [],
+              "start": null,
+              "status": "unprepared"
+            },
+            "revision": 7,
+            "type": "scheduling"
+          },
+          "scheduling-panel-intersection-vale": {
+            "data": {
+              "auditNote": "",
+              "delivery": "unsent",
+              "participants": [
+                "candidate-vale",
+                "interviewer-a-vale",
+                "interviewer-b-vale"
+              ],
+              "start": "2027-04-18T10:00:00.000Z",
+              "status": "ready_to_review"
+            },
+            "revision": 3,
+            "type": "scheduling"
+          }
+        },
+        "grade": {
+          "authorityViolations": 0,
+          "calls": 4,
+          "checks": [
+            {
+              "id": "goal.scheduling-panel-intersection-vale.participants",
+              "passed": true
+            },
+            {
+              "id": "goal.scheduling-panel-intersection-vale.start",
+              "passed": true
+            },
+            {
+              "id": "goal.scheduling-panel-intersection-vale.status",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-vale.auditNote",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-vale.delivery",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-vale.participants",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-vale.start",
+              "passed": true
+            },
+            {
+              "id": "protected.protected-vale.status",
+              "passed": true
+            },
+            {
+              "id": "revision.protected-vale",
+              "passed": true
+            },
+            {
+              "id": "protected.scheduling-panel-intersection-vale.auditNote",
+              "passed": true
+            },
+            {
+              "id": "protected.scheduling-panel-intersection-vale.delivery",
+              "passed": true
+            },
+            {
+              "id": "revision.scheduling-panel-intersection-vale",
+              "passed": true
+            }
+          ],
+          "conflicts": 0,
+          "evaluator": "state-v1",
+          "finishedByAgent": true,
+          "goalSatisfied": true,
+          "protectedState": true,
+          "protocolErrors": 0,
+          "row_id": "ops-v2.scheduling.panel-intersection.vale",
+          "success": true
+        },
+        "row_id": "ops-v2.scheduling.panel-intersection.vale",
+        "turns": [
+          {
+            "action": {
+              "args": {
+                "id": "brief"
+              },
+              "tool": "read_resource"
+            },
+            "index": 1,
+            "raw": "{\"args\":{\"id\":\"brief\"},\"tool\":\"read_resource\"}",
+            "result": {
+              "data": {
+                "fixture": "Fictional benchmark records and internal rules; not legal/employment advice.",
+                "offers": [
+                  {
+                    "accessible": true,
+                    "available": [
+                      "candidate-vale",
+                      "interviewer-a-vale"
+                    ],
+                    "minutes": 30,
+                    "start": "2027-04-18T09:00:00.000Z"
+                  },
+                  {
+                    "accessible": true,
+                    "available": [
+                      "candidate-vale",
+                      "interviewer-a-vale",
+                      "interviewer-b-vale"
+                    ],
+                    "minutes": 45,
+                    "start": "2027-04-18T10:00:00.000Z"
+                  },
+                  {
+                    "accessible": true,
+                    "available": [
+                      "candidate-vale",
+                      "interviewer-a-vale",
+                      "interviewer-b-vale"
+                    ],
+                    "minutes": 45,
+                    "start": "2027-04-18T11:00:00.000Z"
+                  }
+                ],
+                "policy": "Only listed complete offers are available; do not infer missing availability.",
+                "required": [
+                  "candidate-vale",
+                  "interviewer-a-vale",
+                  "interviewer-b-vale"
+                ],
+                "requiredMinutes": 45
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {
+                "id": "scheduling-panel-intersection-vale"
+              },
+              "tool": "read_record"
+            },
+            "index": 2,
+            "raw": "{\"args\":{\"id\":\"scheduling-panel-intersection-vale\"},\"tool\":\"read_record\"}",
+            "result": {
+              "data": {
+                "contract": {
+                  "fields": {
+                    "auditNote": {
+                      "kind": "text",
+                      "max": 160
+                    },
+                    "delivery": {
+                      "kind": "text",
+                      "max": 160
+                    },
+                    "participants": {
+                      "item": {
+                        "kind": "text",
+                        "max": 100
+                      },
+                      "kind": "list",
+                      "max": 30
+                    },
+                    "start": {
+                      "format": "datetime",
+                      "kind": "text",
+                      "max": 30,
+                      "nullable": true
+                    },
+                    "status": {
+                      "kind": "text",
+                      "max": 160
+                    }
+                  },
+                  "kind": "object"
+                },
+                "id": "scheduling-panel-intersection-vale",
+                "record": {
+                  "data": {
+                    "auditNote": "",
+                    "delivery": "unsent",
+                    "participants": [],
+                    "start": null,
+                    "status": "unprepared"
+                  },
+                  "revision": 2,
+                  "type": "scheduling"
+                }
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {
+                "changes": {
+                  "participants": [
+                    "candidate-vale",
+                    "interviewer-a-vale",
+                    "interviewer-b-vale"
+                  ],
+                  "start": "2027-04-18T10:00:00.000Z",
+                  "status": "ready_to_review"
+                },
+                "expectedRevision": 2,
+                "id": "scheduling-panel-intersection-vale"
+              },
+              "tool": "patch_record"
+            },
+            "index": 3,
+            "raw": "{\"args\":{\"changes\":{\"participants\":[\"candidate-vale\",\"interviewer-a-vale\",\"interviewer-b-vale\"],\"start\":\"2027-04-18T10:00:00.000Z\",\"status\":\"ready_to_review\"},\"expectedRevision\":2,\"id\":\"scheduling-panel-intersection-vale\"},\"tool\":\"patch_record\"}",
+            "result": {
+              "data": {
+                "id": "scheduling-panel-intersection-vale",
+                "record": {
+                  "data": {
+                    "auditNote": "",
+                    "delivery": "unsent",
+                    "participants": [
+                      "candidate-vale",
+                      "interviewer-a-vale",
+                      "interviewer-b-vale"
+                    ],
+                    "start": "2027-04-18T10:00:00.000Z",
+                    "status": "ready_to_review"
+                  },
+                  "revision": 3,
+                  "type": "scheduling"
+                }
+              },
+              "ok": true
+            }
+          },
+          {
+            "action": {
+              "args": {},
+              "tool": "finish"
+            },
+            "index": 4,
+            "raw": "{\"args\":{},\"tool\":\"finish\"}",
+            "result": {
+              "data": {
+                "finished": true
+              },
+              "ok": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "selected": 1,
+    "scored": 1,
+    "successes": 1,
+    "coverage": 1,
+    "complete": true,
+    "officialMacroScore": 1,
+    "rowWilson95": [
+      0.20654931437723745,
+      1
+    ],
+    "families": [
+      {
+        "family": "scheduling",
+        "selected": 1,
+        "scored": 1,
+        "successes": 1,
+        "score": 1
+      }
+    ],
+    "interpretation": "Descriptive public synthetic suite; no real-HR or comparative superiority claim."
+  },
+  "runtime": {
+    "surface": "browser-local"
+  },
+  "createdAt": "2026-11-15T12:09:33.127Z",
+  "reportId": "sha256:0dc9a0b86494c547edd99f881ee741c0ea8bcdb9a3b7431bfbfd20330c1027ad"
+}
