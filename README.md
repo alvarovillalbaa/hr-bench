@@ -1,5 +1,9 @@
 # HRBench Ops
 
+<!-- project-family:start -->
+> **Project family:** [AI Research & Evaluation](https://github.com/alvarovillalbaa#ai-research-and-evaluation) · **Area:** HR benchmarks
+<!-- project-family:end -->
+
 Last updated: 2026-11-15
 
 An open benchmark for agents doing human-resources work: read the supplied
